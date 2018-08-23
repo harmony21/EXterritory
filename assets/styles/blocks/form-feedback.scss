@@ -1,0 +1,83 @@
+.form-feedback {
+    margin-top: 35px;
+    background-color: $grey;
+    padding: 25px;
+    &__form {
+        margin-top: 25px;
+    }
+    input {
+        display: block;
+        padding: 10px 15px;
+        border: none;
+        margin-right: 10px;
+        font-family: 'Circe';
+        font-size: 14px;
+    }
+    textarea {
+        width: 98.5%;
+        margin-top: 10px;
+        padding: 10px 15px;
+        border: none;
+        font-family: 'Circe';
+        font-size: 14px;
+        height: 88px;
+    }
+    &__contacts {
+        display: flex;
+    }
+    .checkbox {
+        display: none;
+    }
+    .checkbox-custom {
+        position: relative;
+        width: 16px;             
+        height: 16px;            
+        background: url("assets/images/checkbox-nonactive.png") no-repeat;
+        cursor: pointer;
+    }
+    .checkbox-custom, .label {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .checkbox:checked + .checkbox-custom::before {
+        content: "";             
+        display: block;			 
+        position: absolute;      
+        top: 0px; 
+        right: 0px; 
+        bottom: 0px; 
+        left: 0px; 
+        background: url("assets/images/checkbox-active.png") no-repeat;
+    }
+    .label {
+        margin-left: 15px;  
+    }
+    label {
+        margin-top: 20px;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        width: 100%;
+        padding-left: 0;
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+    }
+}
+.btn-submit {
+    border: none;
+    font-family: 'Circe';
+    color: #fff;
+    background-color: $red;
+    width: 176px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-top: 25px;
+    &:hover {
+        background-color: darken($red, 5);
+    }
+}

@@ -1,0 +1,9 @@
+.cooperation {
+    &__text {
+        font-size: 14px;
+        margin-top: 25px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

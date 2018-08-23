@@ -1,0 +1,90 @@
+.gallery-project {
+    overflow: hidden;
+    margin-top: 40px;
+    &__top, &__bottom  {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__bottom {
+        margin-top: 15px;
+        width: 100%;
+        @media screen and (max-width: 540px) {
+            margin-top: 5px;
+        }
+    }
+    &__desc {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+        @media screen and (max-width: 540px) {
+            padding: 5px 2px;
+        }
+    }
+    &__title {
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        @media screen and (max-width: 850px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 10px;
+        }
+    }
+    &__text {
+        margin-top: 15px;
+        color: white;
+        margin-bottom: 15px;
+        font-size: 15px;
+        @media screen and (max-width: 1401px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 1030px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 850px) {
+            font-size: 11px;
+            margin-top: 8px;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 9px;
+        }
+    }
+    &__img {
+        margin-left: 15px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        @media screen and (max-width: 540px) {
+            margin-left: 5px;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:hover {
+            .gallery-project__desc {
+                opacity: 1;
+            }
+            img {
+                transform: scale(1.05);
+            }
+            cursor: default;
+        }
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+}
+
+@-moz-document url-prefix() {
+    .gallery-project__img-back {
+        height: 220px;
+    }
+}

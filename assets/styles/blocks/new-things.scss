@@ -1,0 +1,17 @@
+.new-things {
+    background: url('assets/images/new-things.png') center center no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 50px 376px;
+    position: relative;
+    @media screen and (max-width: 1840px) {
+        padding: 50px 140px;
+    }
+    @media screen and (max-width: 1366px) {
+        padding: 50px 100px;
+    }
+    @media screen and (max-width: 1230px) {
+        padding: 20px 10px 50px 10px;
+    }
+}

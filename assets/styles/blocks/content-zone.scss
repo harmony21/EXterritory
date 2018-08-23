@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    padding: 40px 376px;
+    position: relative;
+    &--height {
+        min-height: 1400px;
+        @media screen and (max-width: 1000px) {
+            min-height: 100%;
+        }
+    }
+    @media screen and (max-width: 1840px) {
+        padding: 40px 140px;
+    }
+    @media screen and (max-width: 1366px) {
+        padding: 40px 80px;
+    }
+    @media screen and (max-width: 1230px) {
+        padding: 20px 10px;
+    }
+}
+.content-zone {
+    margin-left: 40px;
+    @media screen and (max-width: 1000px) {
+        position: relative;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .fancybox {
+        color: #fff;
+    }
+}

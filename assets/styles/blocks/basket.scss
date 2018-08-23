@@ -1,0 +1,62 @@
+.basket {
+    background-color: $grey;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    @media screen and (max-width: 1030px) {
+        padding: 10px 5px;        
+    }
+    @media screen and (max-width: 540px) {
+        margin-top: 5px;
+        justify-content: center;        
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: bold;
+        &_title {
+            text-transform: uppercase;
+        }
+    }
+    &__compare, &__count {
+        margin-right: 25px;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+        @media screen and (max-width: 1030px) {
+            margin-right: 10px;   
+        }
+        &_icon {
+            @media screen and (max-width: 1030px) {
+                width: 25px;
+            }
+        }
+    }
+    &__count_number {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $red;
+        font-size: 14px;
+        top: -5px;
+        right: -10px;
+        color: white;
+        @media screen and (max-width: 1030px) {
+            font-size: 10px;
+            width: 18px;
+            height: 18px;
+            right: -5px;
+            top: 0px;
+        }
+        span {
+            position: absolute;
+            top: 20%;
+            left: 24%;
+        }
+
+    }
+}

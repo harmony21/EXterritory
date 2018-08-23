@@ -1,0 +1,31 @@
+.contacts-tvc {
+    margin-top: 25px;
+    &:first-child {
+        margin-top: 0;
+    }
+    &__text {
+        font-size: 15px;
+        span {
+            font-weight: bold;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__phone {
+        font-size: 20px;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+    }
+    &--bank {
+        .contacts-tvc__text {
+            font-size: 13px;
+        }
+    }
+}

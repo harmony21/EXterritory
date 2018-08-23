@@ -1,0 +1,22 @@
+.partners {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    &__img {
+        width: 80%;
+    }
+    &__title {
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+    &--cooperation {
+        position: absolute;
+        width: 98.5vw;
+        margin-left: -625px;
+        @media screen and (max-width: 1366px) {
+            margin-left: -330px;
+        }
+    }
+}

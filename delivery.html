@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>EX-территория</title>
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <div class="shadow"></div>
+        <header class="header">
+          <div class="header__top">
+            <div class="links">
+              <ul class="links__list">
+                <li class="links__item"><a class="links__link" href="">Вход</a></li>
+                <li class="links__item border"> <a class="links__link" href="">Регистрация</a></li>
+                <li class="links__item profile"><a class="links__link" href="">Мой профиль</a></li>
+                  <ul class="links__inside-list">
+                    <li class="links__inside-item">Вход</li>
+                    <li class="links__inside-item">Регистрация</li>
+                  </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="header__bottom-left">
+               <div class="logo">
+                  <a href="index.html">
+                    <img class="logo__img" src="assets/images/logo.png">
+                  </a>
+                </div>
+            </div>
+            <div class="header__bottom-right">
+              <div class="time"><img class="time__icon" src="assets/images/clock.png"><span class="time__text">Режим работы Пн.-Пт. 10.00-18.30</span></div>
+              <div class="phone"><a class="phone__number" href="tel:88007001001">8 800 700 1001</a><span class="phone__desc">Бесплатный номер по России</span></div>
+              <div class="basket">
+                <div class="basket__compare"><img class="basket__compare_icon" src="assets/images/compare.png"></div>
+                <div class="basket__count"><img class="basket__count_icon" src="assets/images/basket.png">
+                  <div class="basket__count_number"><span>10</span></div>
+                </div>
+                <div class="basket__info"><span class="basket__info_title">Ваша корзина:</span><span class="basket__info_text">10 товаров на 45 990 Р</span></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="navigation-wrap">
+          <img class="menu__mobile" src="assets/images/nav-icon.png" alt="">
+          <ul class="menu">
+            <div class="menu__catalog">
+              <li class="menu__item">
+                <div class="menu__item_wrap">
+                  <div class="menu__icon"></div>
+                    <a class="menu__link" href="catalog.html">Каталог</a>
+                </div>
+                  <ul class="inside-menu__list">
+                    <li class="inside-menu__item"><img src="assets/images/item1.png" alt=""><a class="inside-menu__link" href="">Кровля
+                        <ul class="inside-menu__items">
+                          <li><a class="inside-menu__items_main" href="">Кровельные материалы (92)</a></li>
+                          <li><a href="">Металлочерепица (4)</a></li>
+                          <li><a href="">Мягкая кровля (13)</a></li>
+                          <li><a href="">Профнастил (6)</a></li>
+                          <li><a href="">Ондулин (8)</a></li>
+                          <li><a href="">Ондувилла (7)</a></li>
+                          <li><a href="">Доборные элементы "ДАМИР" (полукрулгая коллекция) (7)</a></li>
+                          <li><a href="">Доборные элементы для кровли (ручная гибка) (9)</a></li>
+                          <li><a href="">Вентиляционные системы (7)</a></li>
+                          <li><a href="">Элементы безопасности кровли (8)</a></li>
+                          <li><a href="">Система обогрева кровли (1)</a></li>
+                          <li><a href="">Проходки (1)</a></li>
+                          <li><a href="">Окна мансардные (5)</a></li>
+                          <li><a href="">Лестницы чердачные (5)</a></li>
+                          <li><a href="">Флюгера (1)</a></li>
+                          <li><a href="">Ленточный герметик (4)</a></li>
+                        </ul></a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item4.png" alt=""><a class="inside-menu__link" href="">Фасад</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item2.png" alt=""><a class="inside-menu__link" href="">Забор</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item3.png" alt=""><a class="inside-menu__link" href="">Материалы для строительства</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item4.png" alt=""><a class="inside-menu__link" href="">Благоустройство территорий</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item5.png" alt=""><a class="inside-menu__link" href="">Ручной инструмент</a></li>
+                  </ul>
+                </a>
+              </li>
+            </div>
+            <li class="menu__item"><a class="menu__link" href="actions.html">Акции</a></li>
+            <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+            <li class="menu__item"><a class="menu__link" href="payment.html">Оплата</a></li>
+            <li class="menu__item"><a class="menu__link active" href="delivery.html">Доставка</a></li>
+            <li class="menu__item"><a class="menu__link" href="return.html">Возврат</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="navigation-wrap__right">
+            <div class="search">
+              <img class="search__icon" src="assets/images/search.png">
+              <input type="text" placeholder="Поиск по сайту">
+            </div>
+            <div class="location"><span class="location__text">Ваш регион:</span>
+              <div class="location__choice">
+                <img src="assets/images/arrow-down.png" alt="">
+                <span>Хабаровский край</span>
+              </div>
+              <ul class="location__choice-list">
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Хабаровский край</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Приморский край</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Сахалинская область</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Амурская область</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Иркутская область</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Красное меню -->
+        <div class="options">
+          <ul class="options__list">
+            <li class="options__item"> 
+              <div class="options__item-wrap">
+                <img class="options__icon" src="assets/images/roof.png">
+              </div>
+              <a class="options__link" href="">Кровля</a>
+            </li>
+            <li class="options__item"> 
+              <div class="options__item-wrap"><img class="options__icon" src="assets/images/territory.png"></div><a class="options__link" href="">Фасад</a>
+            </li>
+            <li class="options__item"> 
+              <div class="options__item-wrap"><img class="options__icon" src="assets/images/fence.png"></div><a class="options__link" href="">Забор</a>
+            </li>
+            <li class="options__item"> 
+              <div class="options__item-wrap"><img class="options__icon" src="assets/images/materials.png"></div><a class="options__link" href="">Материалы для строительства</a>
+            </li>
+            <li class="options__item"> 
+              <div class="options__item-wrap"><img class="options__icon" src="assets/images/territory.png"></div><a class="options__link" href="">Благоустройство территорий</a>
+            </li>
+            <li class="options__item">
+              <div class="options__item-wrap"><img class="options__icon" src="assets/images/instrument.png"></div><a class="options__link" href="">Ручной инструмент</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Заголовок страницы -->
+        <div class="page-title">
+            <h1 class="page-title__name">Доставка</h1>
+            <div class="page-title__way">
+                <a href="index.html" class="page-title__link">Главная</a> - <a href="delivery.html" class="page-title__link">Доставка</a>
+            </div>
+        </div>
+        <!-- Контентная область -->
+        <div class="container">
+            <div class="delivery">
+                <div class="delivery__left">
+                  <input type="text" class="delivery__address" placeholder="Ваш адрес">
+                  <ul class="delivery__choice-list">
+                    <li class="delivery__choice-item">
+                      <div class="delivery__name">
+                        Доставка курьером
+                      </div>
+                    </li>
+                    <li class="delivery__choice-item">
+                      <div class="delivery__name">Доставка машиной</div>
+                      <div class="delivery__choice-wrap">
+                        <div class="delivery__choice-content">
+                          <div class="delivery__car">
+                            <div class="delivery__car-icon easy"></div>
+                              <p class="delivery__car-title">До 3 тонн</p>
+                          </div>
+                          <div class="delivery__car">
+                            <div class="delivery__car-icon middle"></div>
+                            <p class="delivery__car-title">От 3 тонн <br>до 7 тонн</p>
+                          </div>
+                          <div class="delivery__car">
+                            <div class="delivery__car-icon hard"></div>
+                            <p class="delivery__car-title">Свыше<br>7 тонн</p>
+                          </div>
+                        </div>
+                      </div>   
+                    </li>
+                    <li class="delivery__choice-item">
+                      <div class="delivery__name">Манипулятор</div>
+                      <div class="delivery__choice-wrap">
+                        <div class="delivery__choice-content">
+                          <div class="delivery__car">
+                            <div class="delivery__car-icon easy-manipulator"></div>
+                            <p class="delivery__car-title">До 2 тонн</p>
+                          </div>
+                          <div class="delivery__car">
+                            <div class="delivery__car-icon middle-manipulator"></div>
+                            <p class="delivery__car-title">До 4 тонн</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="delivery__choice-item">
+                      <div class="delivery__name">Длинномер</div>
+                      <div class="delivery__choice-wrap">
+                        <div class="delivery__choice-content">
+                          <div class="delivery__car">
+                            <div class="delivery__car-icon long"></div>
+                            <p class="delivery__car-title">До 25 тонн</p>
+                          </div>
+                        </div> 
+                      </div>
+                    </li>
+                  </ul>
+                  <p class="delivery__kind">Вид доставки</p>
+                  <ul class="delivery__choice-list">
+                    <li class="delivery__choice-item">
+                      <div class="delivery__name">
+                        В течение дня
+                      </div></li>
+                    <li class="delivery__choice-item">
+                      <div class="delivery__name">
+                        Точно ко времени
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="delivery__right">
+                    <div class="delivery__intro">
+                        <p>Стомость доставки</p>
+                        <div class="delivery__amount">
+                            <div class="delivery__number">
+                                <span>319 р.</span> в течение дня
+                            </div>
+                            <div class="delivery__number">
+                                <span>430 р.</span> точно по времени
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4f4c0d0ff4aed872ab4ac7871401198a0d95812696cc69a62dc7e441f34b044f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp"></script>
+                    </div>
+                    <div class="delivery__rules">
+                        <div class="delivery__title">
+                            <p>Правила доставки</p>
+                            <div class="delivery__arrow"></div>
+                        </div>
+                        <div class="delivery__wrap">
+                            <div class="delivery__content">
+                                <p class="delivery__text">Пожалуйста, ознакомьтесь с нашими правилами - 
+                                    их соблюдение поможет нам привезти Ваш заказ максимально быстро и качественно
+                                </p>
+                                <p class="delivery__subtitle">Необходимая информация</p>
+                                <p class="delivery__text">При заказе доставки просим Вас предоставить следующую информацию:</p>
+                                <ul class="delivery__list">
+                                    <li class="delivery__item">- номер дома (корпус, особенности или приметы);</li>
+                                    <li class="delivery__item">- подъезд к дому (с какой улицы, двор, арка, пропуск, место для разгрузки);</li>
+                                    <li class="delivery__item">- номер квартиры, код парадной, этаж, наличие лифта;</li>
+                                    <li class="delivery__item">- номер телефона (на адресе, контактный);</li>
+                                    <li class="delivery__item">- лицо, ответстственное за прием материала, его координаты.</li>
+                                </ul>
+                                <p class="delivery__subtitle">Стоимость</p>
+                                <ul class="delivery__list">
+                                    <li class="delivery__item">
+                                        - В зависимости от веса, объема и габаритов приобретенного Вами товара, а также вида доставки 
+                                        Вам будет предложена грузоподъемностью от 0,7 до 15 тонн, с манипулятором и без.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Стоимость доставки зависит от грузоподъемности ТС, адреса и вида доставки, количества точек разгрузки.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Такие услуги как разгрузка, пронос свыше 50 метров и подъем товара оплачиваются отдельно от доставки.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Если Вы оплатили заказ по безналичному расчету, при доставке Вас попросят предъявить доверенность,
+                                        заполненную в соответствии с законодательством РФ (Инструкция № 99 от 15.05.96 г.). Доставка возможна 
+                                        также при наличии на объекте круглой печати.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - При осуществлении доплаты на объекте чек на сумму доплаты будет выдан Вам в строительном центре, 
+                                        в котором была произведена отгрузка товара или передан водителем при следующей доставке.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Стоимость курьерской доставки - 190 руб. (услуга подъема в стоимость включена). На данный вид доставки 
+                                        существуют ограничения: суммарный вес заказа не должен превышать 10 кг, а габаритные размеры - 110х45х30 см.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Цена на "Пакетную доставку длинномеров" распространяется только на заказы с товарами длиной от 5,85 м.
+                                        На данный вид доставки существуют ограничения: максимальный вес заказа - до 650 кг и максимальный объем заказа - до 1 м3.
+                                    </li>
+                                </ul>
+                                <p class="delivery__subtitle">Время доставки</p>
+                                <ul class="delivery__list">
+                                    <li class="delivery__item">- Время доставки зависит от выбранного Вами вида доставки.</li>
+                                    <li class="delivery__item">- Время доставки не распространяется на подъем.</li>
+                                    <li class="delivery__item">- В случае если Вы оформляете несколько доставок на один адрес, время доставки на 
+                                        каждую следующую машину выставляется с интервалом в 1 час.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - В случае оформления на текущий день доставки заказа, включавшего колеровку краски свыше 50 л, интервал доставки 
+                                        смещается  на 2 часа от времени оформления заказа.
+                                    </li>
+                                    <li class="delivery__item">- В случае опоздания водителя Ваша доставка будет бесплатной.</li>
+                                </ul>
+                                <p class="delivery__subtitle">Общие правила</p>
+                                <ul class="delivery__list">
+                                    <li class="delivery__item">
+                                        - Водитель позвонит в момент выезда на Ваш адрес.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - В день доставки Вам следует быть постоянно на связи по указанным в заказе контактным телефонам 
+                                        (доставка осуществляется только после того, как Вы подтвердите свою готовность принять машину).
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Если нам не удастся связаться с Вами при видах доставки "Точно ко времени" и "Экспресс", машина поедет 
+                                        по указанному Вами адресу без подтверждающего звонка.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Позвонив в наш колл-центр до начала интервала, Вы можете бесплатно перенести время доставки, а также 
+                                        уточнить возможность корректировки заказа.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Позаботьтесь о том, чтобы машине СТД "Петрович" беспрепятственный подъезд к месту разгрузки. В ином 
+                                        случае доставка будет осуществлена максимально близко к месту планируемой выгрузки без нарушения ПДД 
+                                        и вероятности повреждения автомобиля.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - На то, чтобы разгрузить машину, Вам будет выделено 30 минут с момента подачи, если речь идет об 
+                                        автомобиле до 1,8 тонн включительно, и 60 минут для автомобилей свыше 1,8 тонн. Далее оплачивается 
+                                        простой в размере 300 руб. за каждый час - для машин до 1,8 тонн и 600 руб. за каждый час простоя - 
+                                        для машин свыше 1,8 тонн.
+                                    </li>
+                                </ul>
+                                <p class="delivery__subtitle">Разгрузка манипулятором</p>
+                                <ul class="delivery__list">
+                                    <li class="delivery__item">- Услуга "Разгрузка манипулятором" включает только разгрузку товара. К сожалению, 
+                                        мы не осуществляем иные виды работ манипулятором.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Разгрузка манипулятором запрещена под линией электропередач, над бытовыми объектами и заборами.
+                                    </li>
+                                    <li class="delivery__item">
+                                        - Разгрузка манипулятором осуществляется на расстоянии 2-15 метров от кузова автомобиля и в зависимости 
+                                        от технических характеристик манипулятора, т.е. в радиусе действия стрелы и в зоне прямой видимости места разгрузки.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="logo">
+                <a href="index.html">
+                <img class="logo__img" src="assets/images/logo-footer.png">
+                </a>
+            </div>
+            <div class="info">
+              <div class="navigation-wrap navigation-wrap_footer">
+                <nav class="menu menu_footer">
+                  <a class="menu__item" href="index.html">Главная</a>
+                  <a class="menu__item" href="catalog.html">Каталог</a>
+                  <a class="menu__item" href="actions.html">Акции</a>
+                  <a class="menu__item" href="services.html">Услуги</a>
+                  <a class="menu__item" href="payment.html">Оплата</a>
+                  <a class="menu__item" href="delivery.html">Доставка</a>
+                  <a class="menu__item" href="return.html">Возврат</a>
+                  <a class="menu__item" href="about.html">О компании</a>
+                  <a class="menu__item" href="contacts.html">Контакты</a>
+                </nav>
+              </div>
+              <div class="useful-links"><a class="useful-links__policy" href="">Политика конфиденциальности</a><a class="useful-links__site-map" href="">Карта сайта</a></div>
+            </div>
+            <div class="contacts">
+              <div class="time time_footer"><img class="time__icon" src="assets/images/clock-white.png"><span class="time__text">Режим работ Пн.-Пт. 10.00-18.30</span></div>
+              <div class="phone phone_footer"><span class="phone__desc">Бесплатный номер по России</span><a class="phone__number" href="tel:88007001001">8 800 700 1001</a></div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="cards"><img src="assets/images/cards.png"></div>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="https://facebook.com" target="_blank"><img class="socials__icon" src="assets/images/fb.png"></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://youtube.com" target="_blank"><img class="socials__icon" src="assets/images/youtube.png"></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://instagram.com" target="_blank"><img class="socials__icon" src="assets/images/insta.png"></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://telegram.com" target="_blank"><img class="socials__icon" src="assets/images/telegram.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="menu__mobile-wrap">
+      <ul class="menu__mobile-list">
+        <li class="menu__mobile-item"><a href="catalog.html" class="menu__mobile-link">Каталог</a></li>
+        <li class="menu__mobile-item"><a href="actions.html" class="menu__mobile-link">Акции</a></li>
+        <li class="menu__mobile-item"><a href="services.html" class="menu__mobile-link">Услуги</a></li>
+        <li class="menu__mobile-item"><a href="payment.html" class="menu__mobile-link">Оплата</a></li>
+        <li class="menu__mobile-item"><a href="delivery.html" class="menu__mobile-link">Доставка</a></li>
+        <li class="menu__mobile-item"><a href="return.html" class="menu__mobile-link">Возврат</a></li>
+        <li class="menu__mobile-item"><a href="about.html" class="menu__mobile-link">О компании</a></li>
+        <li class="menu__mobile-item"><a href="contacts.html" class="menu__mobile-link">Контакты</a></li>
+      </ul>
+      <img src="assets/images/close.png" alt="" class="menu__mobile-close">
+    </div>
+    <script src="assets/scripts/jquery-3.2.1.js"></script>
+    <script src="assets/scripts/options.js"></script>
+    <script src="assets/scripts/search.js"></script>
+    <script src="assets/scripts/login.js"></script>
+    <script src="assets/scripts/mobile-menu.js"></script>
+
+        <script src="assets/scripts/delivery.js"></script>
+  </body>
+</html>

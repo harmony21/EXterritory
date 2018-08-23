@@ -1,0 +1,33 @@
+.resume {
+    &__desc {
+        font-size: 14px;
+    }
+    &__contacts {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    &__phone, &__mail {
+        a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__btn {
+        background-color: $red;
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        width: 176px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 14px;
+        display: block;
+        margin: 35px 0;
+        &:hover {
+            background-color: darken($red, 6);
+        }
+    }
+}

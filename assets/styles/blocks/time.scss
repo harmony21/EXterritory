@@ -1,0 +1,28 @@
+.time {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1030px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 790px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 540px) {
+        justify-content: center;
+        margin-top: 5px;
+    }
+    &__icon {
+        margin-right: 10px;
+        @media screen and (max-width: 1030px) {
+            display: none;
+        }
+    }
+    &.time_footer {
+        .time__text {
+            color: white;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+    }
+    
+}

@@ -1,0 +1,51 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+    &__item {
+        width: 380px;
+        padding: 20px;
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        margin-left: 20px;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__desc {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    &__icon {
+        width: 33px;
+        height: 33px;
+        fill: #000;
+    }
+}
+.text-intro {
+    font-size: 16px;
+    font-weight: bold;
+}
+.services-more {
+    &__title {
+        font-size: 24px;
+    }
+    &__text, &__list {
+        font-size: 14px;
+    }
+    &__text {
+        margin: 20px 0;
+    }
+    &__list {
+        list-style: decimal;
+        margin-left: 10px;
+    }
+}

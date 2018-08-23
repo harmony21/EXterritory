@@ -1,0 +1,32 @@
+.gallery {
+    width: 100%;
+    padding: 50px 376px;
+    background-color: $light-grey;
+    @media screen and (max-width: 1840px) {
+        padding: 50px 140px;
+    }
+    @media screen and (max-width: 1366px) {
+        padding: 50px 100px;
+    }
+    @media screen and (max-width: 1230px) {
+        padding: 20px 10px 50px 10px;
+    }
+    &.inside {
+        padding: 0;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        hr {
+            width: 60px;
+            margin: 15px 0;
+        }
+        .gallery-project__desc {
+            padding-top: 30px;
+        }
+        .gallery-project__img {
+            margin-left: 0;
+            border-right: 15px solid white;
+            border-bottom: 15px solid white;
+        }
+    }
+}

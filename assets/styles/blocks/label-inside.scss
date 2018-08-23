@@ -1,0 +1,17 @@
+.label-inside {
+    transition: .4s;
+    overflow: hidden;
+    height: 0;
+    &__item {
+        color: $dark-grey;
+        font-size: 14px;
+        padding: 10px 15px;
+        &:hover {
+            color: $red;
+            cursor: pointer;
+        }
+    }
+    &--tvc {
+        height: 100%;
+    }
+}

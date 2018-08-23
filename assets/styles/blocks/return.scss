@@ -1,0 +1,78 @@
+.return {
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 30px;
+    &__intro {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        position: relative;
+        padding: 30px 0 10px 0;
+    }
+    &__name {
+        margin-left: 30px;
+    }
+    &__title {
+        font-size: 24px;
+    }
+    &__subtitle {
+        font-size: 14px;
+    }
+    &__question {
+        color: $red;
+        font-weight: bold;
+    }
+    &__condition {
+        margin-top: 25px;
+        text-transform: uppercase;
+        z-index: 10;
+        position: relative;
+    }
+    &__list {
+        font-size: 14px;
+        margin-top: 25px;
+        z-index: 10;
+        position: relative;
+        li {
+            list-style: none;
+            background: url('assets/images/square.png') no-repeat 0 1px;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+    }
+    &__added, &__connection  {
+        margin-top: 25px;
+        z-index: 10;
+        position: relative;
+    }
+    &__connection {
+        color: $dark-grey;
+        a {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &:last-child {
+        .return__name {
+            margin-left: 0;
+        }
+    }
+    .background {
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        background-color: $grey;
+        margin-left: -390px;
+        z-index: 1;
+        @media screen and (max-width: 1366px) {
+            margin-left: -80px;
+        }
+    }
+}
+
+.svg {
+    fill: $red;
+}

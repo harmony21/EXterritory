@@ -1,0 +1,39 @@
+.block-top {
+    display: flex;
+    align-items: center;
+    &__title {
+        font-size: 30px;
+        margin-left: 35px;
+        @media screen and (max-width: 850px) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: 850px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 330px) {
+            font-size: 18px;
+        }
+    }
+}
+.link-way {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #c5c5c5;
+    @media screen and (max-width: 540px) {
+        padding: 5px 7px;
+    }
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        margin-right: 5px;
+        @media screen and (max-width: 540px) {
+            font-size: 11px;
+        }
+    }
+    &:hover {
+        background-color: $red;
+    }
+}

@@ -1,0 +1,84 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    width: 178px;
+    z-index: 60;
+    position: relative;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    @media screen and (max-width: 540px) {
+        height: 50px;
+        width: 140px;
+    }
+    &__text {
+        font-size: 14px;
+        color: $dark-grey;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+        }
+    }
+    &__choice {
+        font-size: 14px;
+        position: relative;
+        span {
+            margin-left: 5px;
+            @media screen and (max-width: 540px) {
+                margin-left: 0px;
+            }
+        }
+        img {
+            @media screen and (max-width: 540px) {
+                width: 10px;
+            }
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+        }
+    }
+    &__choice-list {
+        display: none;
+        position: absolute;
+        z-index: 60;
+        background-color: $light-grey;
+        width: 173px;
+        top: 72px;
+        @media screen and (max-width: 1090px) {
+            width: 158px;
+        }
+        @media screen and (max-width: 540px) {
+            top: 50px;
+            width: 115px;
+        }
+    }
+    &__choice-item {
+        padding: 10px 0;
+        text-align: center;
+        &:hover {
+            background-color: #cdcdcd;
+        }
+        @media screen and (max-width: 540px) {
+            padding: 5px 0;
+        }
+    }
+    &__choice-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        @media screen and (max-width: 540px) {
+            font-size: 11px;
+        }
+    }
+    &.active {
+        background-color: $light-grey;
+        .location__choice-list {
+            display: block;
+        }
+    }
+}
+.location__choice {
+    &:hover {
+        cursor: pointer;
+    }
+}

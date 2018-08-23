@@ -1,0 +1,33 @@
+.arrow-left, .arrow-right {
+    z-index: 10;
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &.news-arrow {
+        top: 50%;
+    }
+    &.actions-arrow {
+        top: 40%;
+    }
+}
+.arrow-left {
+    left: 1%;
+    background: url('assets/images/arrow-left.png');
+    &:hover {
+        background-position: 0 -50px;
+    }
+}
+.arrow-right {
+    right: 1%;
+    background: url('assets/images/arrow-right.png');
+    &:hover {
+        background-position: 0 -50px;
+    }
+}

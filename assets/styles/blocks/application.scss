@@ -1,0 +1,121 @@
+.application {
+    margin-top: 35px;
+    background-color: $grey;
+    padding: 25px;
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        input, textarea {
+            width: 49%;
+        }
+    }
+    input {
+        display: block;
+        padding: 10px 15px;
+        border: none;
+        margin-top: 10px;
+        font-family: 'Circe';
+        font-size: 14px;
+    }
+    textarea {
+        margin-top: 10px;
+        padding: 10px 15px;
+        border: none;
+        font-family: 'Circe';
+        font-size: 14px;
+        height: 88px;
+    }
+    &__contacts {
+        display: flex;
+    }
+    .checkbox {
+        display: none;
+    }
+    .checkbox-custom {
+        position: relative;
+        width: 16px;             
+        height: 16px;            
+        background: url("assets/images/checkbox-nonactive.png") no-repeat;
+        cursor: pointer;
+    }
+    .checkbox-custom, .label {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .checkbox:checked + .checkbox-custom::before {
+        content: "";             
+        display: block;			 
+        position: absolute;      
+        top: 0px; 
+        right: 0px; 
+        bottom: 0px; 
+        left: 0px; 
+        background: url("assets/images/checkbox-active.png") no-repeat;
+    }
+    .label {
+        margin-left: 15px;  
+    }
+    label {
+        margin-top: 20px;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        width: 100%;
+        padding-left: 0;
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+    }
+    &__area {
+        display: flex;
+        margin-top: 10px;       
+        align-items: center;
+        font-size: 14px;
+        width: 49%;
+        label {
+            width: 25%;
+            margin-left: 10px;
+            margin-top: 0;
+        }
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        font-size: 14px;
+        label {
+            width: 28%;
+        }
+        input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            height: 19px;
+            width: 40px;
+        }
+        .file-upload {
+            position: relative;
+            overflow: hidden;
+            width: 40px;
+            height: 25px;
+            span {
+                width: 21px;
+                height: 19px;
+                background: url('assets/images/file-icon.png') no-repeat;
+            }
+        }
+    }
+    &__feedback {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    &__contacts {
+        input {
+            margin-right: 10px;
+        }
+    }
+}
+
+

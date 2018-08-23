@@ -1,0 +1,245 @@
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    overflow: hidden;
+    &__item {
+        background-color: white;
+        box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 10px;
+        margin-left: 10px;
+        transition: 0.2s ease-in-out;
+        margin-top: 10px;
+        @media screen and (max-width: 1070px) {
+           width: 220px;
+        }
+        @media screen and (max-width: 950px) {
+           width: 180px;
+        }
+        @media screen and (max-width: 760px) {
+           width: 95%;
+        }
+        &:hover {
+            box-shadow: 2px 4px 2px 2px rgba(0,0,0,0.3);
+            transform: scale(1.01);
+            .catalog__title {
+                color: $red;
+            }
+        }
+    }
+    &__status {
+        font-size: 13px;
+        &.order {
+            color: $dark-grey;
+        }
+        &.available {
+            color: #11a618;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+        text-decoration: none;
+    }
+    &__title {
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 15px;
+        color: #000;
+        @media screen and (max-width: 1070px) {
+           font-size: 14px;  
+        }
+        @media screen and (max-width: 750px) {
+            font-size: 12px;
+        }
+    }
+    &__flag {
+       position: absolute;
+       top: 30px;
+       left: -8px;
+       @media screen and (max-width: 750px) {
+            width: 60px;
+            left: -5px;
+        }
+    }
+    &__img-wrap {
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        align-self: center;
+        @media screen and (max-width: 1070px) {
+            width: 100%;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        &-img-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 62px;
+            height: 42px;
+            @media screen and (max-width: 1070px) {
+                width: 28px;
+                height: 19px;
+            }
+            &.left-icon {
+                background: url('assets/images/compare-th.png') no-repeat;
+                @media screen and (max-width: 1070px) {
+                    background: url('assets/images/compare-small.png') no-repeat;
+                }
+                &:hover {
+                    background-position: 0 -42px;
+                    cursor: pointer;
+                    @media screen and (max-width: 1070px) {
+                        background-position: 0 -19px;
+                    }
+                    &.active {
+                        background-position: 0 -84px;
+                        @media screen and (max-width: 1070px) {
+                            background-position: 0 -38px;
+                        }
+                    }
+                }
+            }
+            &.right-icon {
+                background: url('assets/images/basket-th.png');
+                @media screen and (max-width: 1070px) {
+                    background: url('assets/images/basket-small.png') no-repeat;
+                }
+                &:hover {
+                    background-position: 0 -42px;
+                    cursor: pointer;
+                    @media screen and (max-width: 1070px) {
+                        background-position: 0 -19px;
+                    }
+                    &.active {
+                        background-position: 0 -84px;
+                        @media screen and (max-width: 1070px) {
+                            background-position: 0 -38px;
+                        }
+                    }
+                }
+            }
+        }
+        &-price {
+            color: $red;
+            font-weight: bold;
+            font-size: 17px;
+            text-align: center;
+            @media screen and (max-width: 1070px) {
+                font-size: 14px;
+            }
+            &_old {
+                color: $dark-grey;
+                font-size: 10px;
+            }
+            &_new {
+                display: flex;
+                span {
+                    color: #000;
+                    margin-left: 5px;
+                    @media screen and (max-width: 1070px) {
+                        font-size: 12px;  
+                    }
+                }
+            }
+        }
+        &-amount {
+            font-weight: bold;
+            @media screen and (max-width: 1070px) {
+                font-size: 12px;  
+            }
+        }
+    }
+    &__action-status {
+        background-color: rgba(166,166,166,0.7);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        padding: 5px 0;
+    }
+    &__action-title {
+        color: white;
+        font-size: 10px;
+    }
+    &__action-time-wrap {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+    &__action-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_number {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            @media screen and (max-width: 750px) {
+                font-size: 16px;
+            }
+        }
+        &_sub {
+            color: white;
+            font-size: 11px;
+            @media screen and (max-width: 750px) {
+                font-size: 9px;
+            }
+        }
+    }
+}
+.owl-wrapper {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    height: 425px !important;
+}
+.owl-item {
+    width: 280px !important;
+    @media screen and (max-width: 850px) {
+        width: 100% !important;
+    }
+}
+.carousel-element {
+    height: 410px;
+    width: 260px;  
+    @media screen and (max-width: 850px) {
+        width: 200px;
+    } 
+}
+.owl-pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.owl-page {
+    height: 12px;
+    width: 12px;
+    background-color: #000;
+    border-radius: 50px;
+    margin-left: 10px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &.active {
+        background-color: $red;
+    }
+}

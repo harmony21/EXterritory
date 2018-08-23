@@ -1,0 +1,54 @@
+.actions {
+    width: 100%;
+    padding: 50px 376px;
+    position: relative;
+    @media screen and (max-width: 1840px) {
+        padding: 50px 140px;
+    }
+    @media screen and (max-width: 1366px) {
+        padding: 50px 100px;
+    }
+    @media screen and (max-width: 1230px) {
+        padding: 20px 10px;
+    }
+    @media screen and (max-width: 540px) {
+        padding: 20px 5px;
+    }
+}
+.action-desc {
+    &__title {
+        color: $red;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    &__info {
+        margin: 20px 0;
+    }
+    .link-way {
+        width: 95px;
+    }
+}
+.actions-inside {
+    position: relative;
+    .owl-pagination {
+        display: none;
+    }
+    .arrow-left {
+        left: -5%;
+    }
+    .arrow-right {
+        right: -5%;
+    }
+}
+.all {
+    text-align: center;
+    margin-top: 20px;
+    a {
+        color: $dark-grey;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
