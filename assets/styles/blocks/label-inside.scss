@@ -11,7 +11,29 @@
             cursor: pointer;
         }
     }
-    &--tvc {
-        height: 100%;
+    &__content {
+        label {
+            margin-top: 0;
+            color: #808080;
+            background-color: #fff;
+            font-size: 15px;
+            padding: 10px 15px;
+            &:hover {
+                background: #fff;
+                color: $red;
+            }
+        }
+        input {
+            &:checked+label {
+                background-color: #fff;
+                color: $red;
+            }
+        }
+    }
+}
+.label-info {
+    &.active {
+        background-color: $red;
+        color: #fff;
     }
 }

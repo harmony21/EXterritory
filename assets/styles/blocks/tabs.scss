@@ -24,7 +24,7 @@
         width: 234px;
         background-color: $grey;
         padding: 5px 15px;
-        border-bottom: 6px solid #fff;
+        margin-top: 6px;
         @media screen and (max-width: 1000px) {
             text-align: center;
             width: 150px;
@@ -47,7 +47,12 @@
     }
     #tab1:checked~#content-tab1, #tab2:checked~#content-tab2, 
     #tab3:checked~#content-tab3, #tab4:checked~#content-tab4,
-    #tab5:checked~#content-tab5 {
+    #tab5:checked~#content-tab5,
+    #tab11:checked~#content-tab11, #tab12:checked~#content-tab12,
+    #tab21:checked~#content-tab21, #tab22:checked~#content-tab22,
+    #tab23:checked~#content-tab23, #tab24:checked~#content-tab24,
+    #tab25:checked~#content-tab25, 
+     {
         display: block;
     }
     @keyframes scale { 
@@ -64,7 +69,6 @@
 }
 
 .tabs {
-    
     &__icon {
         margin-right: 10px;
         &.size {

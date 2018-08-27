@@ -1,0 +1,92 @@
+.products {
+    margin-top: 45px;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding: 15px;
+        &:nth-child(odd) {
+            background-color: $grey;
+        }
+    }
+    &__visible {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        &-options {
+            position: relative;
+            &:hover {
+                .products__visible-list {
+                    display: block;
+                }
+            }
+        }
+        &-choice {
+            margin-left: 20px;
+            border: 2px solid $dark-grey;
+            padding: 5px 8px 2px 8px;
+            background-color: #fafafa;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &-list {
+            background-color: $grey;
+            width: 42px;
+            position: absolute;
+            left: 20px;
+            display: none;
+        }
+         &-item {
+            padding: 5px 8px;
+            &:hover {
+                cursor: pointer;
+                background-color: #fafafa;
+            }
+        }
+    }
+    &__left {
+        display: flex;
+    }
+    &__desc {
+        margin-top: 15px;
+    }
+    &__status {
+        font-size: 12px;
+        color: $dark-grey;
+    }
+    &__title {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 15px;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__img {
+        img {
+            width: 161px;
+            margin-right: 25px;
+        }
+    }
+    &__right {
+        text-align: center;
+    }
+    &__price {
+        font-size: 14px;
+        span {
+            color: $red;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+    &__icons {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10px;
+    }
+}

@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
 
-    $('.delivery__choice-item').on('click', function (ev){
+    $('.delivery__name').on('click', function (ev){
         ev.preventDefault();
 
         var element = $(ev.target),
@@ -46,5 +46,15 @@ $(document).ready(function() {
                 'height' : 0
             });
         }
+
+        $('.delivery__car-icon').on('click', function (e) {
+            var closeItems = $(this).closest('.delivery__choice-item').siblings().find('.delivery__car-icon');
+            var farItems = $(this).closest('.delivery__car').siblings().find('.delivery__car-icon');
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active');
+                closeItems.removeClass('active');
+                farItems.removeClass('active');
+            }
+        })
     })
 })

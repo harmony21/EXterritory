@@ -113,32 +113,6 @@
             </div>
           </div>
         </div>
-        <!-- Красное меню -->
-        <div class="options">
-          <ul class="options__list">
-            <li class="options__item"> 
-              <div class="options__item-wrap">
-                <img class="options__icon" src="assets/images/roof.png">
-              </div>
-              <a class="options__link" href="">Кровля</a>
-            </li>
-            <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/territory.png"></div><a class="options__link" href="">Фасад</a>
-            </li>
-            <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/fence.png"></div><a class="options__link" href="">Забор</a>
-            </li>
-            <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/materials.png"></div><a class="options__link" href="">Материалы для строительства</a>
-            </li>
-            <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/territory.png"></div><a class="options__link" href="">Благоустройство территорий</a>
-            </li>
-            <li class="options__item">
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/instrument.png"></div><a class="options__link" href="">Ручной инструмент</a>
-            </li>
-          </ul>
-        </div>
         <!-- Заголовок страницы -->
         <div class="page-title">
             <h1 class="page-title__name">Контакты</h1>
@@ -149,14 +123,81 @@
         <!-- Контентная область -->
         <div class="container container--height">
             <div class="tabs">
-                <input id="tab1" type="radio" name="tabs" checked>
-                <label for="tab1" title="Торгово-выставочные центры">Торгово-выставочные центры</label>
+                <input id="tab1" type="radio" name="tabs" class="hide-check">
+                <label for="tab1" title="Торгово-выставочные центры" class="label-info">Торгово-выставочные центры</label>
                 <div class="label-inside label-inside--tvc">
                   <div class="label-inside__content">
-                    <ul class="label-inside__list">
-                      <li class="label-inside__item">Владивосток</li>
-                      <li class="label-inside__item">Хабаровск</li>
-                    </ul>
+                    <input type="radio" name="tabs" id="tab11">
+                    <label for="tab11">Владивосток</label>
+
+                    <input type="radio" name="tabs" id="tab12">
+                    <label for="tab12">Хабаровск</label>
+
+                    <section id="content-tab11">
+                      <div class="content-zone"> 
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Адрес: <span>г. Владивосток, ул. Авиационная 45 А</span></p>
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text">Телефон: <a href="tel:84212752425">+7(4212) 75-24-25</a></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__subtitle">Контактный центр
+                            <p class="contacts-tvc__text">Телефон: <a href="tel:88007001001">8 (800) 700-1001</a> звонок бесплатный</p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            <span>Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной</span>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы в предпраздничные и праздничные дни</p>
+                            <p class="contacts-tvc__text">С 1 по 9 января выходные</p>
+                            <p class="contacts-tvc__text">10 января с 12:00 до 15:00</p>
+                        </div>
+                        <div class="contacts-tvc contacts-tvc--bank">
+                            <p class="contacts-tvc__text">Реквизиты:</p><br>
+                            <p class="contacts-tvc__text">ИП Купцова М. С.</p>
+                            <p class="contacts-tvc__text">ИНН 7744000912 / Юридический адрес: 680052, г. Хабаровск, ул. Воровского, д. 20 /
+                                E-mail: <a href="mailto:sale@ck.ru">sale@ck.ru</a>
+                            </p>
+                        </div>
+                      </div> 
+                      <div class="map map--contacts">
+                          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7c076a2b1ddf2235f043f515c3264bae165b75d9058a671bdc9d0a9fd734f591&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
+                      </div>
+                    </section>
+
+                    <section id="content-tab12">
+                      <div class="content-zone"> 
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Адрес: <span>г. Хабаровск, ул. Авиационная 45 А</span></p>
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text">Телефон: <a href="tel:84212752425">+7(4212) 75-24-25</a></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__subtitle">Контактный центр
+                            <p class="contacts-tvc__text">Телефон: <a href="tel:88007001001">8 (800) 700-1001</a> звонок бесплатный</p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            <span>Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной</span>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы в предпраздничные и праздничные дни</p>
+                            <p class="contacts-tvc__text">С 1 по 9 января выходные</p>
+                            <p class="contacts-tvc__text">10 января с 12:00 до 15:00</p>
+                        </div>
+                        <div class="contacts-tvc contacts-tvc--bank">
+                            <p class="contacts-tvc__text">Реквизиты:</p><br>
+                            <p class="contacts-tvc__text">ИП Купцова М. С.</p>
+                            <p class="contacts-tvc__text">ИНН 7744000912 / Юридический адрес: 680052, г. Хабаровск, ул. Воровского, д. 20 /
+                                E-mail: <a href="mailto:sale@ck.ru">sale@ck.ru</a>
+                            </p>
+                        </div>
+                      </div> 
+                      <div class="map map--contacts">
+                          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4f4c0d0ff4aed872ab4ac7871401198a0d95812696cc69a62dc7e441f34b044f&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
+                      </div>
+                    </section>
                   </div>
                 </div>
 
@@ -164,17 +205,188 @@
                 <label for="tab2" title="Пункты выдачи" class="label-info">Пункты выдачи</label>
                 <div class="label-inside">
                   <div class="label-inside__content">
-                    <ul class="label-inside__list">
-                      <li class="label-inside__item">Иркутск</li>
-                      <li class="label-inside__item">Благовещенск</li>
-                      <li class="label-inside__item">Южно-Сахалинск</li>
-                      <li class="label-inside__item">Владивосток</li>
-                      <li class="label-inside__item">Хабаровск</li>
-                    </ul>
+                    <input type="radio" name="tabs" id="tab21">
+                    <label for="tab21">Иркутск</label>
+
+                    <input type="radio" name="tabs" id="tab22">
+                    <label for="tab22">Благовещенск</label>
+
+                    <input type="radio" name="tabs" id="tab23">
+                    <label for="tab23">Южно-Сахалинск</label>
+
+                    <input type="radio" name="tabs" id="tab24">
+                    <label for="tab24">Владивосток</label>
+
+                    <input type="radio" name="tabs" id="tab25">
+                    <label for="tab25">Хабаровск</label>
+
+
+                    <section id="content-tab21">
+                    <div class="content-zone"> 
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Иркутск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Иркутск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+                    </div> 
+                    <div class="map map--contacts">
+                      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0ea0f0bc8bb3a1e439d7e54d357e274cde52437fe6a9f43076b1fb15e9e4e68&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
+                    </div>
+                </section>  
+
+                <section id="content-tab22">
+                    <div class="content-zone"> 
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Благовещенск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Благовещенск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+                    </div> 
+                    <div class="map map--contacts">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A95a223c62591ab704d948f4c10665336ea649ba8125957179106e781c6fa8df2&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
+                    </div>
+                </section>  
+
+
+                <section id="content-tab23">
+                    <div class="content-zone"> 
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Южно-Сахалинск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Южно-Сахалинск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+                    </div> 
+                    <div class="map map--contacts">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acd0e676596437143d2bc31228696576812623bdfcea01922510f0d1638ccebaa&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
+                    </div>
+                </section>  
+
+
+                <section id="content-tab24">
+                    <div class="content-zone"> 
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Владивосток, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Владивосток, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+                    </div> 
+                    <div class="map map--contacts">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7c076a2b1ddf2235f043f515c3264bae165b75d9058a671bdc9d0a9fd734f591&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
+                    </div>
+                </section>  
+
+                <section id="content-tab25">
+                    <div class="content-zone"> 
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Хабаровск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text"><span>г. Хабаровск, ул. Авиационная 45 А</span></p>
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">Режим работы<br>
+                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
+                        </div>
+                        <div class="contacts-tvc">
+                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
+                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
+                        </div>
+                    </div> 
+                    <div class="map map--contacts">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4f4c0d0ff4aed872ab4ac7871401198a0d95812696cc69a62dc7e441f34b044f&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
+                    </div>
+                </section>   
+
+
+
+
+
+
                   </div>
                 </div> 
             
-                <input id="tab3" type="radio" name="tabs">
+                <input id="tab3" type="radio" name="tabs" checked>
                 <label for="tab3" title="Контактный центр">Контактный центр</label>
             
                 <input id="tab4" type="radio" name="tabs">
@@ -187,6 +399,7 @@
 
                 <section id="content-tab1">
                     <div class="content-zone"> 
+                    
                         <div class="contacts-tvc">
                             <p class="contacts-tvc__text">Адрес: <span>г. Хабаровск, ул. Авиационная 45 А</span></p>
                             <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
@@ -218,40 +431,11 @@
                     </div>
                 </section> 
  
-                <section id="content-tab2">
-                    <div class="content-zone"> 
-                        <div class="contacts-tvc">
-                            <p class="contacts-tvc__text"><span>г. Хабаровск, ул. Авиационная 45 А</span></p>
-                        </div>
-                        <div class="contacts-tvc">
-                            <p class="contacts-tvc__text">Режим работы<br>
-                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
-                        </div>
-                        <div class="contacts-tvc">
-                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
-                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
-                        </div>
-
-                        <div class="contacts-tvc">
-                            <p class="contacts-tvc__text"><span>г. Хабаровск, ул. Авиационная 45 А</span></p>
-                        </div>
-                        <div class="contacts-tvc">
-                            <p class="contacts-tvc__text">Режим работы<br>
-                            Пн. - Пт.: с 10:00 до 18:30, Сб.: с 9:00 до 15:00, Вс.: выходной
-                        </div>
-                        <div class="contacts-tvc">
-                            <p class="contacts-tvc__text">E-mail: <a href="mailto:khv@ck.ru">khv@ck.ru</a></p>
-                            <p class="contacts-tvc__text"><a href="tel:84212752425" class="contacts-tvc__phone">+7 (4212) 75-24-25</a></p>
-                        </div>
-                    </div> 
-                    <div class="map map--contacts">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4f4c0d0ff4aed872ab4ac7871401198a0d95812696cc69a62dc7e441f34b044f&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp"></script>
-                    </div>
-                </section>  
+                
 
                 <section id="content-tab3">
                     <div class="content-zone">
-                
+                      Здесь будет размещена информация о контактном центре. 
                     </div>
                 </section> 
 

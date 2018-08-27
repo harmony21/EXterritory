@@ -27,6 +27,9 @@
     }
     .link-way {
         width: 95px;
+        &.active {
+            background-color: $red;
+        }
     }
 }
 .actions-inside {
@@ -50,5 +53,13 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+.action-more {
+    transition: .3s;
+    overflow: hidden;
+    height: 0;
+    &__content {
+        margin-top: 20px;
     }
 }

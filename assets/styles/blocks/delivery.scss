@@ -59,7 +59,7 @@
                 width: 64px;
                 height: 32px;
                 background: url('assets/images/car1.png') no-repeat; 
-                &:hover {
+                &.active {
                     background-position: 0 -32px;
                 }
             }
@@ -67,7 +67,7 @@
                 width: 67px;
                 height: 26px;
                 background: url('assets/images/car2.png') no-repeat;
-                &:hover {
+                &.active {
                     background-position: 0 -26px;
                 }
             }
@@ -75,7 +75,7 @@
                 width: 91px;
                 height: 27px;
                 background: url('assets/images/car3.png') no-repeat;
-                &:hover {
+                &.active {
                     background-position: 0 -27px;
                 }
             }
@@ -83,7 +83,7 @@
                 width: 57px;
                 height: 32px;
                 background: url('assets/images/car4.png') no-repeat;
-                &:hover {
+                &.active {
                     background-position: 0 -32px;
                 }
             }
@@ -91,7 +91,7 @@
                 width: 67px;
                 height: 31px;
                 background: url('assets/images/car5.png') no-repeat;
-                &:hover {
+                &.active {
                     background-position: 0 -31px;
                 }
             }
@@ -99,7 +99,7 @@
                 width: 109px;
                 height: 26px;
                 background: url('assets/images/car6.png') no-repeat;
-                &:hover {
+                &.active {
                     background-position: 0 -26px;
                 }
             }

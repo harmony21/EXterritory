@@ -4,20 +4,19 @@ $(document).ready(function() {
         ev.preventDefault();
 
         var element = $(ev.target),
-        verItem = element.prev('.label-info'),
-        verInput = element.prev('.hide-check'),
+        verItem = element.closest('.label-info'),
         verContent = element.next('.label-inside'), 
         Height = verContent.find('.label-inside__content').outerHeight(true);
         
-        if (!verInput.attr('checked')) {
-            verInput.attr('checked', 'checked');
+        if (!verItem.hasClass('active')) {
+            verItem.addClass('active');
 
             verContent.css ({
                 'height' : Height
             });
         } 
         else {
-            verInput.removeAttr('checked');
+            verItem.removeClass('active');
 
             verContent.css ({
                 'height' : 0
