@@ -11,11 +11,18 @@
     @media screen and (max-width: 1230px) {
         padding: 20px 10px 50px 10px;
     }
+    
     &.inside {
         padding: 0;
         background-color: #fff;
         display: flex;
         flex-wrap: wrap;
+        @media screen and (max-width: 1150px) {
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 785px) {
+            justify-content: center;
+        }
         hr {
             width: 60px;
             margin: 15px 0;
@@ -28,6 +35,12 @@
             border-right: 15px solid white;
             border-bottom: 15px solid white;
             width: 374px;
+            @media screen and (max-width: 785px) {
+                border-right: none;
+            }
+            img {
+                width: 374px;
+            }
         }
         .fancybox {
             margin-top: 15px;
@@ -36,6 +49,30 @@
                 width: 374px;
                 height: 200px;
             }
+        }
+        &.details {
+            @media screen and (max-width: 540px) {
+                display: none;
+            }
+        }
+    }
+}
+.photo-gallery {
+    display: none;
+    @media screen and (max-width: 540px) {
+        display: block;
+        margin-top: 15px;
+        .page-title__name {
+            text-align: center;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .owl-wrapper-outer {
+            height: 200px;
+            overflow: hidden;
+        }
+        img {
+            height: 200px;
         }
     }
 }

@@ -16,27 +16,48 @@
           <div class="header__top">
             <div class="links">
               <ul class="links__list">
-                <li class="links__item"><a class="links__link" href="">Вход</a></li>
-                <li class="links__item border"> <a class="links__link" href="">Регистрация</a></li>
+                <li class="links__item"><a class="links__link entrance" href="">Вход</a></li>
+                <li class="links__item border"> <a class="links__link registration" href="">Регистрация</a></li>
                 <li class="links__item profile"><a class="links__link" href="">Мой профиль</a></li>
                   <ul class="links__inside-list">
-                    <li class="links__inside-item">Вход</li>
-                    <li class="links__inside-item">Регистрация</li>
+                    <li class="links__inside-item entrance">Вход</li>
+                    <li class="links__inside-item registration">Регистрация</li>
                   </ul>
               </ul>
             </div>
           </div>
           <div class="header__bottom">
             <div class="header__bottom-left">
+              <!-- Анимированная иконка гамбургера для мобильной версии -->
+              <a id="hamburger-icon" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+              </a>
+
               <div class="logo">
                 <a href="index.html">
                   <img class="logo__img" src="assets/images/logo.png">
                 </a>
               </div>
+              <div class="basket mobile-hidden">
+                <div class="basket__compare">
+                  <img class="basket__compare_icon" src="assets/images/compare.png">
+                </div>
+                <div class="basket__count">
+                  <img class="basket__count_icon" src="assets/images/basket.png">
+                </div>
+              </div>
             </div>
             <div class="header__bottom-right">
               <div class="time"><img class="time__icon" src="assets/images/clock.png"><span class="time__text">Режим работы Пн.-Пт. 10.00-18.30</span></div>
               <div class="phone"><a class="phone__number" href="tel:88007001001">8 800 700 1001</a><span class="phone__desc">Бесплатный номер по России</span></div>
+              
+              <div class="search mobile-hidden">
+                <img class="search__icon" src="assets/images/search.png">
+                <input type="text" placeholder="Поиск по сайту">
+              </div>
+              
               <div class="basket">
                 <div class="basket__compare"><img class="basket__compare_icon" src="assets/images/compare.png"></div>
                 <div class="basket__count"><img class="basket__count_icon" src="assets/images/basket.png">
@@ -47,8 +68,14 @@
             </div>
           </div>
         </header>
+
+        <div class="menu__item_wrap mobile-hidden">
+          <div class="menu__icon"></div>
+          <a class="menu__link" href="catalog.html">Каталог</a>
+        </div> 
+
         <div class="navigation-wrap">
-          <img class="menu__mobile" src="assets/images/nav-icon.png" alt="">
+          <img class="menu__laptop" src="assets/images/nav-icon.png" alt="">
           <ul class="menu">
             <div class="menu__catalog">
               <li class="menu__item">
@@ -146,22 +173,43 @@
               <div class="options__item-wrap">
                 <img class="options__icon" src="assets/images/roof.png">
               </div>
+              <img class="options__icon mobile-hidden" src="assets/images/roof.png">
               <a class="options__link" href="">Кровля</a>
             </li>
             <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/territory.png"></div><a class="options__link" href="">Фасад</a>
+              <div class="options__item-wrap">
+                <img class="options__icon" src="assets/images/territory.png">
+              </div>
+              <img class="options__icon mobile-hidden" src="assets/images/territory.png">
+              <a class="options__link" href="">Фасад</a>
             </li>
             <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/fence.png"></div><a class="options__link" href="">Забор</a>
+              <div class="options__item-wrap">
+                <img class="options__icon" src="assets/images/fence.png">
+              </div>
+              <img class="options__icon mobile-hidden" src="assets/images/fence.png">
+              <a class="options__link" href="">Забор</a>
             </li>
             <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/materials.png"></div><a class="options__link" href="">Материалы для строительства</a>
+              <div class="options__item-wrap">
+                <img class="options__icon" src="assets/images/materials.png">
+              </div>
+              <img class="options__icon mobile-hidden" src="assets/images/materials.png">
+              <a class="options__link" href="">Материалы для строительства</a>
             </li>
             <li class="options__item"> 
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/territory.png"></div><a class="options__link" href="">Благоустройство территорий</a>
+              <div class="options__item-wrap">
+                <img class="options__icon" src="assets/images/territory.png">
+              </div>
+              <img class="options__icon mobile-hidden" src="assets/images/territory.png">
+              <a class="options__link" href="">Благоустройство территорий</a>
             </li>
             <li class="options__item">
-              <div class="options__item-wrap"><img class="options__icon" src="assets/images/instrument.png"></div><a class="options__link" href="">Ручной инструмент</a>
+              <div class="options__item-wrap">
+                <img class="options__icon" src="assets/images/instrument.png">
+              </div>
+              <img class="options__icon mobile-hidden" src="assets/images/instrument.png">
+              <a class="options__link" href="">Ручной инструмент</a>
             </li>
           </ul>
         </div>
@@ -170,6 +218,7 @@
           <div class="block-top">
             <div class="link-way non-active"><a class="link-way__link" href="">В раздел</a><img src="assets/images/little-arrow.png"></div>
             <div class="block-top__title">Новинки </div>
+            <a href="catalog.html" class="block-top__all">Все товары</a>
           </div>
           <div class="arrow-left news-arrow" id="js-prev"></div>
           <div class="catalog" id="carousel">
@@ -304,6 +353,7 @@
             <div class="link-way"><a class="link-way__link" href="actions.html">В раздел</a>
               <img src="assets/images/little-arrow.png"></div>
             <div class="block-top__title">Акции</div>
+            <a href="actions.html" class="block-top__all">Все товары</a>
           </div>
           <div class="arrow-left actions-arrow" id="js-prev1"></div>
           <div class="catalog" id="carousel1">
@@ -422,11 +472,36 @@
         <!-- Галерея -->
         <div class="gallery">
           <div class="block-top">
-            <div class="link-way"><a class="link-way__link" href="">В раздел</a><img src="assets/images/little-arrow.png"></div>
+            <div class="link-way"><a class="link-way__link" href="gallery.html">В раздел</a><img src="assets/images/little-arrow.png"></div>
             <div class="block-top__title">Галерея наших работ</div>
+            <a href="gallery.html" class="block-top__all">Вся галерея</a>
           </div>
-          <div class="gallery-slider">
 
+          <!--Слайдер для мобильной версии -->
+          <div class="photo-gallery">
+            <div class="photo-gallery__img" id="carousel4">
+                <a class="fancybox carousel-element" rel="group" href="assets/images/ph.png">
+                    <img src="assets/images/ph.png" alt="" />
+                </a>
+                <a class="fancybox carousel-element" rel="group" href="assets/images/photo1.png">
+                    <img src="assets/images/photo1.png" alt="" />
+                </a>
+                <a class="fancybox carousel-element" rel="group" href="assets/images/photo2.png">
+                    <img src="assets/images/photo2.png" alt="" />
+                </a>
+                <a class="fancybox carousel-element" rel="group" href="assets/images/photo3.png">
+                    <img src="assets/images/photo3.png" alt="" />
+                </a>
+                <a class="fancybox carousel-element" rel="group" href="assets/images/photo3.png">
+                    <img src="assets/images/photo3.png" alt="" />
+                </a>
+                <a class="fancybox carousel-element" rel="group" href="assets/images/photo3.png">
+                    <img src="assets/images/photo3.png" alt="" />
+                </a>
+            </div>
+        </div>
+
+          <div class="gallery-slider">
             <div class="gallery-project">
               <div class="gallery-project__top">
                 <div class="gallery-project__img">
@@ -631,24 +706,168 @@
         </footer>
       </div>
     </div>
-    <div class="menu__mobile-wrap">
-      <ul class="menu__mobile-list">
-        <li class="menu__mobile-item"><a href="catalog.html" class="menu__mobile-link">Каталог</a></li>
-        <li class="menu__mobile-item"><a href="actions.html" class="menu__mobile-link">Акции</a></li>
-        <li class="menu__mobile-item"><a href="services.html" class="menu__mobile-link">Услуги</a></li>
-        <li class="menu__mobile-item"><a href="payment.html" class="menu__mobile-link">Оплата</a></li>
-        <li class="menu__mobile-item"><a href="delivery.html" class="menu__mobile-link">Доставка</a></li>
-        <li class="menu__mobile-item"><a href="return.html" class="menu__mobile-link">Возврат</a></li>
-        <li class="menu__mobile-item"><a href="about.html" class="menu__mobile-link">О компании</a></li>
-        <li class="menu__mobile-item"><a href="contacts.html" class="menu__mobile-link">Контакты</a></li>
+    <!-- Меню для планшетов -->
+    <div class="menu__laptop-wrap">
+      <ul class="menu__laptop-list">
+        <li class="menu__laptop-item"><a href="catalog.html" class="menu__laptop-link">Каталог</a></li>
+        <li class="menu__laptop-item"><a href="actions.html" class="menu__laptop-link">Акции</a></li>
+        <li class="menu__laptop-item"><a href="services.html" class="menu__laptop-link">Услуги</a></li>
+        <li class="menu__laptop-item"><a href="payment.html" class="menu__laptop-link">Оплата</a></li>
+        <li class="menu__laptop-item"><a href="delivery.html" class="menu__laptop-link">Доставка</a></li>
+        <li class="menu__laptop-item"><a href="return.html" class="menu__laptop-link">Возврат</a></li>
+        <li class="menu__laptop-item"><a href="about.html" class="menu__laptop-link">О компании</a></li>
+        <li class="menu__laptop-item"><a href="contacts.html" class="menu__laptop-link">Контакты</a></li>
       </ul>
-      <img src="assets/images/close.png" alt="" class="menu__mobile-close">
+      <img src="assets/images/close.png" alt="" class="menu__laptop-close">
     </div>
+    <!--Перестройка блоков для мобильной версии (меню, выбор региона, вход/регистрация) -->
+    <div class="mobile-menu">
+
+      <div class="links">
+        <ul class="links__list">
+          <li class="links__item"><a class="links__link entrance" href="">Вход</a></li>
+          <li class="links__item border"> <a class="links__link registration" href="">Регистрация</a></li>
+          <li class="links__item profile"><a class="links__link" href="">Мой профиль</a></li>
+        </ul>
+      </div>
+
+      <div class="location"><span class="location__text">Ваш регион:</span>
+        <div class="location__choice">
+          <img src="assets/images/arrow-down.png" alt="">
+          <span>Хабаровский край</span>
+        </div>
+        <ul class="location__choice-list">
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Хабаровский край</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Приморский край</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Сахалинская область</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Амурская область</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Иркутская область</a></li>
+        </ul>
+      </div>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+        <li class="mobile-menu__item"><a href="actions.html" class="mobile-menu__link">Акции</a></li>
+        <li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">Услуги</a></li>
+        <li class="mobile-menu__item"><a href="payment.html" class="mobile-menu__link">Оплата</a></li>
+        <li class="mobile-menu__item"><a href="delivery.html" class="mobile-menu__link">Доставка</a></li>
+        <li class="mobile-menu__item"><a href="return.html" class="mobile-menu__link">Возврат</a></li>
+        <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О компании</a></li>
+        <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+    </div>
+
+    <!-- Всплывающее окно "Закажите замер" -->
+    <div class="form-wrapper"></div> 
+    <form action="" class="form" id="form" method="POST">
+      <div class="form__top">
+        <img src="assets/images/logo.png" alt="">
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Закажи замер</h2>
+        <input type="text" name="user_name" placeholder="Имя *"><br>
+        <input type="tel" name="user_phone" placeholder="Телефон *"><br>
+        <input type="text" name="user_city" placeholder="Город *"><br>
+        <input type="text" name="user_address" placeholder="Адрес объекта"><br>
+        <textarea name="message" placeholder="Сообщение"></textarea>
+        <input type="submit" name="submit" class="btn-submit" value="Отправить">
+    </form>  
+
+    <!-- Всплывающее окно "Регистрация" -->
+    <div class="form-wrapper--registration"></div> 
+    <form action="" class="form--registration" id="form" method="POST">
+      <div class="form__top">
+        <div class="form__logo">
+          <p>Если вы впервые в</p>
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Зарегистрироваться</h2>
+        <div class="form__fields">
+          <div class="form__fields-left">
+            <input type="mail" name="user_mail" placeholder="E-mail *">
+            <input type="password" name="user_password" placeholder="Пароль *">
+            <input type="password" name="user_password-confirm" placeholder="Подтвердите пароль *">
+            <input type="tel" name="user_phone" placeholder="Телефон *">
+          </div>
+          <div class="form__fields-right">
+            <input type="text" name="user_surname" placeholder="Фамилия *">
+            <input type="text" name="user_name" placeholder="Имя *">
+            <input type="text" name="user_patronymic" placeholder="Отчество *">
+            <input type="text" name="user_city" placeholder="Город *">
+          </div>
+        </div>
+        <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Подписаться на рассылку по движению заказов</span>
+          </label>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Подписаться на рассылку об акциях и новинках</span>
+          </label>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Даю согласие на обработку персональных данных</span>
+          </label>
+        <input type="submit" name="submit" class="btn-submit" value="Зарегистрироваться">
+        <div class="socials">
+          <p class="socials__title">Зарегистрироваться через социальные сети</p>
+          <div class="socials__icons">
+            <a href="http://google.com" class="socials__link">
+              <div class="socials__icon google"></div>
+            </a>
+            <a href="http://facebook.com" class="socials__link">
+              <div class="socials__icon fb"></div>
+            </a>
+            <a href="http://twitter.com" class="socials__link">
+              <div class="socials__icon tw"></div>
+            </a>
+          </div>
+        </div>
+    </form> 
+
+    <!-- Всплывающее окно "Вход в личный кабинет" -->
+    <div class="form-wrapper--entrance"></div> 
+    <form action="" class="form--entrance" id="form" method="POST">
+      <div class="form__top">
+        <div class="form__logo">
+          <p>Уже зарегистрированы в</p>
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Вход в личный кабинет</h2>
+        <div class="form__fields">
+          <input type="text" name="user_mail" placeholder="E-mail / Телефон ">
+          <input type="password" name="user_password" placeholder="Пароль">
+        </div>
+        <input type="submit" name="submit" class="btn-submit" value="Войти">
+        <div class="socials">
+          <p class="socials__title">Войти через социальные сети</p>
+          <div class="socials__icons">
+            <a href="http://google.com" class="socials__link">
+              <div class="socials__icon google"></div>
+            </a>
+            <a href="http://facebook.com" class="socials__link">
+              <div class="socials__icon fb"></div>
+            </a>
+            <a href="http://twitter.com" class="socials__link">
+              <div class="socials__icon tw"></div>
+            </a>
+          </div>
+        </div>
+    </form> 
+
     <script src="assets/scripts/jquery-3.2.1.js"></script>
     <script src="assets/scripts/options.js"></script>
     <script src="assets/scripts/search.js"></script>
     <script src="assets/scripts/login.js"></script>
     <script src="assets/scripts/mobile-menu.js"></script>
+    <script src="assets/scripts/form.js"></script>
     <!-- Только для главной страницы -->
     <script src="assets/scripts/jquery.bxslider.min.js"></script>
     <script src="assets/scripts/slider.js"></script>  

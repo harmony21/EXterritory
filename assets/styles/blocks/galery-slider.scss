@@ -1,3 +1,8 @@
+.gallery-slider {
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+}
 .gallery-project {
     overflow: hidden;
     margin-top: 40px;

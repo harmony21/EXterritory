@@ -1,0 +1,138 @@
+.catalog-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog-item {
+    margin-top: 35px;
+    width: 365px;
+    display: flex;
+    @media screen and (max-width: 540px) {
+        width: 100%;
+        align-items: center;
+        background-color: $grey;
+        margin-top: 0;
+        padding: 10px 5px;
+        &:hover {
+            background-color: $red;
+            a {
+                color: #fff;
+            }
+            @media screen and (max-width: 540px) {
+                .catalog-item__img {
+                    &.roof {
+                        background-position: 0 -30px;
+                    }
+                    &.fence {
+                        background-position: 0 -29px;
+                    }
+                    &.front {
+                        background-position: 0 -31px;
+                    }
+                    &.materials {
+                        background-position: 0 -43px;
+                    }
+                    &.territory {
+                        background-position: 0 -28px;
+                    }
+                    &.hand {
+                        background-position: 0 -35px;
+                    }
+                }
+            }
+        }
+    }
+    &__img {
+        img {
+            width: 80px;
+            @media screen and (max-width: 540px) {
+                width: 40px;
+            }
+        }
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+        &.mobile {
+            display: none;
+            @media screen and (max-width: 540px) {
+                display: block;
+                &.roof {
+                    width: 39px;
+                    height: 30px;
+                    background: url('assets/images/items1.png') no-repeat;
+                }
+                &.fence {
+                    width: 34px;
+                    height: 29px;
+                    background: url('assets/images/items2.png') no-repeat;
+                }
+                &.front {
+                    width: 39px;
+                    height: 31px;
+                    background: url('assets/images/items3.png') no-repeat;
+                }
+                &.materials {
+                    width: 39px;
+                    height: 43px;
+                    background: url('assets/images/items4.png') no-repeat;
+                }
+                &.territory {
+                    width: 37px;
+                    height: 28px;
+                    background: url('assets/images/items5.png') no-repeat;
+                }
+                &.hand {
+                    width: 35px;
+                    height: 35px;
+                    background: url('assets/images/items6.png') no-repeat;
+                }
+            }
+        }
+    }
+    &__desc {
+        margin-left: 30px;
+        margin-top: 25px;
+        @media screen and (max-width: 540px) {
+            margin-top: 0;
+        }
+    }
+    &__list {
+        margin-top: 20px;
+        font-size: 14px;
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+
+    }
+    &__title {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 14px;
+        }
+    }
+    &__show-all {
+        font-size: 14px;
+        color: $dark-grey;
+        margin-top: 15px;
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        &.active {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    }
+    .catalog-hidden {
+        transition: 0.4s;
+        overflow: hidden;
+        height: 0;
+    }
+}

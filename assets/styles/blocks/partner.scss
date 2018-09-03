@@ -15,8 +15,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: 750px) {
-            width: 50px;
+        img {
+            @media screen and (max-width: 750px) {
+                width: 60px;
+            }
         }
     }
     &__title {
@@ -29,6 +31,8 @@
         }
         @media screen and (max-width: 610px) {
             margin-top: 10px;
+            padding: 0;
+            text-transform: uppercase;
         }
     }
     &__services-list {
@@ -51,6 +55,7 @@
         font-size: 14px;
         @media screen and (max-width: 610px) {
             margin-top: 10px;
+            font-size: 12px;
         }
         a {
             text-decoration: none;

@@ -18,7 +18,7 @@
             height: 280px;
         }
         @media screen and (max-width: 540px) {
-            height: 200px;
+            height: 155px;
         }
     }
     &__title, &__desc, &__btn {
@@ -34,6 +34,11 @@
         }
         @media screen and (max-width: 540px) {
             font-size: 24px;
+            text-align: center;
+            color: #fff;
+            display: block;
+            margin-top: 55px;
+            text-shadow: 1px 1px 0 black;
         }
     }
     &__desc {
@@ -43,6 +48,9 @@
         }
         @media screen and (max-width: 540px) {
             font-size: 14px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 0 black;
         }
         @media screen and (max-width: 450px) {
             font-size: 12px;
@@ -65,9 +73,7 @@
             width: 200px;
         }
         @media screen and (max-width: 540px) {
-            font-size: 11px;
-            width: 150px;
-            padding: 8px;
+            display: none;
         }
         &:hover {
             border: 1px solid #000;
@@ -153,7 +159,7 @@
     }
 }
 
-.gallery{
+.gallery {
     .bx-controls {
         display: flex;
         width: 100%;
@@ -168,6 +174,9 @@
         z-index: 10;
         border-radius: 20px;
         padding: 20px;
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
         &-item {
             margin-left: 10px;
             &:first-child {
@@ -192,6 +201,9 @@
     &--actions {
         height: 340px;
         position: relative;
+        @media screen and (max-width: 540px) {
+            height: 100px;
+        }
         .slider__background {
             margin-left: -390px;
             margin-top: 30px;
@@ -199,14 +211,23 @@
             @media screen and (max-width: 1366px) {
                 margin-left: -80px
             }
+            @media screen and (max-width: 1230px) {
+                margin-left: -10px;
+            }
         }
         .slider__title {
             position: absolute;
             top: 50%;
+            @media screen and (max-width: 540px) {
+                display: none;
+            }
         }
         .slider__desc {
             position: absolute;
             top: 70%;
+            @media screen and (max-width: 540px) {
+                display: none;
+            }
         }
     }
 }

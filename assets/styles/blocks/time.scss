@@ -8,8 +8,7 @@
         font-size: 12px;
     }
     @media screen and (max-width: 540px) {
-        justify-content: center;
-        margin-top: 5px;
+        display: none;
     }
     &__icon {
         margin-right: 10px;

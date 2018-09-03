@@ -24,3 +24,29 @@ $(document).ready(function() {
         }
     })
 })
+
+
+$(document).ready(function() {
+    if ($(window).width() <= 540) {
+        $('.inside-label').on('click', function (ev) {
+       
+            ev.preventDefault();
+            var inputID = $(this).prev().attr('id'),
+            inputs = $(this).siblings('label'),
+            sections = $(this).siblings('section');
+
+            if (!$(this).hasClass('active')) {
+
+                inputs.removeClass('active');
+                sections.css('display', 'none');
+                $(this).addClass('active');
+                $('#content-'+inputID).css('display', 'block');
+            }
+            else {
+
+            }
+
+        })
+    }
+})
+

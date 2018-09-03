@@ -1,8 +1,11 @@
 $('.options__item').mouseenter(function() {
-    if(!$(this).hasClass('active')) {
-        $(this).addClass('active');
+    if ($(window).width() > 540) {
+        if(!$(this).hasClass('active')) {
+            $(this).addClass('active');
+        }
+        else {
+            $(this).removeClass('active');
+        }
     }
-    else {
-        $(this).removeClass('active');
-    }
+    
 })

@@ -1,5 +1,10 @@
 .about {
     margin-top: 60px;
+    @media screen and (max-width: 540px) {
+        background-color: $red;
+        color: #fff;
+        padding: 5px;
+    }
     &__slogan {
         font-weight: bold;
         font-size: 30px;

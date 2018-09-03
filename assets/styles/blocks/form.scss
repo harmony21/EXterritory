@@ -1,0 +1,215 @@
+.form-wrapper, .form-wrapper--registration, .form-wrapper--entrance {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+    display: none;
+}
+.form, .form--registration, .form--entrance {
+    position: absolute;
+    top: 30px;
+    z-index: 150;
+    width: 554px;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -277px;
+    padding: 30px 73px;
+    display: none;
+    @media screen and (max-width: 580px) {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        padding: 30px 10px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        img {
+            &:first-child {
+                width: 160px;           
+            }
+            &:last-child {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__logo {
+        img {
+            width: 160px;           
+        }
+    }
+    &__title {
+        font-size: 18px;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+    input {
+        width: 100%;
+        padding: 5px 15px;
+        margin-top: 8px;
+        border: none;
+        border-bottom: 3px solid #f4f4f4;
+        font-family: 'Circe';
+        font-size: 14px;
+    }
+    textarea {
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 10px 15px;
+        margin-top: 8px;
+        border: none;
+        height: 145px;
+        font-family: 'Circe';
+        font-size: 14px;
+    }
+    .btn-submit {
+        width: 176px;
+        margin-left: 120px;
+        margin-top: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+        }
+    }
+    .socials {
+        &__title {
+            color: #000;
+            margin-top: 25px;
+            text-align: center;
+            @media screen and (max-width: 400px) {
+                font-size: 12px;
+            }
+        }
+        &__icons {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 100px;
+            @media screen and (max-width: 580px) {
+                padding: 10px 30px;
+            }
+        }
+        &__icon {
+            width: 31px;
+            height: 31px;
+            &.google {
+                background: url('assets/images/google.png') no-repeat;
+                &:hover {
+                    background-position: 0 -31px;
+                }
+            }
+            &.fb {
+                background: url('assets/images/facebook.png') no-repeat;
+                &:hover {
+                    background-position: 0 -31px;
+                }
+            }
+            &.tw {
+                background: url('assets/images/twitter.png') no-repeat;
+                &:hover {
+                    background-position: 0 -31px;
+                }
+            }
+        }
+    }
+    &--registration {
+        position: absolute;
+        top: 30px;
+        z-index: 150;
+        width: 554px;
+        background-color: #fff;
+        left: 50%;
+        margin-left: -277px;
+        padding: 30px 73px;
+        display: none;
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+            padding: 30px 10px;
+        }
+        p {
+            color: $dark-grey;
+            font-size: 15px;
+        }
+        input {
+            @media screen and (max-width: 580px) {
+                font-size: 11px;
+            }
+        }
+        .checkbox {
+            display: none;
+        }
+        .checkbox-custom {
+            position: relative;
+            width: 16px;             
+            height: 16px;            
+            background: url("assets/images/checkbox-nonactive-grey.png") no-repeat;
+            cursor: pointer;
+        }
+        .checkbox-custom, .label {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .checkbox:checked + .checkbox-custom::before {
+            content: "";             
+            display: block;			 
+            position: absolute;      
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+            background: url("assets/images/checkbox-active.png") no-repeat;
+        }
+        .label {
+            margin-left: 15px;  
+        }
+        label {
+            margin-top: 20px;
+            border-bottom: none;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            width: 100%;
+            padding-left: 0;
+            &:hover {
+                background-color: transparent;
+                color: #000;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 11px;
+            }
+        }
+        .form__fields {
+            display: flex;
+            justify-content: space-between;
+            &-left, &-right {
+                width: 49%;
+            }
+        }
+    }
+    &--entrance {
+        p {
+            color: $dark-grey;
+            font-size: 15px;
+        }
+        .form__fields {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 49%;
+            }
+        }
+    }
+}

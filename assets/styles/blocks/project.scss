@@ -4,9 +4,19 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-top: 35px;
+        @media screen and (max-width: 540px) {
+            padding: 5px;
+            color: $red;
+            font-size: 15px;
+        }
     }
     &__desc {
         font-size: 14px;
         margin: 20px 0;
+        @media screen and (max-width: 540px) {
+            padding: 5px;
+            font-size: 12px;
+            margin: 0;
+        }
     }
 }

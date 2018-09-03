@@ -16,27 +16,47 @@
           <div class="header__top">
             <div class="links">
               <ul class="links__list">
-                <li class="links__item"><a class="links__link" href="">Вход</a></li>
-                <li class="links__item border"> <a class="links__link" href="">Регистрация</a></li>
+                <li class="links__item"><a class="links__link entrance" href="">Вход</a></li>
+                <li class="links__item border"> <a class="links__link registration" href="">Регистрация</a></li>
                 <li class="links__item profile"><a class="links__link" href="">Мой профиль</a></li>
                   <ul class="links__inside-list">
-                    <li class="links__inside-item">Вход</li>
-                    <li class="links__inside-item">Регистрация</li>
+                    <li class="links__inside-item entrance">Вход</li>
+                    <li class="links__inside-item registration">Регистрация</li>
                   </ul>
               </ul>
             </div>
           </div>
           <div class="header__bottom">
             <div class="header__bottom-left">
-               <div class="logo">
-                  <a href="index.html">
-                    <img class="logo__img" src="assets/images/logo.png">
-                  </a>
+              <!-- Анимированная иконка гамбургера для мобильной версии -->
+              <a id="hamburger-icon" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+              </a>
+              <div class="logo">
+                <a href="index.html">
+                  <img class="logo__img" src="assets/images/logo.png">
+                </a>
+              </div>
+              <div class="basket mobile-hidden">
+                <div class="basket__compare">
+                  <img class="basket__compare_icon" src="assets/images/compare.png">
                 </div>
+                <div class="basket__count">
+                  <img class="basket__count_icon" src="assets/images/basket.png">
+                </div>
+              </div>
             </div>
             <div class="header__bottom-right">
               <div class="time"><img class="time__icon" src="assets/images/clock.png"><span class="time__text">Режим работы Пн.-Пт. 10.00-18.30</span></div>
               <div class="phone"><a class="phone__number" href="tel:88007001001">8 800 700 1001</a><span class="phone__desc">Бесплатный номер по России</span></div>
+              
+              <div class="search mobile-hidden">
+                <img class="search__icon" src="assets/images/search.png">
+                <input type="text" placeholder="Поиск по сайту">
+              </div>
+
               <div class="basket">
                 <div class="basket__compare"><img class="basket__compare_icon" src="assets/images/compare.png"></div>
                 <div class="basket__count"><img class="basket__count_icon" src="assets/images/basket.png">
@@ -47,8 +67,14 @@
             </div>
           </div>
         </header>
+
+        <div class="menu__item_wrap mobile-hidden">
+          <div class="menu__icon"></div>
+          <a class="menu__link" href="catalog.html">Каталог</a>
+        </div> 
+
         <div class="navigation-wrap">
-          <img class="menu__mobile" src="assets/images/nav-icon.png" alt="">
+          <img class="menu__laptop" src="assets/images/nav-icon.png" alt="">
           <ul class="menu">
             <div class="menu__catalog">
               <li class="menu__item">
@@ -126,29 +152,36 @@
                 <div class="return__intro">
                     <img src="assets/images/return-icon1.png" alt="" class="return__icon">
                     <div class="return__name">
+                      <div class="return__text">
                         <h2 class="return__title">Условия отказа от материалов до получения</h2>
                         <p class="return__subtitle">
                             <span class="return__question">Передумали?</span>
                             Вы можете отказаться от товара до его передачи
                         </p>
+                      </div>
                     </div>
+                  <div class="return__arrow"></div> 
                 </div>
-                <p class="return__condition">Если у вас был самовывоз:</p>
-                <ul class="return__list">
-                    <li>Позвоните нам, мы отменим заказ</li>
-                    <li>Вернем всю сумму, оплаченную Вами</li>
-                </ul>
-                <p class="return__condition">Если у вас была оформлена доставка:</p>
-                <ul class="return__list">
-                    <li>Материалы уже отгружены со склада, но машина не выехала, мы возвращаем сумму,
-                        оплаченную Вами, за исключением расходов на погрузочно-разгрузочные работы
-                        (определяется из тоннажа товара)
-                    </li>
-                    <li>Материалы отгружены со склада и машина выехала к Вам, мы возвращаем сумму, оплаченную Вами,
-                        за исключением расходов на погрузочно-разгрузочные работы и доставку 
-                        (определяется из тоннажа товара и стоимости доставки)
-                    </li>
-                </ul>
+                <div class="return__wrap">
+                  <div class="return__content">
+                    <p class="return__condition">Если у вас был самовывоз:</p>
+                    <ul class="return__list">
+                        <li>Позвоните нам, мы отменим заказ</li>
+                        <li>Вернем всю сумму, оплаченную Вами</li>
+                    </ul>
+                    <p class="return__condition">Если у вас была оформлена доставка:</p>
+                    <ul class="return__list">
+                        <li>Материалы уже отгружены со склада, но машина не выехала, мы возвращаем сумму,
+                            оплаченную Вами, за исключением расходов на погрузочно-разгрузочные работы
+                            (определяется из тоннажа товара)
+                        </li>
+                        <li>Материалы отгружены со склада и машина выехала к Вам, мы возвращаем сумму, оплаченную Вами,
+                            за исключением расходов на погрузочно-разгрузочные работы и доставку 
+                            (определяется из тоннажа товара и стоимости доставки)
+                        </li>
+                    </ul>
+                  </div>
+                </div>
             </div>
 
             <div class="return">
@@ -156,39 +189,53 @@
                 <div class="return__intro">
                     <img src="assets/images/return-icon2.png" alt="" class="return__icon">
                     <div class="return__name">
+                      <div class="return__text">
                         <h2 class="return__title">Условия возврата материалов надлежащего качества</h2>
                         <p class="return__subtitle">
                             <span class="return__question">Стройка закончилась, а материалы остались?</span>
                             В EX территории готовы принять товар обратно в течение 90 дней с момента получения 
                             Вами товара со склада.
                         </p>
+                      </div>
                     </div>
+                    <div class="return__arrow"></div> 
                 </div>
-                <ul class="return__list">
-                    <li>Материал не был в употреблении</li>
-                    <li>Сохранен товарный вид, потребительские свойства материала</li>
-                    <li>Сохранены пломбы, фабричные ярлыки</li>
-                    <li>Имеется товарный или кассовый чек, либо любой другой подтверждающий оплату указанного материала документ</li>
-                </ul>
-                <p class="return__added">Решение о возврате денежных средств осуществляется после осмотра ТМЦ на территории изготовителя.</p>
-                <p class="return__added">Возврат осуществляется самостоятельно.</p>          
+                <div class="return__wrap">
+                  <div class="return__content">
+                    <ul class="return__list">
+                      <li>Материал не был в употреблении</li>
+                      <li>Сохранен товарный вид, потребительские свойства материала</li>
+                      <li>Сохранены пломбы, фабричные ярлыки</li>
+                      <li>Имеется товарный или кассовый чек, либо любой другой подтверждающий оплату указанного материала документ</li>
+                    </ul>
+                    <p class="return__added">Решение о возврате денежных средств осуществляется после осмотра ТМЦ на территории изготовителя.</p>
+                    <p class="return__added">Возврат осуществляется самостоятельно.</p>  
+                  </div>
+                </div>    
             </div>
 
             <div class="return">
                 <div class="return__intro">
                     <img src="assets/images/return-icon3.png" alt="" class="return__icon">
                     <div class="return__name">
+                      <div class="return__text">
                         <h2 class="return__title">Условия возврата материалов не надлежащего качества</h2>
                         <p class="return__subtitle">
                             <span class="return__question">Обнаружили, что с материалом что-то не так?</span>
                             Пожалуйста, обратитесь в нашу службу качества
                         </p>
+                      </div>
                     </div>
+                    <div class="return__arrow"></div>
                 </div>
-                <div class="return__connection">
-                    Телефон: <a href="tel:84212752460">+7 (4212) 752460</a> / WhatsApp: <a href="tel:89141690049">8-914-169-00-49</a> / 
-                    E-mail: <a href="mailto:servis@ck.ru">servis@ck.ru</a>
-                </div>             
+                <div class="return__wrap">
+                  <div class="return__content">
+                    <div class="return__connection">
+                        Телефон: <a href="tel:84212752460">+7 (4212) 752460</a> / WhatsApp: <a href="tel:89141690049">8-914-169-00-49</a> / 
+                        E-mail: <a href="mailto:servis@ck.ru">servis@ck.ru</a>
+                    </div> 
+                  </div>
+                </div>           
             </div>
 
             <div class="return">
@@ -196,56 +243,77 @@
                 <div class="return__intro">
                     <img src="assets/images/return-icon4.png" alt="" class="return__icon">
                     <div class="return__name">
+                      <div class="return__text">
                         <h2 class="return__title">Необходимые для возврата материалов документы</h2>
+                      </div>
                     </div>
+                    <div class="return__arrow"></div>
                 </div>
-                <ul class="return__list">
-                    <li>Паспорт РФ</li>
-                    <li>Товарный и кассовый чеки или их копии</li>
-                    <li>Оригинал банковской карты или слип-чек, если оплата была произведена банковской картой (предъявляется владельцем карты)</li>
-                    <li>Доверенность, если возврат на юридическое лицо</li>
-                    <li>Заявление о возврате или претензия (можно заполнить в пункте выдачи материалов)</li>
-                </ul>
-                <p class="return__added">При отсутствии документов, подтверждающих покупку, вы можете ссылаться на другие доказательства
-                    приобретения товара в EX территории.</p>       
+                <div class="return__wrap">
+                  <div class="return__content">
+                    <ul class="return__list">
+                        <li>Паспорт РФ</li>
+                        <li>Товарный и кассовый чеки или их копии</li>
+                        <li>Оригинал банковской карты или слип-чек, если оплата была произведена банковской картой (предъявляется владельцем карты)</li>
+                        <li>Доверенность, если возврат на юридическое лицо</li>
+                        <li>Заявление о возврате или претензия (можно заполнить в пункте выдачи материалов)</li>
+                    </ul>
+                    <p class="return__added">При отсутствии документов, подтверждающих покупку, вы можете ссылаться на другие доказательства
+                        приобретения товара в EX территории.</p>
+                  </div>
+                </div>        
             </div>
 
             <div class="return">
                 <div class="return__intro">
                     <img src="assets/images/return-icon5.png" alt="" class="return__icon">
                     <div class="return__name">
+                      <div class="return__text">
                         <h2 class="return__title">Возврат денежных средств при оплате банковской картой</h2>
+                      </div>
                     </div>
+                    <div class="return__arrow"></div>
                 </div>
-                <ul class="return__list">
-                    <li>Если вы оплатили ваш заказ банковской картой на сайте или по телефону и хотите что-то вернуть - 
-                        это можно сделать в любом удобном вам пункте выдачи в часы работы, достаточно приехать и написать заявление
-                    </li>
-                    <li>Если заказ оплачен банковской картой в торгово-выставочном центре, мы очень просим вас сохранять кассовый и слип чеки. 
-                        В этом случае возврат будет происходить до 30-ти дней после обращения
-                    </li>
-                </ul>
-                <p class="return__added">Если же чеки утеряны, возврат средств осуществляется исключительно через письмо в банк.
-                    И возврат денег может затянуться на достаточно продолжительное время.</p>       
+                  <div class="return__wrap">
+                    <div class="return__content">
+                       <ul class="return__list">
+                          <li>Если вы оплатили ваш заказ банковской картой на сайте или по телефону и хотите что-то вернуть - 
+                              это можно сделать в любом удобном вам пункте выдачи в часы работы, достаточно приехать и написать заявление
+                          </li>
+                          <li>Если заказ оплачен банковской картой в торгово-выставочном центре, мы очень просим вас сохранять кассовый и слип чеки. 
+                              В этом случае возврат будет происходить до 30-ти дней после обращения
+                          </li>
+                      </ul>
+                      <p class="return__added">Если же чеки утеряны, возврат средств осуществляется исключительно через письмо в банк.
+                          И возврат денег может затянуться на достаточно продолжительное время.</p>  
+                    </div>
+                  </div>
             </div>
 
             <div class="return">
                 <div class="background"></div>
                 <div class="return__intro">
                     <div class="return__name">
+                      <div class="return__text">
                         <h2 class="return__title">Ограничения по возврату материалов</h2>
                         <p class="return__subtitle">
                             <span class="return__question">Мы можем отказать в возврате материалов, если:</span>
                         </p>
+                      </div>
                     </div>
+                    <div class="return__arrow"></div>
                 </div>
-                <ul class="return__list">
-                    <li>Вы приобрели материалы, имеющие ииндивидуально-определенные свойства, если указанный товар может быть использован 
-                        исключительно потребителем, который купил его. Например, товары и продукция под заказ, строительные и отделочные 
-                        материалы, отпускаемые на метраж
-                    </li>
-                    <li>Вы приобрели уцененный товар, а также товар, проданный как некондиционный</li>
-                </ul>    
+                  <div class="return__wrap">
+                    <div class="return__content">
+                      <ul class="return__list">
+                          <li>Вы приобрели материалы, имеющие ииндивидуально-определенные свойства, если указанный товар может быть использован 
+                              исключительно потребителем, который купил его. Например, товары и продукция под заказ, строительные и отделочные 
+                              материалы, отпускаемые на метраж
+                          </li>
+                          <li>Вы приобрели уцененный товар, а также товар, проданный как некондиционный</li>
+                      </ul> 
+                    </div>
+                  </div> 
             </div>
         </div>
         <!-- Footer -->
@@ -291,23 +359,167 @@
         </footer>
       </div>
     </div>
-    <div class="menu__mobile-wrap">
-      <ul class="menu__mobile-list">
-        <li class="menu__mobile-item"><a href="catalog.html" class="menu__mobile-link">Каталог</a></li>
-        <li class="menu__mobile-item"><a href="actions.html" class="menu__mobile-link">Акции</a></li>
-        <li class="menu__mobile-item"><a href="services.html" class="menu__mobile-link">Услуги</a></li>
-        <li class="menu__mobile-item"><a href="payment.html" class="menu__mobile-link">Оплата</a></li>
-        <li class="menu__mobile-item"><a href="delivery.html" class="menu__mobile-link">Доставка</a></li>
-        <li class="menu__mobile-item"><a href="return.html" class="menu__mobile-link">Возврат</a></li>
-        <li class="menu__mobile-item"><a href="about.html" class="menu__mobile-link">О компании</a></li>
-        <li class="menu__mobile-item"><a href="contacts.html" class="menu__mobile-link">Контакты</a></li>
+    <!-- Меню для планшетов -->
+    <div class="menu__laptop-wrap">
+      <ul class="menu__laptop-list">
+        <li class="menu__laptop-item"><a href="catalog.html" class="menu__laptop-link">Каталог</a></li>
+        <li class="menu__laptop-item"><a href="actions.html" class="menu__laptop-link">Акции</a></li>
+        <li class="menu__laptop-item"><a href="services.html" class="menu__laptop-link">Услуги</a></li>
+        <li class="menu__laptop-item"><a href="payment.html" class="menu__laptop-link">Оплата</a></li>
+        <li class="menu__laptop-item"><a href="delivery.html" class="menu__laptop-link">Доставка</a></li>
+        <li class="menu__laptop-item"><a href="return.html" class="menu__laptop-link">Возврат</a></li>
+        <li class="menu__laptop-item"><a href="about.html" class="menu__laptop-link">О компании</a></li>
+        <li class="menu__laptop-item"><a href="contacts.html" class="menu__laptop-link">Контакты</a></li>
       </ul>
-      <img src="assets/images/close.png" alt="" class="menu__mobile-close">
+      <img src="assets/images/close.png" alt="" class="menu__laptop-close">
     </div>
+    <!--Перестройка блоков для мобильной версии (меню, выбор региона, вход/регистрация) -->
+    <div class="mobile-menu">
+
+      <div class="links">
+        <ul class="links__list">
+          <li class="links__item"><a class="links__link entrance" href="">Вход</a></li>
+          <li class="links__item border"> <a class="links__link registration" href="">Регистрация</a></li>
+          <li class="links__item profile"><a class="links__link" href="">Мой профиль</a></li>
+        </ul>
+      </div>
+
+      <div class="location"><span class="location__text">Ваш регион:</span>
+        <div class="location__choice">
+          <img src="assets/images/arrow-down.png" alt="">
+          <span>Хабаровский край</span>
+        </div>
+        <ul class="location__choice-list">
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Хабаровский край</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Приморский край</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Сахалинская область</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Амурская область</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Иркутская область</a></li>
+        </ul>
+      </div>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+        <li class="mobile-menu__item"><a href="actions.html" class="mobile-menu__link">Акции</a></li>
+        <li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">Услуги</a></li>
+        <li class="mobile-menu__item"><a href="payment.html" class="mobile-menu__link">Оплата</a></li>
+        <li class="mobile-menu__item"><a href="delivery.html" class="mobile-menu__link">Доставка</a></li>
+        <li class="mobile-menu__item"><a href="return.html" class="mobile-menu__link">Возврат</a></li>
+        <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О компании</a></li>
+        <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+    </div>
+    <!-- Всплывающее окно "Закажите замер" -->
+    <div class="form-wrapper"></div> 
+    <form action="" class="form" id="form" method="POST">
+      <div class="form__top">
+        <img src="assets/images/logo.png" alt="">
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Закажи замер</h2>
+        <input type="text" name="user_name" placeholder="Имя *"><br>
+        <input type="tel" name="user_phone" placeholder="Телефон *"><br>
+        <input type="text" name="user_city" placeholder="Город *"><br>
+        <input type="text" name="user_address" placeholder="Адрес объекта"><br>
+        <textarea name="message" placeholder="Сообщение"></textarea>
+        <input type="submit" name="submit" class="btn-submit" value="Отправить">
+    </form>  
+
+    <!-- Всплывающее окно "Регистрация" -->
+    <div class="form-wrapper--registration"></div> 
+    <form action="" class="form--registration" id="form" method="POST">
+      <div class="form__top">
+        <div class="form__logo">
+          <p>Если вы впервые в</p>
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Зарегистрироваться</h2>
+        <div class="form__fields">
+          <div class="form__fields-left">
+            <input type="mail" name="user_mail" placeholder="E-mail *">
+            <input type="password" name="user_password" placeholder="Пароль *">
+            <input type="password" name="user_password-confirm" placeholder="Подтвердите пароль *">
+            <input type="tel" name="user_phone" placeholder="Телефон *">
+          </div>
+          <div class="form__fields-right">
+            <input type="text" name="user_surname" placeholder="Фамилия *">
+            <input type="text" name="user_name" placeholder="Имя *">
+            <input type="text" name="user_patronymic" placeholder="Отчество *">
+            <input type="text" name="user_city" placeholder="Город *">
+          </div>
+        </div>
+        <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Подписаться на рассылку по движению заказов</span>
+          </label>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Подписаться на рассылку об акциях и новинках</span>
+          </label>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Даю согласие на обработку персональных данных</span>
+          </label>
+        <input type="submit" name="submit" class="btn-submit" value="Зарегистрироваться">
+        <div class="socials">
+          <p class="socials__title">Зарегистрироваться через социальные сети</p>
+          <div class="socials__icons">
+            <a href="http://google.com" class="socials__link">
+              <div class="socials__icon google"></div>
+            </a>
+            <a href="http://facebook.com" class="socials__link">
+              <div class="socials__icon fb"></div>
+            </a>
+            <a href="http://twitter.com" class="socials__link">
+              <div class="socials__icon tw"></div>
+            </a>
+          </div>
+        </div>
+    </form> 
+
+    <!-- Всплывающее окно "Вход в личный кабинет" -->
+    <div class="form-wrapper--entrance"></div> 
+    <form action="" class="form--entrance" id="form" method="POST">
+      <div class="form__top">
+        <div class="form__logo">
+          <p>Уже зарегистрированы в</p>
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Вход в личный кабинет</h2>
+        <div class="form__fields">
+          <input type="text" name="user_mail" placeholder="E-mail / Телефон ">
+          <input type="password" name="user_password" placeholder="Пароль">
+        </div>
+        <input type="submit" name="submit" class="btn-submit" value="Войти">
+        <div class="socials">
+          <p class="socials__title">Войти через социальные сети</p>
+          <div class="socials__icons">
+            <a href="http://google.com" class="socials__link">
+              <div class="socials__icon google"></div>
+            </a>
+            <a href="http://facebook.com" class="socials__link">
+              <div class="socials__icon fb"></div>
+            </a>
+            <a href="http://twitter.com" class="socials__link">
+              <div class="socials__icon tw"></div>
+            </a>
+          </div>
+        </div>
+    </form> 
     <script src="assets/scripts/jquery-3.2.1.js"></script>
     <script src="assets/scripts/options.js"></script>
     <script src="assets/scripts/search.js"></script>
     <script src="assets/scripts/login.js"></script>
     <script src="assets/scripts/mobile-menu.js"></script>
+    <script src="assets/scripts/form.js"></script>
+
+    <script src="assets/scripts/return.js"></script>
   </body>
 </html>

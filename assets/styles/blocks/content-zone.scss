@@ -2,9 +2,15 @@
     width: 100%;
     padding: 40px 376px;
     position: relative;
+    @media screen and (max-width: 1000px) {
+        min-height: 100%;
+    }
     &--height {
-        min-height: 1400px;
-        @media screen and (max-width: 1000px) {
+        min-height: 1580px;
+        @media screen and (max-width: 870px) {
+            min-height: 1600px;
+        }
+        @media screen and (max-width: 540px) {
             min-height: 100%;
         }
     }
@@ -17,6 +23,12 @@
     @media screen and (max-width: 1230px) {
         padding: 20px 10px;
     }
+    @media screen and (max-width: 540px) {
+        padding: 10px 5px;
+        &.mobile {
+            padding: 0;
+        }
+    }
 }
 .content-zone {
     margin-left: 40px;
@@ -24,8 +36,26 @@
         position: relative;
         margin-left: 0;
         margin-top: 15px;
+        width: 100%;
+    }
+    &.mobile {
+        @media screen and (max-width: 540px) {
+            margin-top: 0;
+            padding: 5px;
+        }
+    }
+    &.empty-mobile {
+        @media screen and (max-width: 540px) {
+            padding: 0;
+            margin-top: 0;
+        }
     }
     .fancybox {
         color: #fff;
+    }
+    p {
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+        }
     }
 }

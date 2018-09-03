@@ -22,6 +22,9 @@
                 background: #fff;
                 color: $red;
             }
+            @media screen and (max-width: 540px) {
+                font-size: 13px;
+            }
         }
         input {
             &:checked+label {

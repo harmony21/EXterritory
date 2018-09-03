@@ -14,15 +14,32 @@
         padding: 10px 80px;
     }
     @media screen and (max-width: 1230px) {
-        padding: 10px;
+        padding: 20px 10px 10px 10px;
+    }
+    @media screen and (max-width: 540px) {
+        background-color: #fff;
+        justify-content: center;
+    }
+    &.mobile-hidden {
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
     }
     &__name {
         font-size: 30px;
+        @media screen and (max-width: 790px) {
+            font-size: 24px;
+        }
         @media screen and (max-width: 720px) {
             font-size: 22px;
         }
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 540px) {
+            color: #000;
+            text-transform: uppercase;
             font-size: 18px;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 16px;
         }
     }
     &__way {
@@ -30,7 +47,10 @@
         @media screen and (max-width: 720px) {
             font-size: 14px;
         }
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+        @media screen and (max-width: 400px) {
             font-size: 11px;
         }
     }

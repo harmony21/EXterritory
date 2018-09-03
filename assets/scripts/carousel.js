@@ -121,4 +121,26 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+	var carousel4 = $("#carousel4");
+    carousel4.owlCarousel({
+        responsive: {
+            0:{
+                items:1
+            },
+            320:{
+                items:2
+            },
+            600:{
+                items: 3
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+});
+
+
+
 

@@ -11,6 +11,16 @@
             left: 0;
         }
     }
+    .inside-section {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 250px;
+        animation: scale 0.5s ease-in-out; 
+        @media screen and (max-width: 1000px) {
+            left: 180px;
+        }
+    }
     input {
         display: none;
         &:checked+label {
@@ -52,15 +62,19 @@
     #tab21:checked~#content-tab21, #tab22:checked~#content-tab22,
     #tab23:checked~#content-tab23, #tab24:checked~#content-tab24,
     #tab25:checked~#content-tab25, 
-     {
+    #tab100:checked~#content-tab100,
+    #tab200:checked~#content-tab200,
+    #tab300:checked~#content-tab300, #tab400:checked~#content-tab400,
+    #tab500:checked~#content-tab500,
+    {
         display: block;
     }
     @keyframes scale { 
         0% {  
-        opacity: 0; 
+            opacity: 0; 
         } 
         100% { 
-        opacity: 1; 
+            opacity: 1; 
         } 
     }
 }
@@ -71,6 +85,9 @@
 .tabs {
     &__icon {
         margin-right: 10px;
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
         &.size {
             width: 75px;
             height: 33px;
@@ -80,6 +97,9 @@
             width: 43px;
             height: 27px;
             background: url('assets/images/service-menu2.png') no-repeat;
+            @media screen and (max-width: 1000px) {
+                display: none;
+            }
         }
         &.cut {
             width: 43px;
@@ -108,6 +128,24 @@
         }
     }
     &--services {
+        section {
+            @media screen and (max-width: 1000px) {
+               left: 170px;
+               top: 0;
+               position: absolute;
+            }
+            @media screen and (max-width: 540px) {
+                position: relative;
+                left: 0;
+            }
+        }
+        label {
+            @media screen and (max-width: 1000px) {
+                float: none;
+                font-size: 12px !important;
+                text-align: left;
+            }
+        }
         #tab101:checked~#content-tab1, #tab102:checked~#content-tab2,
         #tab103:checked~#content-tab3, #tab104:checked~#content-tab4,
         #tab105:checked~#content-tab5, #tab106:checked~#content-tab6,
@@ -122,6 +160,62 @@
             display: flex;
             align-items: center;
             padding: 5px 8px;
+            @media screen and (max-width: 540px) {
+                display: none;
+            }
         }
+    }
+    &--contacts {
+        section {
+            @media screen and (max-width: 1000px) {
+               left: 170px;
+               top: 0;
+            }
+        }
+        label {
+            @media screen and (max-width: 1000px) {
+                float: none;
+            }
+        }
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+
+        &.mobile {
+            display: none;
+            @media screen and (max-width: 540px) {
+                display: block;
+            }
+            label {
+                @media screen and (max-width: 540px) {
+                    float: left;
+                    width: 50%;
+                    border-left: 2px solid white;
+                    border-right: 2px solid white;
+                    margin-right: 0;
+                }
+                @media screen and (max-width: 495px) {
+                    font-size: 12px;
+                    padding: 5px 2px;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: 10px;
+                }
+                &.inside-label {
+                    border: none;
+                    float: none;
+                    width: 100%;
+                    &.active {
+                        background-color: $red;
+                        color: #fff;
+                    }
+                }
+            }
+            section {
+                position: relative;
+                left: 0;
+            }
+        }
+        
     }
 }

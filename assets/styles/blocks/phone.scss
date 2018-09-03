@@ -8,7 +8,9 @@
         margin: 0 10px;        
     }
     @media screen and (max-width: 540px) {
-       margin-top: 5px;
+       flex-direction: row-reverse;
+       padding: 10px 5px;
+       margin: 0;
     }
     &__number {
         color: #000;
@@ -21,6 +23,13 @@
         @media screen and (max-width: 790px) {
             font-size: 18px;
         }
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        @media screen and (max-width: 350px) {
+            font-size: 10px;
+        }
     }
     &__desc {
         font-size: 10px;
@@ -31,12 +40,22 @@
         @media screen and (max-width: 790px) {
             font-size: 7px;
         }
+        @media screen and (max-width: 540px) {
+            font-size: 11px;
+        }
+        @media screen and (max-width: 350px) {
+            font-size: 10px;
+        }
     }
     &.phone_footer {
         flex-direction: row;
         color: white;
         align-items: center;
         margin: 0;
+        @media screen and (max-width: 540px) {
+            flex-direction: column;
+            margin-top: 10px;
+        }
         .phone__number {
             font-size: 20px;
             color: white;

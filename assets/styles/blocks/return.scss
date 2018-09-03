@@ -2,21 +2,46 @@
     margin-bottom: 60px;
     position: relative;
     padding-bottom: 30px;
+    @media screen and (max-width: 540px) {
+        margin-bottom: 10px; 
+        background-color: $grey;
+        padding: 5px;
+    }
     &__intro {
         display: flex;
         align-items: center;
         z-index: 10;
         position: relative;
         padding: 30px 0 10px 0;
+        @media screen and (max-width: 540px) {
+            padding: 0px;
+            justify-content: space-between;
+        }
+    }
+    &__icon {
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
     }
     &__name {
         margin-left: 30px;
+        @media screen and (max-width: 540px) {
+            margin-left: 0;
+            width: 95%;
+        }
     }
     &__title {
         font-size: 24px;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
     }
     &__subtitle {
         font-size: 14px;
+        @media screen and (max-width: 540px) {
+            font-size: 11px;
+        }
     }
     &__question {
         color: $red;
@@ -27,12 +52,20 @@
         text-transform: uppercase;
         z-index: 10;
         position: relative;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+            margin-top: 15px;
+        }
     }
     &__list {
         font-size: 14px;
         margin-top: 25px;
         z-index: 10;
         position: relative;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+            margin-top: 15px;
+        }
         li {
             list-style: none;
             background: url('assets/images/square.png') no-repeat 0 1px;
@@ -44,6 +77,10 @@
         margin-top: 25px;
         z-index: 10;
         position: relative;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+            margin-top: 15px;
+        }
     }
     &__connection {
         color: $dark-grey;
@@ -53,6 +90,28 @@
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+    &__arrow {
+        width: 20px;
+        height: 20px;
+        background: url('assets/images/arrow-list-small.png') no-repeat;
+        display: none;
+        &:hover {
+            cursor: pointer;
+        }
+        &.active {
+            background-position: 0 -20px;
+        }
+        @media screen and (max-width: 540px) {
+            display: block;
+        }
+    }
+    &__wrap {
+        @media screen and (max-width: 540px) {
+            transition: .4s;
+            overflow: hidden;
+            height: 0;
         }
     }
     &:last-child {
@@ -70,9 +129,11 @@
         @media screen and (max-width: 1366px) {
             margin-left: -80px;
         }
+        @media screen and (max-width: 1230px) {
+            margin-left: -10px
+        }
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
     }
-}
-
-.svg {
-    fill: $red;
 }

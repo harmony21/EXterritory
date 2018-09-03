@@ -1,6 +1,10 @@
 .block-top {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 540px) {
+        justify-content: center;
+        flex-direction: column;
+    }
     &__title {
         font-size: 30px;
         margin-left: 35px;
@@ -10,8 +14,25 @@
         @media screen and (max-width: 850px) {
             font-size: 20px;
         }
+        @media screen and (max-width: 540px) {
+            margin-left: 0;
+            text-transform: uppercase;
+        }
         @media screen and (max-width: 330px) {
             font-size: 18px;
+        }
+    }
+    &__all {
+        display: none;
+        @media screen and (max-width: 540px) {
+            display: block;
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -22,7 +43,7 @@
     border-radius: 10px;
     background-color: #c5c5c5;
     @media screen and (max-width: 540px) {
-        padding: 5px 7px;
+        display: none;
     }
     &__link {
         text-decoration: none;

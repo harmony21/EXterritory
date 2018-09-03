@@ -6,10 +6,48 @@
     &__item {
         width: 330px;
         padding: 20px 10px;
+        @media screen and (max-width: 540px) {
+            width: 100%;
+            background-color: $grey;
+            padding: 10px;
+            &:hover {
+                background-color: $red;
+                a {
+                    color: #fff;
+                }
+                .services__img {
+                    &.sizes {
+                        background-position: 0 -33px;
+                    }
+                    &.delivery {
+                        background-position: 0 -27px;
+                    }
+                    &.cut {
+                        background-position: 0 -32px;
+                    }
+                    &.twist {
+                        background-position: 0 -31px;
+                    }
+                    &.pack {
+                        background-position: 0 -33px;
+                    }
+                    &.load {
+                        background-position: 0 -34px;
+                    }
+                    &.back {
+                        background-position: 0 -32px;
+                    }
+                }
+            }
+        }
     }
     &__title {
         display: flex;
         align-items: center;
+        @media screen and (max-width: 540px) {
+            text-transform: uppercase;
+            font-size: 14px;
+        }
     }
     &__link {
         margin-left: 20px;
@@ -19,33 +57,167 @@
         &:hover {
             text-decoration: underline;
         }
+        @media screen and (max-width:390px) {
+            font-size: 12px;
+        }
     }
     &__desc {
         margin-top: 20px;
         font-size: 14px;
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
     }
     &__icon {
         width: 33px;
         height: 33px;
         fill: #000;
     }
+    &__img {
+        display: none;
+        @media screen and (max-width: 540px) {
+            display: block;
+            &.sizes {
+                width: 33px;
+                height: 33px;
+                background: url('assets/images/service-menu1.png') no-repeat;
+            }
+            &.delivery {
+                width: 37px;
+                height: 27px;
+                background: url('assets/images/service-menu2.png') no-repeat;
+            }
+            &.cut {
+                width: 32px;
+                height: 32px;
+                background: url('assets/images/service-menu3.png') no-repeat;
+            }
+            &.twist {
+                width: 38px;
+                height: 31px;
+                background: url('assets/images/service-menu4.png') no-repeat;
+            }
+            &.pack {
+                width: 43px;
+                height: 33px;
+                background: url('assets/images/service-menu5.png') no-repeat;
+            }
+            &.load {
+                width: 35px;
+                height: 34px;
+                background: url('assets/images/service-menu6.png') no-repeat;
+            }
+            &.back {
+                width: 31px;
+                height: 32px;
+                background: url('assets/images/service-menu7.png') no-repeat;
+            }
+        }
+    }
+    img {
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    }
 }
 .text-intro {
     font-size: 16px;
     font-weight: bold;
+    @media screen and (max-width: 540px) {
+        font-weight: normal;
+        font-size: 13px;
+        padding: 0 10px;
+    }
 }
 .services-more {
     &__title {
         font-size: 24px;
+        @media screen and (max-width: 540px) {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-left: 15px;
+            
+        }
     }
     &__text, &__list {
         font-size: 14px;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+            padding: 5px;
+        }
     }
     &__text {
         margin: 20px 0;
+        @media screen and (max-width: 540px) {
+            margin: 5px 0;
+        }
     }
     &__list {
         list-style: decimal;
         margin-left: 10px;
+    }
+    &__top {
+        @media screen and (max-width: 540px) {
+            display: flex;
+            background-color: $red;
+            color: #fff;
+            padding: 10px;
+            align-items: center;
+        }
+    }
+    &__icon {
+        display: none;
+        @media screen and (max-width: 540px) {
+            display: block;
+            &.sizes {
+                width: 33px;
+                height: 33px;
+                background: url('assets/images/service-menu1.png') no-repeat 0 -33px;
+            }
+            &.delivery {
+                width: 37px;
+                height: 27px;
+                background: url('assets/images/service-menu2.png') no-repeat 0 -27px;
+            }
+            &.cut {
+                width: 32px;
+                height: 32px;
+                background: url('assets/images/service-menu3.png') no-repeat 0 -32px;
+            }
+            &.twist {
+                width: 38px;
+                height: 31px;
+                background: url('assets/images/service-menu4.png') no-repeat 0 -31px;
+            }
+            &.pack {
+                width: 43px;
+                height: 33px;
+                background: url('assets/images/service-menu5.png') no-repeat 0 -33px;
+            }
+            &.load {
+                width: 35px;
+                height: 34px;
+                background: url('assets/images/service-menu6.png') no-repeat 0 -34px;
+            }
+            &.back {
+                width: 31px;
+                height: 32px;
+                background: url('assets/images/service-menu7.png') no-repeat 0 -32px;
+            }
+        }
+    }
+    &__back {
+        display: none;
+        @media screen and (max-width: 540px) {
+            display: block;
+            background-color: $grey;
+            text-align: center;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
     }
 }

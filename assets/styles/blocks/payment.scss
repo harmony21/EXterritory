@@ -10,6 +10,9 @@
     }
     &__icon {
         width: 90px;
+        @media screen and (max-width: 540px) {
+            width: 80px;
+        }
         &.cash {
             height: 38px;
             background: url('assets/images/payment1.png') no-repeat;
@@ -53,6 +56,11 @@
             }
         }
     }
+    &__name {
+        @media screen and (max-width: 540px) {
+            font-size: 14px;
+        }
+    }
     &__arrow {
         height: 33px;
         width: 33px;
@@ -69,6 +77,9 @@
                 background-position: 0 -33px;
             }
         }
+        @media screen and (max-width: 540px) {
+            padding: 25px 5px;
+        }
     }
     &__wrap {
         transition: .4s;
@@ -78,5 +89,9 @@
     &__content {
         margin-top: 20px;
         margin-left: 90px;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+            margin-left: 0;
+        }
     }
 }
