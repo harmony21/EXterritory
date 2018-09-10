@@ -793,6 +793,9 @@ p {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; } }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .gallery.inside {
+        width: 950px; } }
     .gallery.inside hr {
       width: 60px;
       margin: 15px 0; }
@@ -1733,7 +1736,12 @@ p {
   .links__inside-list {
     left: 0; }
   .owl-wrapper {
-    width: 3220px !important; }
+    width: 3220px !important; } }
+  @media screen and (-ms-high-contrast: active) and (max-width: 1366px), screen and (-ms-high-contrast: none) and (max-width: 1366px) {
+    .owl-wrapper {
+      width: 2200px !important; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .catalog__item {
     width: 300px; } }
 
@@ -1875,6 +1883,9 @@ _:-ms-lang(x), .search {
     @media screen and (max-width: 540px) {
       .slider .bx-pager {
         bottom: 10px; } }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .slider .bx-pager {
+        margin-left: -55px; } }
     .slider .bx-pager-item {
       margin-left: 10px; }
       .slider .bx-pager-item:first-child {
@@ -2139,6 +2150,9 @@ _:-ms-lang(x), .search {
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse; } }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .about-company__item {
+      width: 950px; } }
 
 .about-company__text {
   font-size: 16px; }
@@ -3136,6 +3150,9 @@ _:-ms-lang(x), .search {
   @media screen and (max-width: 790px) {
     .delivery__right {
       margin-top: 8px; } }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .delivery__right {
+      width: 900px; } }
   .delivery__address {
     padding: 10px 15px;
     font-family: 'Circe';
@@ -3158,6 +3175,9 @@ _:-ms-lang(x), .search {
       background-color: #ca1616;
       color: #fff;
       cursor: pointer; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .delivery__choice-item {
+        width: 234px; } }
   .delivery__choice-wrap {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
@@ -3374,6 +3394,10 @@ _:-ms-lang(x), .search {
     .cooperation__text {
       font-size: 12px !important;
       padding: 5px; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .cooperation {
+    width: 950px; } }
 
 .application {
   margin-top: 35px;

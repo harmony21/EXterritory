@@ -127,6 +127,9 @@
     }
     .owl-wrapper {
         width: 3220px !important;
+        @media screen and (max-width: 1366px) {
+            width: 2200px !important;
+        }
     }
     .catalog__item {
         width: 300px;

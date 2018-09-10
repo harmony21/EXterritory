@@ -13,4 +13,7 @@
             padding: 5px;
         }
     }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        width: 950px;
+    }
 }

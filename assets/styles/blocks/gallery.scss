@@ -23,6 +23,9 @@
         @media screen and (max-width: 785px) {
             justify-content: center;
         }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            width: 950px;
+        }
         hr {
             width: 60px;
             margin: 15px 0;

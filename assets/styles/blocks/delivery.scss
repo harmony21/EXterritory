@@ -13,6 +13,9 @@
     &__right {
         @media screen and (max-width: 790px) {
             margin-top: 8px;
+        } 
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            width: 900px;
         }
     }
     &__address {
@@ -40,6 +43,9 @@
             background-color: $red;
             color: #fff;
             cursor: pointer;
+        }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            width: 234px;
         }
     }
     &__choice-wrap {
