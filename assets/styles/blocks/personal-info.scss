@@ -1,0 +1,98 @@
+.personal-info {
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 15px;
+        @media screen and (max-width: 540px) {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &__form {
+        @media screen and (max-width: 540px) {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 5px 15px;
+            margin-top: 8px;
+            border: none;
+            border-bottom: 3px solid #f4f4f4;
+            font-family: 'Circe';
+            font-size: 14px;
+        }
+    }
+    &__notice {
+        font-size: 13px;
+        color: $dark-grey;
+        margin-top: 10px;
+        padding-left: 15px;
+    }
+    &__required {
+        margin-top: 20px;
+        padding-left: 10px;
+        font-size: 14px;
+        @media screen and (max-width: 540px) {
+            font-size: 12px;
+        }
+    }
+    .btn-submit {
+        width: 176px;
+        margin-top: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+        @media screen and (max-width: 580px) {
+            align-self: center;
+        }
+    }
+    .socials {
+        margin-left: 0;
+        padding-left: 15px;
+        @media screen and (max-width: 580px) {
+            align-self: center;
+        }
+        &__title {
+            color: #000;
+            margin-top: 25px;
+            font-size: 14px;
+            @media screen and (max-width: 540px) {
+                font-size: 12px;
+            }
+        }
+        &__icons {
+            display: flex;
+            margin-top: 15px;
+            @media screen and (max-width: 580px) {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+        }
+        &__icon {
+            width: 31px;
+            height: 31px;
+            margin-right: 10px;
+            &.google {
+                background: url('assets/images/google.png') no-repeat;
+                &:hover {
+                    background-position: 0 -31px;
+                }
+            }
+            &.fb {
+                background: url('assets/images/facebook.png') no-repeat;
+                &:hover {
+                    background-position: 0 -31px;
+                }
+            }
+            &.tw {
+                background: url('assets/images/twitter.png') no-repeat;
+                &:hover {
+                    background-position: 0 -31px;
+                }
+            }
+        }
+    }
+}

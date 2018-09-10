@@ -1,5 +1,67 @@
 .tabs {
     position: relative;
+    &__title {
+        text-transform: uppercase;
+        color: $dark-grey;
+        font-size: 14px;
+        margin: 20px 0 20px 20px;
+        @media screen and (max-width: 540px) {
+            width: 100%;
+            text-align: left;
+            margin: 20px 0 10px 15px;
+        }
+    }
+    &__link {
+        display: block;
+        background-color: $grey;
+        width: 234px;
+        padding: 5px 15px;
+        margin-top: 6px;
+        text-decoration: none;
+        color: #000;
+        &--exit {
+            background-color: $dark-grey;
+            color: #fff;
+            display: flex;
+            align-items: flex-start;
+            img {
+                margin-right: 10px;
+            }
+            @media screen and (max-width: 540px) {
+                display: none;
+            }
+            &.mobile-hidden {
+                display: none; 
+                @media screen and (max-width: 540px) {
+                    display: flex;
+                    width: 100%;
+                    float: none;
+                    border: none;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+            font-size: 14px;
+            width: 150px;
+        }
+        @media screen and (max-width: 540px) {
+            width: 50%;
+            float: left;
+            border: 2px solid #fff;
+        }
+        @media screen and (max-width: 370px) {
+            font-size: 11px;
+        }
+        &:hover {
+            background-color: $red;
+            color: #fff;
+            font-weight: normal;
+            cursor: pointer;
+        }
+    }
     section {
         display: none;
         position: absolute;
@@ -217,5 +279,32 @@
             }
         }
         
+    }
+    &--pc {
+        label {
+            @media screen and (max-width: 1000px) {
+                float: none;
+            }
+            @media screen and (max-width: 540px) {
+                float: left;
+                width: 50%;
+                margin-right: 0;
+                border: 2px solid #fff;
+            }
+            @media screen and (max-width: 370px) {
+                font-size: 11px;
+            }
+        }
+        section {
+            @media screen and (max-width: 1000px) {
+                position: absolute;
+                left: 200px;
+            }
+            @media screen and (max-width: 540px) {
+                position: relative;
+                left: 0;
+            }
+        }
+
     }
 }

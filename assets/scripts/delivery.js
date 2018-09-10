@@ -22,22 +22,30 @@ $(document).ready(function() {
     })
 
 
-
-
     $('.delivery__name').on('click', function (ev){
         ev.preventDefault();
 
         var element = $(ev.target),
         verItem = element.closest('.delivery__choice-item'),
+        verItems = verItem.siblings(),
         verContent = verItem.find('.delivery__choice-wrap'), 
+        verContents = verItems.find('.delivery__choice-wrap'),
         Height = verItem.find('.delivery__choice-content').outerHeight(true);
+        console.log(verContents);
 
         if (!verItem.hasClass('active')) {
             verItem.addClass('active');
+            verItems.removeClass('active');
+
+            verContents.css ({
+                'height' : 0
+            });
 
             verContent.css ({
                 'height' : Height
             });
+
+            
 
         } else {
             verItem.removeClass('active');

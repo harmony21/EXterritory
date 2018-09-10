@@ -29,6 +29,22 @@
         }
         .gallery-project__desc {
             padding-top: 30px;
+            @media screen and (max-width: 540px) {
+                position: relative;
+                opacity: 1;
+                background-color: #fff;
+            }
+        }
+        .gallery-project__link {
+            @media screen and (max-width: 540px) {
+                margin-left: 0;
+            }
+        }
+        .gallery-project__text, .gallery-project__title {
+            @media screen and (max-width: 540px) {
+                color: #000;
+                font-size: 14px;
+            }
         }
         .gallery-project__img {
             margin-left: 0;
@@ -37,6 +53,10 @@
             width: 374px;
             @media screen and (max-width: 785px) {
                 border-right: none;
+            }
+            @media screen and (max-width: 540px) {
+                display: flex;
+                flex-direction: column;
             }
             img {
                 width: 374px;

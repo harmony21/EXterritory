@@ -5,7 +5,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>EX-территория</title>
-    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="template_styles.css">
     <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css"/>
   </head>
   <body>
@@ -18,7 +18,7 @@
               <ul class="links__list">
                 <li class="links__item"><a class="links__link entrance" href="">Вход</a></li>
                 <li class="links__item border"> <a class="links__link registration" href="">Регистрация</a></li>
-                <li class="links__item profile"><a class="links__link" href="">Мой профиль</a></li>
+                <li class="links__item profile"><a class="links__link" href="personal-cabinet.html">Мой профиль</a></li>
                   <ul class="links__inside-list">
                     <li class="links__inside-item entrance">Вход</li>
                     <li class="links__inside-item registration">Регистрация</li>
@@ -154,10 +154,10 @@
                 <div class="label-inside label-inside--tvc">
                   <div class="label-inside__content">
                     <input type="radio" name="tabs" id="tab11" class="input">
-                    <label for="tab11">Владивосток</label>
+                    <label for="tab11" class="label-inside__item">Владивосток</label>
 
                     <input type="radio" name="tabs" id="tab12" class="input">
-                    <label for="tab12">Хабаровск</label>
+                    <label for="tab12" class="label-inside__item">Хабаровск</label>
 
                     <section id="content-tab11" class="inside-section">
                       <div class="content-zone"> 
@@ -232,19 +232,19 @@
                 <div class="label-inside">
                   <div class="label-inside__content">
                     <input type="radio" name="tabs" id="tab21">
-                    <label for="tab21">Иркутск</label>
+                    <label for="tab21" class="label-inside__item">Иркутск</label>
 
                     <input type="radio" name="tabs" id="tab22">
-                    <label for="tab22">Благовещенск</label>
+                    <label for="tab22" class="label-inside__item">Благовещенск</label>
 
                     <input type="radio" name="tabs" id="tab23">
-                    <label for="tab23">Южно-Сахалинск</label>
+                    <label for="tab23" class="label-inside__item">Южно-Сахалинск</label>
 
                     <input type="radio" name="tabs" id="tab24">
-                    <label for="tab24">Владивосток</label>
+                    <label for="tab24" class="label-inside__item">Владивосток</label>
 
                     <input type="radio" name="tabs" id="tab25">
-                    <label for="tab25">Хабаровск</label>
+                    <label for="tab25" class="label-inside__item">Хабаровск</label>
 
 
                     <section id="content-tab21" class="inside-section">
@@ -406,14 +406,14 @@
                   </div>
                 </div> 
             
-                <input id="tab3" type="radio" name="tabs" checked>
-                <label for="tab3" title="Контактный центр">Контактный центр</label>
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3" title="Контактный центр" class="label-info">Контактный центр</label>
             
-                <input id="tab4" type="radio" name="tabs">
-                <label for="tab4" title="Сотрудничество">Сотрудничество</label>
+                <input id="tab4" type="radio" name="tabs" checked="checked">
+                <label for="tab4" title="Сотрудничество" class="label-info">Сотрудничество</label>
             
                 <input id="tab5" type="radio" name="tabs">
-                <label for="tab5" title="Служба качества">Служба качества</label>
+                <label for="tab5" title="Служба качества" class="label-info">Служба качества</label>
 
                 <div class="clear"></div> 
 
@@ -546,7 +546,7 @@
             </div>
             
             <div class="tabs tabs--contacts mobile">
-                <input id="tab100" type="radio" name="tabs" checked>
+                <input id="tab100" type="radio" name="tabs">
                 <label for="tab100" title="Торгово-выставочные центры">Торгово-выставочные центры</label>
 
                 <input id="tab200" type="radio" name="tabs">
@@ -1171,6 +1171,6 @@
     <script src="assets/scripts/mobile-menu.js"></script>
     <script src="assets/scripts/form.js"></script>
 
-     <script src="assets/scripts/label-inside.js"></script> 
+    <script src="assets/scripts/label-inside.js"></script>  
   </body>
 </html>

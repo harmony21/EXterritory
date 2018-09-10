@@ -28,35 +28,36 @@
           </div>
           <div class="header__bottom">
             <div class="header__bottom-left">
-              <!-- Анимированная иконка гамбургера для мобильной версии -->
-              <a id="hamburger-icon" href="#" title="Menu">
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-              </a>
-              <div class="logo">
-                <a href="index.html">
-                  <img class="logo__img" src="assets/images/logo.png">
+                <!-- Анимированная иконка гамбургера для мобильной версии -->
+                <a id="hamburger-icon" href="#" title="Menu">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
                 </a>
-              </div>
-              <div class="basket mobile-hidden">
-                <div class="basket__compare">
-                  <img class="basket__compare_icon" src="assets/images/compare.png">
+
+               <div class="logo">
+                  <a href="index.html">
+                    <img class="logo__img" src="assets/images/logo.png">
+                  </a>
                 </div>
-                <div class="basket__count">
-                  <img class="basket__count_icon" src="assets/images/basket.png">
+                <div class="basket mobile-hidden">
+                    <div class="basket__compare">
+                        <img class="basket__compare_icon" src="assets/images/compare.png">
+                    </div>
+                    <div class="basket__count">
+                        <img class="basket__count_icon" src="assets/images/basket.png">
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="header__bottom-right">
               <div class="time"><img class="time__icon" src="assets/images/clock.png"><span class="time__text">Режим работы Пн.-Пт. 10.00-18.30</span></div>
               <div class="phone"><a class="phone__number" href="tel:88007001001">8 800 700 1001</a><span class="phone__desc">Бесплатный номер по России</span></div>
               
-               <div class="search mobile-hidden">
+              <div class="search mobile-hidden">
                 <img class="search__icon" src="assets/images/search.png">
                 <input type="text" placeholder="Поиск по сайту">
               </div>
-              
+
               <div class="basket">
                 <div class="basket__compare"><img class="basket__compare_icon" src="assets/images/compare.png"></div>
                 <div class="basket__count"><img class="basket__count_icon" src="assets/images/basket.png">
@@ -72,6 +73,7 @@
           <div class="menu__icon"></div>
           <a class="menu__link" href="catalog.html">Каталог</a>
         </div> 
+
 
         <div class="navigation-wrap">
           <img class="menu__laptop" src="assets/images/nav-icon.png" alt="">
@@ -113,7 +115,7 @@
             </div>
             <li class="menu__item"><a class="menu__link" href="actions.html">Акции</a></li>
             <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
-            <li class="menu__item"><a class="menu__link active" href="payment.html">Оплата</a></li>
+            <li class="menu__item"><a class="menu__link" href="payment.html">Оплата</a></li>
             <li class="menu__item"><a class="menu__link" href="delivery.html">Доставка</a></li>
             <li class="menu__item"><a class="menu__link" href="return.html">Возврат</a></li>
             <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
@@ -140,109 +142,211 @@
           </div>
         </div>
         <!-- Заголовок страницы -->
-        <div class="page-title">
-            <h1 class="page-title__name">Способы оплаты</h1>
+        <div class="page-title mobile-hidden">
+            <h1 class="page-title__name">Мой профиль</h1>
             <div class="page-title__way">
-                <a href="index.html" class="page-title__link">Главная</a> - <a href="payment.html" class="page-title__link">Оплата</a>
+                <a href="index.html" class="page-title__link">Главная</a> - <a href="personal-cabinet.html" class="page-title__link">Мой профиль</a>
             </div>
         </div>
         <!-- Контентная область -->
-        <div class="container">
-            <div class="payment">
-                <ul class="payment__list">
-                    <li class="payment__item">
-                        <div class="payment__top">
-                            <div class="payment__title">
-                                <div class="payment__icon cash"></div>
-                                <h2 class="payment__name">Наличными в офисе</h2>
-                            </div>
-                            <div class="payment__arrow"></div>
+        <div class="container container--pc mobile">
+            <div class="tabs tabs--pc">
+                <p class="tabs__title">Личная информация</p>
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" title="Персональные данные">Персональные данные</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2" title="Покупатель">Покупатель</label>
+            
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3" title="Сменить пароль">Сменить пароль</label>
+                <div class="clear mobile-hidden"></div> 
+            
+                <p class="tabs__title">Мои заказы</p>
+                <input id="tab4" type="radio" name="tabs">
+                <label for="tab4" title="История заказов">История заказов</label>
+            
+                <a href="basket.html" class="tabs__link">Переход в корзину</a>
+
+                <a href="index.html" class="tabs__link tabs__link--exit">
+                    <img src="assets/images/exit.png" alt="">
+                    Выход
+                </a>  
+
+                <div class="clear"></div> 
+
+                <section id="content-tab1">
+                    <div class="content-zone"> 
+                        <div class="personal-info">
+                            <h3 class="personal-info__title">Персональные данные</h3>
+                            <form action="" class="personal-info__form" method="POST">
+                                <input type="text" placeholder="Фамилия, Имя, Отчество *">
+                                <input type="email" placeholder="E-mail *">
+                                <p class="personal-info__notice">
+                                    Если вы укажете свой E-mail, это существенно ускорит обработку заказа. 
+                                    Пожалуйста, проверяйте свою почту чаще!
+                                </p>
+                                <input type="text" placeholder="Город *">
+                                <input type="tel" placeholder="Номер телефона *">
+
+                                <div class="personal-info__required">
+                                    <img src="assets/images/required.png" alt="">
+                                    <span>Обязательные поля для заполнения</span>
+                                </div>
+
+                                <input type="submit" name="submit" class="btn-submit" value="Сохранить">
+                                
+                                <div class="socials">
+                                <p class="socials__title">Вы можете связать свой профиль с профилями в социальных сетях и сервисах:</p>
+                                <div class="socials__icons">
+                                    <a href="http://google.com" class="socials__link">
+                                    <div class="socials__icon google"></div>
+                                    </a>
+                                    <a href="http://facebook.com" class="socials__link">
+                                    <div class="socials__icon fb"></div>
+                                    </a>
+                                    <a href="http://twitter.com" class="socials__link">
+                                    <div class="socials__icon tw"></div>
+                                    </a>
+                                </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="payment__wrap">
-                            <div class="payment__content">
-                                Вы можете оплатить заказ в любом пункте выдачи на кассе, указав номер 
-                                Вашего заказа из интернет-магазина (оплата доступна наличным и безналичным способом)
+                    </div> 
+                </section> 
+ 
+                <section id="content-tab2">
+                    <div class="content-zone">
+                        <div class="customer-info">
+                            <h3 class="personal-info__title">Данные покупателя</h3>
+                            <div class="customer-info__wrap">
+                                <div class="customer-info__item">
+                                    <p>Тип плательщика:</p>
+                                    <div class="customer-info__right">
+                                        Юридическое лицо
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Контактное лицо:</p>
+                                    <div class="customer-info__right">
+                                        Свитова Наталья
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Мобильный телефон (для уточнения данных по заказу и передачи курьерской службы):</p>
+                                    <div class="customer-info__right">
+                                        +7 914 406 19 09
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Полное наименование:</p>
+                                    <div class="customer-info__right">
+                                        ООО "Управляющая компания"
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>ИНН:</p>
+                                    <div class="customer-info__right">
+                                        2724213705
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>КПП:</p>
+                                    <div class="customer-info__right">
+                                        272403001
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Полное ФИО в именительном падеже для лицензионного договора:</p>
+                                    <div class="customer-info__right">
+                                        Безматерных Роман Викторович
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Действует на основании:</p>
+                                    <div class="customer-info__right">
+                                        Устава
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Должность:</p>
+                                    <div class="customer-info__right">
+                                        Директор
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Полный юридический адрес:</p>
+                                    <div class="customer-info__right">
+                                        г. Хабаровск, ул. Карла Маркса, 144 А
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                  <p>Адрес почтовый:</p>
+                                  <div class="customer-info__right">
+                                      Россия, Дальний Восток, Хабаровский край, г. Хабаровск
+                                  </div>
+                                </div>
+                                <div class="customer-info__item">
+                                  <p>Индекс почтовый:</p>
+                                  <div class="customer-info__right">
+                                      680031
+                                  </div>
+                                </div>
+                                <div class="customer-info__item">
+                                  <p>Адрес почтовый (без индекса города):</p>
+                                  <div class="customer-info__right">
+                                      г. Хабаровск, ул. Карла Маркса, 144 А
+                                  </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>Телефон компании:</p>
+                                    <div class="customer-info__right">
+                                        +7 914 406 19 09
+                                    </div>
+                                </div>
+                                <div class="customer-info__item">
+                                    <p>E-mail:</p>
+                                    <div class="customer-info__right">
+                                        ddkk_engros@ck27.ru
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="payment__item">
-                        <div class="payment__top">
-                            <div class="payment__title">
-                                <div class="payment__icon card"></div>
-                                <h2 class="payment__name">Банковской картой</h2>
-                            </div>
-                            <div class="payment__arrow"></div>
+                    </div>
+                </section>  
+
+                <section id="content-tab3">
+                  <div class="content-zone">
+                    <div class="personal-info">
+                      <h3 class="personal-info__title">Сменить пароль</h3>
+                      <form action="" class="personal-info__form" method="POST">
+                        <input type="password" placeholder="Новый пароль *">
+                        <p class="personal-info__notice">
+                            Длина пароля не менее 6 символов
+                        </p>
+                        <input type="password" placeholder="Подтверждение нового пароля *">
+
+                        <div class="personal-info__required">
+                            <img src="assets/images/required.png" alt="">
+                            <span>Обязательные поля для заполнения</span>
                         </div>
-                        <div class="payment__wrap">
-                            <div class="payment__content">
-                                Вы можете оплатить заказ в любом пункте выдачи на кассе, указав номер 
-                                Вашего заказа из интернет-магазина (оплата доступна наличным и безналичным способом)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="payment__item">
-                        <div class="payment__top">
-                            <div class="payment__title">
-                                <div class="payment__icon bank"></div>
-                                <h2 class="payment__name">Оплата через банк по счету</h2>
-                            </div>
-                            <div class="payment__arrow"></div>
-                        </div>
-                        <div class="payment__wrap">
-                            <div class="payment__content">
-                                Вы можете оплатить заказ в любом пункте выдачи на кассе, указав номер 
-                                Вашего заказа из интернет-магазина (оплата доступна наличным и безналичным способом)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="payment__item">
-                        <div class="payment__top">
-                            <div class="payment__title">
-                                <div class="payment__icon pay"></div>
-                                <h2 class="payment__name">Оплата через Pay</h2>
-                            </div>
-                            <div class="payment__arrow"></div>
-                        </div>
-                        <div class="payment__wrap">
-                            <div class="payment__content">
-                                Вы можете оплатить заказ в любом пункте выдачи на кассе, указав номер 
-                                Вашего заказа из интернет-магазина (оплата доступна наличным и безналичным способом)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="payment__item">
-                        <div class="payment__top">
-                            <div class="payment__title">
-                                <div class="payment__icon center"></div>
-                                <h2 class="payment__name">Оплата через контактный центр</h2>
-                            </div>
-                            <div class="payment__arrow"></div>
-                        </div>
-                        <div class="payment__wrap">
-                            <div class="payment__content">
-                                Вы можете оплатить заказ в любом пункте выдачи на кассе, указав номер 
-                                Вашего заказа из интернет-магазина (оплата доступна наличным и безналичным способом)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="payment__item">
-                        <div class="payment__top">
-                            <div class="payment__title">
-                                <div class="payment__icon delay"></div>
-                                <h2 class="payment__name">Отстрочка платежа</h2>
-                            </div>
-                            <div class="payment__arrow"></div>
-                        </div>
-                        <div class="payment__wrap">
-                            <div class="payment__content">
-                                Вы можете оплатить заказ в любом пункте выдачи на кассе, указав номер 
-                                Вашего заказа из интернет-магазина (оплата доступна наличным и безналичным способом)
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-             
+
+                        <input type="submit" name="submit" class="btn-submit" value="Сохранить">
+                      </form>
+                    </div>
+                  </div>
+                </section>
+                <section id="content-tab4">
+                    <div class="content-zone">
+
+                    </div>
+                </section> 
+   
+            </div>   
+            <a href="index.html" class="tabs__link tabs__link--exit mobile-hidden">
+                <img src="assets/images/exit.png" alt="">
+                Выход
+            </a>
         </div>
         <!-- Footer -->
         <footer class="footer">
@@ -301,6 +405,7 @@
       </ul>
       <img src="assets/images/close.png" alt="" class="menu__laptop-close">
     </div>
+
     <!--Перестройка блоков для мобильной версии (меню, выбор региона, вход/регистрация) -->
     <div class="mobile-menu">
 
@@ -352,7 +457,6 @@
         <textarea name="message" placeholder="Сообщение"></textarea>
         <input type="submit" name="submit" class="btn-submit" value="Отправить">
     </form>  
-
     <!-- Всплывающее окно "Регистрация" -->
     <div class="form-wrapper--registration"></div> 
     <form action="" class="form--registration" id="form" method="POST">
@@ -441,12 +545,14 @@
           </div>
         </div>
     </form> 
+
     <script src="assets/scripts/jquery-3.2.1.js"></script>
     <script src="assets/scripts/options.js"></script>
     <script src="assets/scripts/search.js"></script>
     <script src="assets/scripts/login.js"></script>
     <script src="assets/scripts/mobile-menu.js"></script>
-    <script src="assets/scripts/payment.js"></script>
+    <script src="assets/scripts/jquery.fancybox.min.js"></script>
+    <script src="assets/scripts/modal-window.js"></script>
     <script src="assets/scripts/form.js"></script>
   </body>
 </html>
