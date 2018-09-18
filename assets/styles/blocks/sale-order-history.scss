@@ -1,0 +1,228 @@
+.sale-order-history {
+    display: flex;
+    width: 69vw;
+    margin-top: 20px;
+    @media screen and (max-width: 540px) {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+.sale-order-history-link, .sale-order-list-about-link, .sale-order-list-repeat-link {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 4px 0;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 174px;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 14px;
+    @media screen and (max-width: 540px) {
+        width: 32%;
+        margin-right: 0;
+        border-radius: 0px;
+        border: none;
+        background-color: $grey;
+        font-size: 11px;
+    }
+    &:hover, &.active {
+        background-color: $red;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid $red;
+    }
+}
+.sale-order-list-inner-container, .sale-order-detail-item-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+    th {
+        text-transform: uppercase;
+        font-size: 14px;
+        border-bottom: 2px solid $grey;
+        padding: 10px;
+    }
+    td {
+        border-bottom: 2px solid $grey;
+        padding: 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .sale-order-list-status-alert {
+        color: $red;
+    }
+}
+.sale-order-detail-options-order-content-title {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+}
+.sale-order-detail-item-table {
+    margin-top: 10px;
+    th {
+        text-transform: none;
+    }
+    .left {
+        text-align: left;
+    }
+}
+.sale-order-detail-about-order-inner-container-price {
+    display: flex;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+    .sale-order-detail-about-order-inner-container-price-detail {
+        margin-left: 6px;
+    }
+}
+.sale-order-list-container {
+    display: flex;
+    margin-top: 30px;
+    @media screen and (max-width: 540px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        .sale-order-list-about-link, .sale-order-list-repeat-link {
+            border-radius: 20px;
+            border: 1px solid #000;
+            background-color: transparent;
+            width: 40%;
+            &:hover {
+                background-color: $red;
+                color: #fff;
+                border: 1px solid $red;
+            }
+            @media screen and (max-width: 540px) {
+                margin-top: 10px;
+                text-transform: uppercase;
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+//стили для мобильной версии
+.sale-order-item {
+    display: none;
+    @media screen and (max-width: 540px) {
+        display: block;
+        width: 100%;
+    }
+    &.active {
+        background-color: $grey;
+    }
+    &__content {
+        @media screen and (max-width: 540px) {
+            display: flex;
+            width: 100%;
+            padding: 20px 5px;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    }
+    &__left, &__right {
+        width: 50%;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .sale-order-list-date-number {
+        font-size: 14px;
+    }
+    .sale-order-list-title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .sale-order-list-payment-price {
+        font-size: 12px;
+    }
+    .sale-order-list-payment{
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .sale-order-list-status-alert {
+        color: $red;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .sale-order-detail-about-order-inner-container-status {
+        text-align: center;
+        font-size: 14px;
+    }
+    .sale-order-detail-about-order-inner-container-status-title {
+        font-weight: bold;
+    }
+    .sale-order-detail-about-order-inner-container-status-detail {
+        font-size: 13px;
+    }
+
+
+    .sale-order-detail-item-table {
+        @media screen and (max-width: 540px) {
+            display: block;     
+            display: flex;
+            justify-content: space-around;
+            th {
+                font-weight: normal;
+                font-size: 12px;
+            }
+            td {
+                width: 25%;
+                font-size: 12px;
+                padding: 0 10px;
+                border-right: 1px solid $red;
+                border-bottom: none;
+            }
+        }
+    }
+    .sale-order-item__wrap {
+        background-color: $grey;
+        height: 0;
+        overflow: hidden;
+        transition: .4s;
+    }
+    .sale-order-list-about {
+        margin-left: 5px;
+        color: $red;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .line {
+        border: 1.5px solid darken($grey, 7);
+    }
+    .sale-order-detail-order-item {
+        font-size: 14px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    .sale-order-detail-order-item-title {
+        font-weight: bold;
+    }
+    .sale-order-list-payment-price-mobile {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+}

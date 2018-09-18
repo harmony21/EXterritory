@@ -1,19 +1,10 @@
 .personal-info {
-    &__title {
-        font-size: 16px;
-        font-weight: bold;
-        padding-left: 15px;
-        @media screen and (max-width: 540px) {
-            text-align: center;
-            text-transform: uppercase;
-        }
-    }
     &__form {
         @media screen and (max-width: 540px) {
             display: flex;
             flex-direction: column;
         }
-        input {
+        .form-control {
             display: block;
             width: 100%;
             padding: 5px 15px;
@@ -24,7 +15,7 @@
             font-size: 14px;
         }
     }
-    &__notice {
+    .main-profile-form-email-annotation, .main-profile-form-password-annotation {
         font-size: 13px;
         color: $dark-grey;
         margin-top: 10px;
@@ -48,13 +39,13 @@
             align-self: center;
         }
     }
-    .socials {
+    .soc-serv-main {
         margin-left: 0;
         padding-left: 15px;
         @media screen and (max-width: 580px) {
             align-self: center;
         }
-        &__title {
+        .soc-serv-title-grey {
             color: #000;
             margin-top: 25px;
             font-size: 14px;
@@ -62,7 +53,7 @@
                 font-size: 12px;
             }
         }
-        &__icons {
+        .bx-auth-serv-icons {
             display: flex;
             margin-top: 15px;
             @media screen and (max-width: 580px) {
@@ -71,7 +62,7 @@
                 margin-bottom: 15px;
             }
         }
-        &__icon {
+        .bx-ss-icon {
             width: 31px;
             height: 31px;
             margin-right: 10px;
@@ -94,5 +85,14 @@
                 }
             }
         }
+    }
+}
+.bx-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 15px;
+    @media screen and (max-width: 540px) {
+        text-align: center;
+        text-transform: uppercase;
     }
 }
