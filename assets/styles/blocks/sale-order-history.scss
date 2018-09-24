@@ -18,6 +18,9 @@
     text-align: center;
     margin-right: 15px;
     font-size: 14px;
+    @media screen and (max-width: 1040px) {
+        font-size: 12px;
+    }
     @media screen and (max-width: 540px) {
         width: 32%;
         margin-right: 0;
@@ -33,24 +36,52 @@
         border: 1px solid $red;
     }
 }
-.sale-order-list-inner-container, .sale-order-detail-item-table {
+.sale-order-list-inner-container {
     width: 100%;
     margin-top: 30px;
-    border-collapse: collapse;
     @media screen and (max-width: 540px) {
         display: none;
     }
-    th {
+    .sale-order-list-inner-container-item {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        span {
+            border-right: 1px solid $red;
+            display: block;
+        }
+    }
+    .sale-order-list-inner-container-item-title {
         text-transform: uppercase;
         font-size: 14px;
         border-bottom: 2px solid $grey;
-        padding: 10px;
+        padding: 10px 2px;
+        text-align: center;
+        width: 20%;
+        @media screen and (max-width: 1040px) {
+            font-size: 12px;
+        }
+        .last {
+            border-right: none;
+        }
     }
-    td {
+    .sale-order-list-inner-container-item-text, .sale-order-list-status-alert {
         border-bottom: 2px solid $grey;
-        padding: 10px;
+        padding: 10px 2px;
         text-align: center;
         font-size: 13px;
+        width: 20%;
+        @media screen and (max-width: 1040px) {
+            font-size: 10px;
+        }
+        .last {
+            border-right: none;
+        }
+    }
+    .sale-order-list-inner-container-item-text-title {
+        &:hover {
+            cursor: pointer;
+        }
     }
     .sale-order-list-status-alert {
         color: $red;
@@ -65,18 +96,41 @@
         display: none;
     }
 }
-.sale-order-detail-item-table {
-    margin-top: 10px;
-    th {
-        text-transform: none;
-    }
-    .left {
-        text-align: left;
+.order-wrap {
+    transition: .4s;
+    display: none;
+    .sale-order-list-inner-container-item-text {
+        width: 12%;
+        text-align: center;
+        @media screen and (max-width: 1040px) {
+            width: 8.5%;
+        }
+        &.number {
+            width: 6%;
+        }
+        &.nomenclature {
+            width: 40%;
+            text-align: left;
+            @media screen and (max-width: 1040px) {
+                width: 30%;
+            }
+        }
+        &.nomenclature-part {
+            width: 35%;
+            text-align: left;
+            @media screen and (max-width: 1040px) {
+                width: 30%;
+            }
+        }
+        .last {
+            border-right: none;
+        }
     }
 }
+
 .sale-order-detail-about-order-inner-container-price {
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
     font-weight: bold;
     font-size: 15px;
     @media screen and (max-width: 540px) {
@@ -88,29 +142,35 @@
 }
 .sale-order-list-container {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     @media screen and (max-width: 540px) {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-        .sale-order-list-about-link, .sale-order-list-repeat-link {
-            border-radius: 20px;
-            border: 1px solid #000;
-            background-color: transparent;
-            width: 40%;
-            &:hover {
-                background-color: $red;
-                color: #fff;
-                border: 1px solid $red;
-            }
-            @media screen and (max-width: 540px) {
-                margin-top: 10px;
-                text-transform: uppercase;
-                &:last-child {
-                    margin-bottom: 20px;
+        display: none;
+        &.mobile {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            display: flex;
+            .sale-order-list-about-link, .sale-order-list-repeat-link {
+                border-radius: 20px;
+                border: 1px solid #000;
+                background-color: transparent;
+                width: 40%;
+                &:hover {
+                    background-color: $red;
+                    color: #fff;
+                    border: 1px solid $red;
+                }
+                @media screen and (max-width: 540px) {
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    &:last-child {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
+      
     }
 }
 
@@ -176,30 +236,28 @@
         font-size: 13px;
     }
 
-
-    .sale-order-detail-item-table {
-        @media screen and (max-width: 540px) {
-            display: block;     
-            display: flex;
-            justify-content: space-around;
-            th {
-                font-weight: normal;
-                font-size: 12px;
-            }
-            td {
-                width: 25%;
-                font-size: 12px;
-                padding: 0 10px;
-                border-right: 1px solid $red;
-                border-bottom: none;
-            }
-        }
-    }
     .sale-order-item__wrap {
         background-color: $grey;
         height: 0;
         overflow: hidden;
         transition: .4s;
+    }
+    .sale-order-list-inner-container-item {
+        display: flex;
+        justify-content: center;
+    }
+    .sale-order-list-inner-container-item-text, 
+    .sale-order-list-inner-container-item-title {
+        width: 25%;
+        font-size: 13px;
+        text-align: center;
+    }
+    .sale-order-list-inner-container-item-text {
+        border-right: 1px solid $red;
+        margin-top: 10px;
+        &.last {
+            border-right: none;
+        }
     }
     .sale-order-list-about {
         margin-left: 5px;

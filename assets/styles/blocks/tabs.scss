@@ -228,6 +228,76 @@
             }
         }
     }
+    &--catalog {
+        label {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 5px;
+            @media screen and (max-width: 1000px) {
+                height: 48px;
+                justify-content: center;
+            }
+            @media screen and (max-width: 540px) {
+                display: none;
+            }
+        }
+        #tab101:checked~#content-tab1, #tab102:checked~#content-tab2,
+        #tab103:checked~#content-tab3, #tab104:checked~#content-tab4,
+        #tab105:checked~#content-tab5, #tab106:checked~#content-tab6 {
+            display: block;
+        }
+        .tabs__icon {
+            &.roof {
+                width: 40px;
+                height: 30px;
+                background: url('assets/images/item1.png') no-repeat;
+            }
+            &.facade {
+                width: 40px;
+                height: 31px;
+                background: url('assets/images/item6.png') no-repeat;
+            }
+            &.fence {
+                width: 40px;
+                height: 31px;
+                background: url('assets/images/item2.png') no-repeat;
+            }
+            &.materials {
+                width: 46px;
+                height: 43px;
+                background: url('assets/images/item7.png') no-repeat;
+            }
+            &.territory {
+                width: 45px;
+                height: 28px;
+                background: url('assets/images/item4.png') no-repeat;
+            }
+            &.hand {
+                width: 37px;
+                height: 35px;
+                background: url('assets/images/item5.png') no-repeat;
+            }
+        }
+        .text-for-clients {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 20px;
+            &.title {
+                margin-top: 0;
+                @media screen and (max-width: 540px) {
+                    text-transform: uppercase;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                padding: 5px;
+                font-weight: normal;
+                font-size: 13px;
+            }
+        }
+    }
     &--contacts {
         section {
             @media screen and (max-width: 1000px) {
