@@ -4613,7 +4613,7 @@ _:-ms-lang(x), .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 69vw;
+  width: 63vw;
   margin-top: 20px; }
   @media screen and (max-width: 540px) {
     .sale-order-history {
