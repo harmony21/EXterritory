@@ -4713,7 +4713,6 @@ _:-ms-lang(x), .search {
   -o-transition: .4s;
   transition: .4s;
   display: none;
-  background-color: #ebebeb;
   padding-bottom: 15px; }
   .order-wrap .sale-order-list-inner-container-item-text {
     width: 12%;
