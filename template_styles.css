@@ -4613,8 +4613,11 @@ _:-ms-lang(x), .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 63vw;
+  width: 50vw;
   margin-top: 20px; }
+  @media screen and (max-width: 1366px) {
+    .sale-order-history {
+      width: 63vw; } }
   @media screen and (max-width: 540px) {
     .sale-order-history {
       width: 100%;
@@ -4662,6 +4665,8 @@ _:-ms-lang(x), .search {
     width: 100%;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
+    .sale-order-list-inner-container .sale-order-list-inner-container-item.active {
+      background-color: #ebebeb; }
     .sale-order-list-inner-container .sale-order-list-inner-container-item span {
       border-right: 1px solid #ca1616;
       display: block; }
@@ -4694,7 +4699,8 @@ _:-ms-lang(x), .search {
     color: #ca1616; }
 
 .sale-order-detail-options-order-content-title {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold; }
@@ -4706,7 +4712,9 @@ _:-ms-lang(x), .search {
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
-  display: none; }
+  display: none;
+  background-color: #ebebeb;
+  padding-bottom: 15px; }
   .order-wrap .sale-order-list-inner-container-item-text {
     width: 12%;
     text-align: center; }
@@ -4736,7 +4744,8 @@ _:-ms-lang(x), .search {
   display: flex;
   margin-top: 15px;
   font-weight: bold;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-left: 10px; }
   @media screen and (max-width: 540px) {
     .sale-order-detail-about-order-inner-container-price {
       display: none; } }
@@ -4748,7 +4757,8 @@ _:-ms-lang(x), .search {
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: 10px; }
   @media screen and (max-width: 540px) {
     .sale-order-list-container {
       display: none; }
