@@ -42,8 +42,10 @@
     }
     &__right {
         width: 70%;
+        margin-left: 20px;
         @media screen and (max-width: 750px) {
             width: 100%;
+            margin-left: 0;
         }
         &-content {
             display: flex;
