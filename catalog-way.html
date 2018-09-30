@@ -81,7 +81,7 @@
               <li class="menu__item">
                 <div class="menu__item_wrap">
                   <div class="menu__icon"></div>
-                    <a class="menu__link" href="catalog.html">Каталог</a>
+                    <a class="menu__link active" href="catalog.html">Каталог</a>
                 </div>
                   <ul class="inside-menu__list">
                     <li class="inside-menu__item"><img src="assets/images/item1.png" alt=""><a class="inside-menu__link" href="catalog-way.html">Кровля
@@ -117,7 +117,7 @@
             <li class="menu__item"><a class="menu__link" href="payment.html">Оплата</a></li>
             <li class="menu__item"><a class="menu__link" href="delivery.html">Доставка</a></li>
             <li class="menu__item"><a class="menu__link" href="return.html">Возврат</a></li>
-            <li class="menu__item"><a class="menu__link active" href="about.html">О компании</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
             <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
           </ul>
           <div class="navigation-wrap__right">
@@ -148,229 +148,181 @@
             </div>
         </div>
         <!-- Контентная область -->
-        <div class="container container--height mobile">
-            <div class="tabs tabs--catalog">
-                <input id="tab101" type="radio" name="tabs" checked="checked">
-                <label for="tab101" title="Кровля" class="label">
-                    <div class="tabs__icon roof"></div>
-                    Кровля
-                </label>
-                <div class="catalog-way-hidden-wrap">
-                  <ul class="catalog-way-hidden-list">
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Сухие строительные смеси и гидроизоляция</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Гидроизоляция</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Кладочные и монтажные растворы</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Клеи для керамической плитки, керамогранита</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Огнеупорные и печные растворы</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Ремосоставы</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Ровнители для пола</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Системы утепления фасадов</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Цементно-песчаные смеси и гарцовка</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Шпаклевки</a>
-                    </li>
-                    <li>
-                      <a href="" class="catalog-way-hidden-link">Штукатурки</a>
-                    </li>
-                  </ul>
+        <div class="container container--flex mobile">
+          <div class="catalog-navigation">
+            <div class="catalog-navigation__item active">
+              <div class="catalog-navigation__icon roof"></div>
+              <a href="#" class="catalog-navigation__link">Кровля</a>
+            </div>
+            <div class="catalog-way-hidden-wrap">
+              <ul class="catalog-way-hidden-list">
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Сухие строительные смеси и гидроизоляция</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Гидроизоляция</a>
+                </li>
+                <li>
+                  <a href="catalog-more.html" class="catalog-way-hidden-link">Кладочные и монтажные растворы</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Клеи для керамической плитки, керамогранита</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Огнеупорные и печные растворы</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Ремосоставы</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Ровнители для пола</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Системы утепления фасадов</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Цементно-песчаные смеси и гарцовка</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Шпаклевки</a>
+                </li>
+                <li>
+                  <a href="" class="catalog-way-hidden-link">Штукатурки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-navigation__item">
+              <div class="catalog-navigation__icon facade"></div>
+              <a href="#" class="catalog-navigation__link">Фасад</a>
+            </div>
+            <div class="catalog-navigation__item">
+              <div class="catalog-navigation__icon fence"></div>
+              <a href="#" class="catalog-navigation__link">Заградительные системы</a>
+            </div>
+            <div class="catalog-navigation__item">
+              <div class="catalog-navigation__icon materials"></div>
+              <a href="#" class="catalog-navigation__link">Материалы для строительства</a>
+            </div>
+            <div class="catalog-navigation__item">
+              <div class="catalog-navigation__icon territory"></div>
+              <a href="#" class="catalog-navigation__link">Благоустройство территорий</a>
+            </div>
+            <div class="catalog-navigation__item">
+              <div class="catalog-navigation__icon hand"></div>
+              <a href="#" class="catalog-navigation__link">Ручной инструмент</a>
+            </div>  
+          </div>
+          <div class="content-zone empty-mobile info-catalog "> 
+            <a href="catalog-way.html" class="services-more__back">Вернуться назад</a>
+            <div class="catalog-way__top">
+                <div class="catalog-way__icon roof"></div>
+                <a href="catalog-way.html" class="catalog-way__name">Кровля</a>
+            </div>
+            <p class="text-for-clients title">Информация для покупателей</p>
+            <p class="text-for-clients">
+              Выбрать и купить общестроительные материалы в интернет-магазине вам поможет информация по 
+              размеру, весу, ценам, фото и другим характеристикам в каталоге товаров. 
+              Доставка по Хабаровску и по ДВ осуществляется автомобилями грузоподъемностью от 700 кг до 15 т.
+            </p>
+            <p class="text-for-clients">
+              Подробную информацию об услуге, условиях и стоимость можно посмотреть на этой странице. 
+              Все представленные на сайте товары мы продаем оптом и в розницу. 
+              При этом розничные покупатели могут оформить карту Клуба друзей EX, получать скидки и копить баллы.
+            </p>
+
+            <div class="catalog-way">
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news1.png" alt="">
                 </div>
-
-                <input id="tab102" type="radio" name="tabs">
-                <label for="tab102" title="Фасад">
-                    <div class="tabs__icon facade"></div>
-                    Фасад
-                </label>
-            
-                <input id="tab103" type="radio" name="tabs">
-                <label for="tab103" title="Заградительные системы">
-                    <div class="tabs__icon fence"></div>
-                    Заградительные системы
-                </label>
-            
-                <input id="tab104" type="radio" name="tabs">
-                <label for="tab104" title="Материалы для строительства">
-                    <div class="tabs__icon materials"></div>
-                    Материалы для строительства
-                </label>
-            
-                <input id="tab105" type="radio" name="tabs">
-                <label for="tab105" title="Блогоустройство территорий">
-                    <div class="tabs__icon territory"></div>
-                    Благоустройство территорий
-                </label>
-
-                <input id="tab106" type="radio" name="tabs">
-                <label for="tab106" title="Ручной инструмент">
-                    <div class="tabs__icon hand"></div>
-                    Ручной инструмент
-                </label>
-
-
-                <div class="clear"></div> 
-
-                <section id="content-tab1">
-                    <div class="content-zone empty-mobile"> 
-                      <a href="catalog-way.html" class="services-more__back">Вернуться назад</a>
-                      <div class="catalog-way__top">
-                          <div class="catalog-way__icon roof"></div>
-                          <h2 class="catalog-way__name">Кровля</h2>
-                      </div>
-                      <p class="text-for-clients title">Информация для покупателей</p>
-                      <p class="text-for-clients">
-                        Выбрать и купить общестроительные материалы в интернет-магазине вам поможет информация по 
-                        размеру, весу, ценам, фото и другим характеристикам в каталоге товаров. 
-                        Доставка по Хабаровску и по ДВ осуществляется автомобилями грузоподъемностью от 700 кг до 15 т.
-                      </p>
-                      <p class="text-for-clients">
-                        Подробную информацию об услуге, условиях и стоимость можно посмотреть на этой странице. 
-                        Все представленные на сайте товары мы продаем оптом и в розницу. 
-                        При этом розничные покупатели могут оформить карту Клуба друзей EX, получать скидки и копить баллы.
-                      </p>
-
-                      <div class="catalog-way">
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news1.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Металлочерепица
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news2.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Мягкая кровля
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news3.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Профнастил
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news4.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Доборные элементы "ДАМИР"
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news1.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Проходки
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news2.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Окна мансардные
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news3.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Ленточный герметик
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news2.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Металлочерепица
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news1.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Профнастил
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news4.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Металлочерепица
-                          </a>
-                        </div>
-                        <div class="catalog-way__item">
-                          <div class="catalog-way__img">
-                            <img src="assets/images/news1.png" alt="">
-                          </div>
-                          <a href="#" class="catalog-way__title">
-                            Мягкая кровля
-                          </a>
-                        </div>
-                      </div>
-                       
-                    </div> 
-                </section> 
- 
-                <section id="content-tab2">
-                    <div class="content-zone">
-                      
-                    </div>
-                </section>  
-
-                <section id="content-tab3">
-                    <div class="content-zone">
-                        
-                    </div>
-                </section> 
-
-                <section id="content-tab4">
-                    <div class="content-zone">
-                        
-                    </div>
-                </section> 
-
-                <section id="content-tab5">
-                    <div class="content-zone">    
-          
-                    </div>
-                </section> 
-                  
-                
-                <section id="content-tab6">
-                    <div class="content-zone">    
-          
-                    </div>
-                </section>  
-            </div>   
+                <a href="#" class="catalog-way__title">
+                  Металлочерепица
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news2.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Мягкая кровля
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news3.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Профнастил
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news4.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Доборные элементы "ДАМИР"
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news1.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Проходки
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news2.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Окна мансардные
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news3.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Ленточный герметик
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news2.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Металлочерепица
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news1.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Профнастил
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news4.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Металлочерепица
+                </a>
+              </div>
+              <div class="catalog-way__item">
+                <div class="catalog-way__img">
+                  <img src="assets/images/news1.png" alt="">
+                </div>
+                <a href="#" class="catalog-way__title">
+                  Мягкая кровля
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
         <!-- Footer -->
         <footer class="footer">
           <div class="footer__top">

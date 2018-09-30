@@ -4,6 +4,12 @@
     justify-content: center;
     margin: 35px auto 20px auto;
     align-items: center;
+    &.mobile {
+        display: none;
+        @media screen and (max-width: 760px) {
+            display: flex;
+        }
+    }
     &__number {
         display: block;
         width: 25px;

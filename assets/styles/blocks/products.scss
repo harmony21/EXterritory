@@ -18,7 +18,10 @@
         font-size: 13px;
         display: flex;
         align-items: center;
-        @media screen and (max-width: 540px) {
+        @media screen and (max-width: 845px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 620px) {
             display: none;
         }
         &-options {
@@ -44,6 +47,7 @@
             position: absolute;
             left: 20px;
             display: none;
+            z-index: 20;
         }
          &-item {
             padding: 5px 8px;

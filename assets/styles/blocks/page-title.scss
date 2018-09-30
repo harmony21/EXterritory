@@ -27,8 +27,8 @@
     }
     &__name {
         font-size: 30px;
-        @media screen and (max-width: 790px) {
-            font-size: 24px;
+        @media screen and (max-width: 950px) {
+            font-size: 20px;
         }
         @media screen and (max-width: 720px) {
             font-size: 22px;
@@ -44,8 +44,8 @@
     }
     &__way {
         font-size: 16px;
-        @media screen and (max-width: 720px) {
-            font-size: 14px;
+        @media screen and (max-width: 950px) {
+            font-size: 12px;
         }
         @media screen and (max-width: 540px) {
             display: none;

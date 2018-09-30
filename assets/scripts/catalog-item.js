@@ -1,6 +1,6 @@
 $(document).ready(function() {
     if ($(window).width() > 1000) {
-           $('.label').on('click', function (ev) {
+           $('.catalog-navigation__item').on('click', function (ev) {
             verContent = $(this).next('.catalog-way-hidden-wrap'), 
             Height = verContent.find('.catalog-way-hidden-list').outerHeight(true);
 

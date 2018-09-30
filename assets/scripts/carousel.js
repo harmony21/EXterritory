@@ -143,4 +143,27 @@ $(document).ready(function(){
 
 
 
+//слайдер продукта
+$(document).ready(function(){
+	$(function(){
+        $('#carousel-pro').infiniteCarousel({
+            imagePath: 'assets/images/',
+            internalThumbnails: false,
+            thumbnailType: 'images',
+            customClass: 'myCarousel',
+            progressRingColorOpacity: '0,0,0,.9',
+            progressRingBackgroundOn: true,
+            easeLeft: 'easeOutExpo',
+            easeRight:'easeOutQuad',
+            inView: 1,
+            advance: 1,
+            prevNextInternal: true,
+            autoHideCaptions: true,
+            displayProgressRing: false
+        });
+    });
+});
+
+
+
 

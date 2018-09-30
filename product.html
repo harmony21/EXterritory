@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>EX-территория</title>
+    <link rel="stylesheet" href="template_styles.css">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <div class="shadow"></div>
+        <header class="header">
+          <div class="header__top">
+            <div class="links">
+              <ul class="links__list">
+                <li class="links__item"><a class="links__link entrance" href="">Вход</a></li>
+                <li class="links__item border"> <a class="links__link registration" href="">Регистрация</a></li>
+                <li class="links__item profile"><a class="links__link" href="personal-cabinet.html">Мой профиль</a></li>
+                  <ul class="links__inside-list">
+                    <li class="links__inside-item entrance">Вход</li>
+                    <li class="links__inside-item registration">Регистрация</li>
+                  </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="header__bottom-left">
+              <!-- Анимированная иконка гамбургера для мобильной версии -->
+              <a id="hamburger-icon" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+              </a>
+              <div class="logo">
+                <a href="index.html">
+                  <img class="logo__img" src="assets/images/logo.png">
+                </a>
+              </div>
+              <div class="basket mobile-hidden">
+                <div class="basket__compare">
+                  <img class="basket__compare_icon" src="assets/images/compare.png">
+                </div>
+                <div class="basket__count">
+                  <img class="basket__count_icon" src="assets/images/basket.png">
+                </div>
+              </div>
+            </div>
+            <div class="header__bottom-right">
+              <div class="time"><img class="time__icon" src="assets/images/clock.png"><span class="time__text">Режим работы Пн.-Пт. 10.00-18.30</span></div>
+              <div class="phone"><a class="phone__number" href="tel:88007001001">8 800 700 1001</a><span class="phone__desc">Бесплатный номер по России</span></div>
+              
+              <div class="search mobile-hidden">
+                <img class="search__icon" src="assets/images/search.png">
+                <input type="text" placeholder="Поиск по сайту">
+              </div>
+              
+              <div class="basket">
+                <div class="basket__compare"><img class="basket__compare_icon" src="assets/images/compare.png"></div>
+                <div class="basket__count"><img class="basket__count_icon" src="assets/images/basket.png">
+                  <div class="basket__count_number"><span>10</span></div>
+                </div>
+                <div class="basket__info"><span class="basket__info_title">Ваша корзина:</span><span class="basket__info_text">10 товаров на 45 990 Р</span></div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="menu__item_wrap mobile-hidden">
+          <div class="menu__icon"></div>
+          <a class="menu__link" href="catalog.html">Каталог</a>
+        </div> 
+
+        <div class="navigation-wrap">
+          <img class="menu__laptop" src="assets/images/nav-icon.png" alt="">
+          <ul class="menu">
+            <div class="menu__catalog">
+              <li class="menu__item">
+                <div class="menu__item_wrap">
+                  <div class="menu__icon"></div>
+                    <a class="menu__link" href="catalog.html">Каталог</a>
+                </div>
+                  <ul class="inside-menu__list">
+                    <li class="inside-menu__item"><img src="assets/images/item1.png" alt=""><a class="inside-menu__link" href="">Кровля
+                        <ul class="inside-menu__items">
+                          <li><a class="inside-menu__items_main" href="">Кровельные материалы (92)</a></li>
+                          <li><a href="">Металлочерепица (4)</a></li>
+                          <li><a href="">Мягкая кровля (13)</a></li>
+                          <li><a href="">Профнастил (6)</a></li>
+                          <li><a href="">Ондулин (8)</a></li>
+                          <li><a href="">Ондувилла (7)</a></li>
+                          <li><a href="">Доборные элементы "ДАМИР" (полукрулгая коллекция) (7)</a></li>
+                          <li><a href="">Доборные элементы для кровли (ручная гибка) (9)</a></li>
+                          <li><a href="">Вентиляционные системы (7)</a></li>
+                          <li><a href="">Элементы безопасности кровли (8)</a></li>
+                          <li><a href="">Система обогрева кровли (1)</a></li>
+                          <li><a href="">Проходки (1)</a></li>
+                          <li><a href="">Окна мансардные (5)</a></li>
+                          <li><a href="">Лестницы чердачные (5)</a></li>
+                          <li><a href="">Флюгера (1)</a></li>
+                          <li><a href="">Ленточный герметик (4)</a></li>
+                        </ul></a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item4.png" alt=""><a class="inside-menu__link" href="">Фасад</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item2.png" alt=""><a class="inside-menu__link" href="">Забор</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item3.png" alt=""><a class="inside-menu__link" href="">Материалы для строительства</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item4.png" alt=""><a class="inside-menu__link" href="">Благоустройство территорий</a></li>
+                    <li class="inside-menu__item"><img src="assets/images/item5.png" alt=""><a class="inside-menu__link" href="">Ручной инструмент</a></li>
+                  </ul>
+                </a>
+              </li>
+            </div>
+            <li class="menu__item"><a class="menu__link" href="actions.html">Акции</a></li>
+            <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+            <li class="menu__item"><a class="menu__link" href="payment.html">Оплата</a></li>
+            <li class="menu__item"><a class="menu__link active" href="delivery.html">Доставка</a></li>
+            <li class="menu__item"><a class="menu__link" href="return.html">Возврат</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="navigation-wrap__right">
+            <div class="search">
+              <img class="search__icon" src="assets/images/search.png">
+              <input type="text" placeholder="Поиск по сайту">
+            </div>
+            <div class="location"><span class="location__text">Ваш регион:</span>
+              <div class="location__choice">
+                <img src="assets/images/arrow-down.png" alt="">
+                <span>Хабаровский край</span>
+              </div>
+              <ul class="location__choice-list">
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Хабаровский край</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Приморский край</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Сахалинская область</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Амурская область</a></li>
+                <li class="location__choice-item"><a href="#" class="location__choice-link">Иркутская область</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Заголовок страницы -->
+        <div class="page-title mobile-hidden">
+            <h1 class="page-title__name">Кровля</h1>
+            <div class="page-title__way">
+                <a href="index.html" class="page-title__link">Главная</a> - <a href="catalog.html" class="page-title__link">Каталог</a> - <a href="catalog-more.html" class="page-title__link">Кровля</a> - <a href="product.html" class="page-title__link">Металлочерепица</a>
+            </div>
+        </div>
+        <!-- Контентная область -->
+        <div class="container mobile">
+          <div class="content-zone empty-mobile">
+            <a href="catalog-way.html" class="services-more__back">Вернуться назад</a>
+              <div class="catalog-way__top">
+                  <div class="catalog-way__icon roof"></div>
+                  <a href="catalog-way.html" class="catalog-way__name">Кровля</a>
+              </div>
+
+          
+            <div class="product-code">Код: 140012</div>
+            <h1 class="bx-title product">Металлочерепица "Монтеррей"</h1>
+            <div class="product-wrap">
+                <div class="product-wrap__left">
+                  <ul id="carousel-pro">
+                    <li>
+                      <img  class="product-wrap__img" alt="" src="assets/images/product-main.png" />
+                    </li>
+                    <li>
+                      <img class="product-wrap__img" alt="" src="assets/images/product-main-rotated.png" />
+                    </li>
+                    <li>
+                      <img class="product-wrap__img" alt="" src="assets/images/product-main.png" />
+                    </li>
+                  </ul>    
+
+                  <!--Мобильный слайдер-->
+                  <div class="product-photo">
+                    <div class="product-photo__img" id="carousel4">
+                        <a class="fancybox carousel-element" rel="group" href="assets/images/product-main.png">
+                            <img src="assets/images/product-main.png" alt="" />
+                        </a>
+                        <a class="fancybox carousel-element" rel="group" href="assets/images/product-main-rotated.png">
+                            <img src="assets/images/product-main-rotated.png" alt="" />
+                        </a>
+                        <a class="fancybox carousel-element" rel="group" href="assets/images/product-main.png">
+                            <img src="assets/images/product-main.png" alt="" />
+                        </a>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="product-wrap__right">
+                    <div class="product-wrap__right-content">
+
+                        <div class="product-item-detail-info-section">
+                            <p class="product-subtitle">Выберите характеристики</p>
+                            <div class="product-item-detail-info-container">
+                                <div class="product-item-detail-info-container-title">
+                                    Цвет
+                                </div>
+                                <div class="product-item-scu-container">
+                                  <ul class="product-item-scu-item-list">
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec1.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec2.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec3.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec4.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec5.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec6.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec7.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec8.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec9.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec10.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec11.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec12.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color selected" style="background-image: url('/assets/images/rec13.png');"></div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-color-container">
+                                          <div class="product-item-scu-item-color-block">
+                                              <div class="product-item-scu-item-color" style="background-image: url('/assets/images/rec14.png');"></div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div class="product-item-detail-info-container-title">
+                                    Тип покрытия
+                                </div>
+                                <div class="product-item-scu-container">
+                                  <ul class="product-item-scu-item-list">
+                                      <li class="product-item-scu-item-text-container">
+                                          <div class="product-item-scu-item-text-block">
+                                              <div class="product-item-scu-item-text hide-info-more">Полиестер</div>
+                                              <!-- Подробная информация-->
+                                              <div class="hide-wrapper"></div>
+                                              <div class="product-item-scu-item-text-hide-info-more">
+                                                <p class="product-item-scu-item-text-hide-info-more__title">Полиестер</p>
+                                                <p class="product-item-scu-item-text-hide-info-more__desc">
+                                                  Кровельный материал, имитирующий натуральное черепичное покрытие, 
+                                                  который изготавливается из оцинкованной стали с полимерным покрытием 
+                                                  от лучших мировых производителей. Благодаря своей простоте, надежности 
+                                                  и доступной цене металлочерепица является самым популярным из всех 
+                                                  современных кровельныйх материалов.
+                                                </p>
+                                                <p class="product-item-scu-item-text-hide-info-more__subtitle">Преимущества:</p>
+                                                <ul class="product-item-scu-item-text-hide-info-more__list">
+                                                  <li>
+                                                    - Оптимальное сочетание цены и качества. Самое доступное решение 
+                                                    с применением металлочерепицы
+                                                  </li>
+                                                  <li>
+                                                    - Фигурная 3D кромка нижнего среза листа, благодаря которой стык между 
+                                                    листами металлочерепицы становится неразличимым
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-text-container">
+                                          <div class="product-item-scu-item-text-block">
+                                              <div class="product-item-scu-item-text">Полиестер</div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-text-container">
+                                          <div class="product-item-scu-item-text-block">
+                                              <div class="product-item-scu-item-text">Полиестер</div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-text-container">
+                                          <div class="product-item-scu-item-text-block">
+                                              <div class="product-item-scu-item-text">Полиестер</div>
+                                          </div>
+                                      </li>
+                                      <li class="product-item-scu-item-text-container">
+                                          <div class="product-item-scu-item-text-block">
+                                              <div class="product-item-scu-item-text">Полиестер</div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                                </div>
+                                <div class="product-item-detail-info-container-title">
+                                    Толщина
+                                </div>
+                                <div class="product-item-scu-container">
+                                    <ul class="product-item-scu-item-list">
+                                        <li class="product-item-scu-item-text-container">
+                                            <div class="product-item-scu-item-text-block">
+                                                <div class="product-item-scu-item-text">0,3 мм</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-item-details">
+                            <p class="product-subtitle">Характеристики</p>
+                            <div class="product-item-scu-container">
+                              <div class="product-item-scu-container__left">
+                                <img src="assets/images/icon1.png" alt="">
+                              </div>
+                              <div class="product-item-scu-container__right">
+                                <div class="product-item-detail-info-container-title">
+                                    Количество метров в упаковке
+                                </div>
+                                <div class="product-item-scu-item-text-block">
+                                    <div class="product-item-scu-item-text">2,4 кв. м</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-item-scu-container">
+                              <div class="product-item-scu-container__left">
+                                <img src="assets/images/icon2.png" alt="">
+                              </div>
+                              <div class="product-item-scu-container__right">
+                                <div class="product-item-detail-info-container-title">
+                                    Толщина
+                                </div>
+                                <div class="product-item-scu-item-text-block">
+                                    <div class="product-item-scu-item-text">444 +/- 3 мм</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-item-scu-container">
+                              <div class="product-item-scu-container__left">
+                                <img src="assets/images/icon3.png" alt="">
+                              </div>
+                              <div class="product-item-scu-container__right">
+                                <div class="product-item-detail-info-container-title">
+                                    Рабочая ширина
+                                </div>
+                                <div class="product-item-scu-item-text-block">
+                                    <div class="product-item-scu-item-text">3,1 +/- 0,2 мм</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-item-scu-container">
+                              <div class="product-item-scu-container__left">
+                                <img src="assets/images/icon4.png" alt="">
+                              </div>
+                              <div class="product-item-scu-container__right">
+                                <div class="product-item-detail-info-container-title">
+                                    Длина
+                                </div>
+                                <div class="product-item-scu-item-text-block">
+                                    <div class="product-item-scu-item-text">1000 мм</div>
+                                </div>
+                              </div>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="product-wrap__right-bottom">
+                      <p class="product-subtitle">Выберите длину и количество штук</p>
+                      <div class="product-item-detail-wrap">
+                        <div class="product-item-detail-info-container">
+                          <div class="product-item-detail-info-container-title">
+                              Длина листа
+                          </div>
+                          <div class="product-item-scu-container">
+                            <div class="product-item-scu-item-field-block">
+                                <input class="product-item-scu-item-field" placeholder="500">
+                                <span>мм</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item-detail-info-container">
+                          <div class="product-item-detail-info-container-title">
+                              Количество
+                          </div>
+                          <div class="product-item-scu-container">
+                            <div class="product-item-scu-item-field-block">
+                                <input class="product-item-scu-item-field" placeholder="10"> 
+                                <span>шт</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item-detail-info-container">
+                          <div class="product-item-detail-info-container-title">
+                              Кол-во м2
+                          </div>
+                          <div class="product-item-scu-container">
+                            <div class="product-item-scu-item-field-block">
+                                <input class="product-item-scu-item-field" placeholder="30">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item-detail-info-container">
+                          <div class="product-item-detail-info-container-title">
+                              Стоимость
+                          </div>
+                          <div class="product-item-scu-container">
+                            <div class="product-item-scu-item-text-block">
+                                <div class="product-item-scu-item-text total">15 000 р.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-item-detail-info-container button">
+                          <a href="" class="product-item-detail-buy-button">
+                            <img src="assets/images/basket-white.png" alt="">
+                            <span>Добавить в корзину</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="product-item-detail-gallery">
+              <p class="product-subtitle">Фотогалерея</p>
+              <div class="arrow-left" id="js-prev"></div>
+              <div class="product-item-detail-gallery-content" id="carousel">
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main.png">
+                      <img src="assets/images/product-small1.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main-rotated.png">
+                      <img src="assets/images/product-small2.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main.png">
+                      <img src="assets/images/product-small1.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main-rotated.png">
+                      <img src="assets/images/product-small2.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main-rotated.png">
+                      <img src="assets/images/product-small2.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main.png">
+                      <img src="assets/images/product-small1.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main-rotated.png">
+                      <img src="assets/images/product-small2.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main-rotated.png">
+                      <img src="assets/images/product-small2.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main-rotated.png">
+                      <img src="assets/images/product-small2.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-item-detail-gallery-item carousel-element">
+                  <a class="fancybox" rel="group" href="assets/images/product-main-rotated.png">
+                      <img src="assets/images/product-small2.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="arrow-right" id="js-next"></div>
+            </div> 
+          
+
+            <div class="tabs-product">
+              <input id="tab1" type="radio" name="tabss" checked>
+              <label for="tab1" title="Описание">Описание</label> 
+
+              <input id="tab2" type="radio" name="tabss">
+              <label for="tab2" title="Чертежи, инструкции, сертификаты">Чертежи, инструкции, сертификаты</label>
+          
+              <input id="tab3" type="radio" name="tabss">
+              <label for="tab3" title="Отзывы">Отзывы</label>
+
+              <div class="clear"></div>
+
+              <section id="content-tab1">
+                <div class="product-item-detail-tab-content">
+                  <div class="product-item-detail-tab-content-text">
+                    Кровельный материал, имитирующий натураное черепичное покрытие, который
+                    изготавливается из оцинкованной стали с полумерным покрытием от лучших 
+                    мировых производителей. Благодаря своей простоте, надежности и доступной цене 
+                    металлочерепица является самым популярным из всех современных кровельных материалов.
+                  </div>
+                  <p class="product-item-detail-tab-content-title">Преимущества:</p>
+                  <ul class="product-item-detail-tab-content-list">
+                    <li>Оптимальное сочетание цены и качества. Самое доступное решение с применением металлочерепицы</li>
+                    <li>Фигурная 3D кромка нижнего среза листа, благодаря которой стык между листами металлочерепицы
+                      становится неразличимым
+                    </li>
+                    <li>
+                      Высококачественное европейское оборудование гарантирует точность геометрии волны и идентичность 
+                      личто металлочерепицы
+                    </li>
+                    <li>Стойкость окраски. Покрытие не выгорает на солнце. Гарантия 1 год.</li>
+                  </ul>
+                  <div class="product-item-detail-tab-content-text added">
+                    По желанию заказчика мы можем поставить металл любой толщины, цвета, размера.<br>
+                    Объем заказа согласовывается в индивидуальном порядке.
+                  </div>
+                </div>
+              </section> 
+
+              <section id="content-tab2">
+                <div class="product-item-detail-tab-content">
+                  <div class="product-item-detail-tab-content-text">
+                    Кровельный материал, имитирующий натураное черепичное покрытие, который
+                    изготавливается из оцинкованной стали с полумерным покрытием от лучших 
+                    мировых производителей. Благодаря своей простоте, надежности и доступной цене 
+                    металлочерепица является самым популярным из всех современных кровельных материалов.
+                  </div>
+                  <p class="product-item-detail-tab-content-title">Преимущества:</p>
+                  <ul class="product-item-detail-tab-content-list">
+                    <li>Оптимальное сочетание цены и качества. Самое доступное решение с применением металлочерепицы</li>
+                    <li>Фигурная 3D кромка нижнего среза листа, благодаря которой стык между листами металлочерепицы
+                      становится неразличимым
+                    </li>
+                    <li>
+                      Высококачественное европейское оборудование гарантирует точность геометрии волны и идентичность 
+                      личто металлочерепицы
+                    </li>
+                    <li>Стойкость окраски. Покрытие не выгорает на солнце. Гарантия 1 год.</li>
+                  </ul>
+                  <div class="product-item-detail-tab-content-text added">
+                    По желанию заказчика мы можем поставить металл любой толщины, цвета, размера.<br>
+                    Объем заказа согласовывается в индивидуальном порядке.
+                  </div>
+                </div>
+              </section> 
+
+              <section id="content-tab3">
+                <div class="product-item-detail-tab-content">
+                  <p class="product-item-detail-tab-content-title">Здесь вы можете оставить отзыв о товаре</p>
+                  <div class="product-item-detail-tab-content-text">
+                    Кровельный материал, имитирующий натураное черепичное покрытие, который
+                    изготавливается из оцинкованной стали с полумерным покрытием от лучших 
+                    мировых производителей. Благодаря своей простоте, надежности и доступной цене 
+                    металлочерепица является самым популярным из всех современных кровельных материалов.
+                  </div>
+                  <p class="product-item-detail-tab-content-title">Преимущества:</p>
+                  <ul class="product-item-detail-tab-content-list">
+                    <li>Оптимальное сочетание цены и качества. Самое доступное решение с применением металлочерепицы</li>
+                    <li>Фигурная 3D кромка нижнего среза листа, благодаря которой стык между листами металлочерепицы
+                      становится неразличимым
+                    </li>
+                    <li>
+                      Высококачественное европейское оборудование гарантирует точность геометрии волны и идентичность 
+                      личто металлочерепицы
+                    </li>
+                    <li>Стойкость окраски. Покрытие не выгорает на солнце. Гарантия 1 год.</li>
+                  </ul>
+                  <div class="product-item-detail-tab-content-text added">
+                    По желанию заказчика мы можем поставить металл любой толщины, цвета, размера.<br>
+                    Объем заказа согласовывается в индивидуальном порядке.
+                  </div>
+                </div>
+              </section> 
+            </div>
+
+            <!--Табы мобильной версии (раскрывающийся список) -->
+            <div class="product-item-detail-mobile-wrap">
+              <ul class="product-item-detail-mobile-list">
+                <li class="product-item-detail-mobile-item">
+                  <div class="product-item-detail-mobile-item-arrow"></div>
+                  <h3 class="product-item-detail-mobile-item-title">Описание</h3>
+                </li>
+                <div class="product-item-detail-mobile-wrap-hide-content">
+                  <div class="product-item-detail-mobile-wrap-hide-content-info">
+                    <div class="product-item-detail-tab-content-text">
+                      Кровельный материал, имитирующий натураное черепичное покрытие, который
+                      изготавливается из оцинкованной стали с полумерным покрытием от лучших 
+                      мировых производителей. Благодаря своей простоте, надежности и доступной цене 
+                      металлочерепица является самым популярным из всех современных кровельных материалов.
+                    </div>
+                    <p class="product-item-detail-tab-content-title">Преимущества:</p>
+                    <ul class="product-item-detail-tab-content-list">
+                      <li>Оптимальное сочетание цены и качества. Самое доступное решение с применением металлочерепицы</li>
+                      <li>Фигурная 3D кромка нижнего среза листа, благодаря которой стык между листами металлочерепицы
+                        становится неразличимым
+                      </li>
+                      <li>
+                        Высококачественное европейское оборудование гарантирует точность геометрии волны и идентичность 
+                        личто металлочерепицы
+                      </li>
+                      <li>Стойкость окраски. Покрытие не выгорает на солнце. Гарантия 1 год.</li>
+                    </ul>
+                    <div class="product-item-detail-tab-content-text added">
+                      По желанию заказчика мы можем поставить металл любой толщины, цвета, размера.<br>
+                      Объем заказа согласовывается в индивидуальном порядке.
+                    </div>
+                  </div>
+                </div>
+              
+                <li class="product-item-detail-mobile-item">
+                  <div class="product-item-detail-mobile-item-arrow"></div>
+                  <h3 class="product-item-detail-mobile-item-title">Чертежи, инструкции, сертификаты</h3>
+                </li>
+                <li class="product-item-detail-mobile-item">
+                  <div class="product-item-detail-mobile-item-arrow"></div>
+                  <h3 class="product-item-detail-mobile-item-title">Отзывы</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+        <div class="actions actions--catalog">
+          <div class="block-top">
+            <div class="link-way"><a class="link-way__link" href="actions.html">В раздел</a>
+              <img src="assets/images/little-arrow.png"></div>
+            <div class="block-top__title">С этим покупают</div>
+          </div>
+          <div class="arrow-left actions-arrow" id="js-prev1"></div>
+          <div class="catalog" id="carousel1">
+            <div class="product-item carousel-element">
+              <a class="catalog__content" href="#">
+                <span class="catalog__status order">Под заказ</span>
+                <img class="catalog__flag" src="assets/images/tip-actions.png">
+                <div class="catalog__img-wrap">
+                  <img class="catalog__img" src="assets/images/action1.png">
+                </div>
+                <p class="product-item-title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+              <div class="catalog__bottom">
+                <div class="catalog__bottom-img-wrap left-icon"></div>
+                <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                <div class="catalog__bottom-img-wrap right-icon"></div>
+              </div>
+            </div>
+            <div class="product-item carousel-element"><a class="catalog__content" href="#">
+              <span class="catalog__status available">Товар в наличии</span>
+              <img class="catalog__flag" src="assets/images/tip-actions.png">
+              <div class="catalog__img-wrap">
+                  <img class="catalog__img" src="assets/images/action2.png">
+                </div>
+                <div class="catalog__action-status">
+                  <div class="catalog__action-title">До конца акции осталось</div>
+                  <div class="catalog__action-time-wrap">
+                    <div class="catalog__action-time"> 
+                      <p class="catalog__action-time_number">00</p>
+                      <p class="catalog__action-time_sub">часов</p>
+                    </div>
+                    <div class="catalog__action-time"> 
+                      <p class="catalog__action-time_number">55</p>
+                      <p class="catalog__action-time_sub">минут</p>
+                    </div>
+                    <div class="catalog__action-time"> 
+                      <p class="catalog__action-time_number">35</p>
+                      <p class="catalog__action-time_sub">секунд</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="product-item-title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+              <div class="catalog__bottom">
+                <div class="catalog__bottom-img-wrap left-icon"></div>
+                <div class="catalog__bottom-price-wrap"> 
+                  <div class="catalog__bottom-price"> 
+                    <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                    <div class="catalog__bottom-price_new">
+                      <p>1500 </p><span>Р/Шт.  </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__bottom-img-wrap right-icon"></div>
+              </div>
+            </div>
+            <div class="product-item carousel-element"><a class="catalog__content" href="#">
+              <span class="catalog__status order">Под заказ</span>
+              <img class="catalog__flag" src="assets/images/tip-actions.png">
+              <div class="catalog__img-wrap">
+                  <img class="catalog__img" src="assets/images/action3.png">
+                </div>
+                <p class="product-item-title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+              <div class="catalog__bottom">
+                <div class="catalog__bottom-img-wrap left-icon"></div>
+                <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                <div class="catalog__bottom-img-wrap right-icon"></div>
+              </div>
+            </div>
+            <div class="product-item carousel-element">
+              <a class="catalog__content" href="#">
+                <span class="catalog__status available">Товар в наличии</span>
+                <img class="catalog__flag" src="assets/images/tip-actions.png">
+                <div class="catalog__img-wrap">
+                  <img class="catalog__img" src="assets/images/action4.png">
+                </div>
+                <p class="product-item-title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+              <div class="catalog__bottom">
+                <div class="catalog__bottom-img-wrap left-icon"></div>
+                <div class="catalog__bottom-price-wrap"><span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                <div class="catalog__bottom-img-wrap right-icon"></div>
+              </div>
+            </div>
+            <div class="product-item carousel-element"><a class="catalog__content" href="#">
+              <span class="catalog__status available">Товар в наличии</span>
+              <img class="catalog__flag" src="assets/images/tip-actions.png">
+              <div class="catalog__img-wrap">
+                  <img class="catalog__img" src="assets/images/action4.png">
+                </div>
+                <p class="product-item-title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+              <div class="catalog__bottom">
+                <div class="catalog__bottom-img-wrap left-icon"></div>
+                <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                <div class="catalog__bottom-img-wrap right-icon"></div>
+              </div>
+            </div>
+            <div class="product-item carousel-element"><a class="catalog__content" href="#">
+              <span class="catalog__status available">Товар в наличии</span>
+              <img class="catalog__flag" src="assets/images/tip-actions.png">
+              <div class="catalog__img-wrap">
+                  <img class="catalog__img" src="assets/images/action4.png">
+                </div>
+                <p class="product-item-title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+              <div class="catalog__bottom">
+                <div class="catalog__bottom-img-wrap left-icon"></div>
+                <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                <div class="catalog__bottom-img-wrap right-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow-right actions-arrow" id="js-next1"></div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="logo">
+                <a href="index.html">
+                <img class="logo__img" src="assets/images/logo-footer.png">
+                </a>
+            </div>
+            <div class="info">
+              <div class="navigation-wrap navigation-wrap_footer">
+                <nav class="menu menu_footer">
+                  <a class="menu__item" href="index.html">Главная</a>
+                  <a class="menu__item" href="catalog.html">Каталог</a>
+                  <a class="menu__item" href="actions.html">Акции</a>
+                  <a class="menu__item" href="services.html">Услуги</a>
+                  <a class="menu__item" href="payment.html">Оплата</a>
+                  <a class="menu__item" href="delivery.html">Доставка</a>
+                  <a class="menu__item" href="return.html">Возврат</a>
+                  <a class="menu__item" href="about.html">О компании</a>
+                  <a class="menu__item" href="contacts.html">Контакты</a>
+                </nav>
+              </div>
+              <div class="useful-links"><a class="useful-links__policy" href="">Политика конфиденциальности</a><a class="useful-links__site-map" href="">Карта сайта</a></div>
+            </div>
+            <div class="contacts">
+              <div class="time time_footer"><img class="time__icon" src="assets/images/clock-white.png"><span class="time__text">Режим работ Пн.-Пт. 10.00-18.30</span></div>
+              <div class="phone phone_footer"><span class="phone__desc">Бесплатный номер по России</span><a class="phone__number" href="tel:88007001001">8 800 700 1001</a></div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="cards"><img src="assets/images/cards.png"></div>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="https://facebook.com" target="_blank"><img class="socials__icon" src="assets/images/fb.png"></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://youtube.com" target="_blank"><img class="socials__icon" src="assets/images/youtube.png"></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://instagram.com" target="_blank"><img class="socials__icon" src="assets/images/insta.png"></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://telegram.com" target="_blank"><img class="socials__icon" src="assets/images/telegram.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Меню для планшетов -->
+    <div class="menu__laptop-wrap">
+      <ul class="menu__laptop-list">
+        <li class="menu__laptop-item"><a href="catalog.html" class="menu__laptop-link">Каталог</a></li>
+        <li class="menu__laptop-item"><a href="actions.html" class="menu__laptop-link">Акции</a></li>
+        <li class="menu__laptop-item"><a href="services.html" class="menu__laptop-link">Услуги</a></li>
+        <li class="menu__laptop-item"><a href="payment.html" class="menu__laptop-link">Оплата</a></li>
+        <li class="menu__laptop-item"><a href="delivery.html" class="menu__laptop-link">Доставка</a></li>
+        <li class="menu__laptop-item"><a href="return.html" class="menu__laptop-link">Возврат</a></li>
+        <li class="menu__laptop-item"><a href="about.html" class="menu__laptop-link">О компании</a></li>
+        <li class="menu__laptop-item"><a href="contacts.html" class="menu__laptop-link">Контакты</a></li>
+      </ul>
+      <img src="assets/images/close.png" alt="" class="menu__laptop-close">
+    </div>
+    <!--Перестройка блоков для мобильной версии (меню, выбор региона, вход/регистрация) -->
+    <div class="mobile-menu">
+
+      <div class="links">
+        <ul class="links__list">
+          <li class="links__item"><a class="links__link entrance" href="">Вход</a></li>
+          <li class="links__item border"> <a class="links__link registration" href="">Регистрация</a></li>
+          <li class="links__item profile"><a class="links__link" href="personal-cabinet.html">Мой профиль</a></li>
+        </ul>
+      </div>
+
+      <div class="location"><span class="location__text">Ваш регион:</span>
+        <div class="location__choice">
+          <img src="assets/images/arrow-down.png" alt="">
+          <span>Хабаровский край</span>
+        </div>
+        <ul class="location__choice-list">
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Хабаровский край</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Приморский край</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Сахалинская область</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Амурская область</a></li>
+          <li class="location__choice-item"><a href="#" class="location__choice-link">Иркутская область</a></li>
+        </ul>
+      </div>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+        <li class="mobile-menu__item"><a href="actions.html" class="mobile-menu__link">Акции</a></li>
+        <li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">Услуги</a></li>
+        <li class="mobile-menu__item"><a href="payment.html" class="mobile-menu__link">Оплата</a></li>
+        <li class="mobile-menu__item"><a href="delivery.html" class="mobile-menu__link">Доставка</a></li>
+        <li class="mobile-menu__item"><a href="return.html" class="mobile-menu__link">Возврат</a></li>
+        <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О компании</a></li>
+        <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+    </div>
+    <!-- Всплывающее окно "Закажите замер" -->
+    <div class="form-wrapper"></div> 
+    <form action="" class="form" id="form" method="POST">
+      <div class="form__top">
+        <img src="assets/images/logo.png" alt="">
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Закажи замер</h2>
+        <input type="text" name="user_name" placeholder="Имя *"><br>
+        <input type="tel" name="user_phone" placeholder="Телефон *"><br>
+        <input type="text" name="user_city" placeholder="Город *"><br>
+        <input type="text" name="user_address" placeholder="Адрес объекта"><br>
+        <textarea name="message" placeholder="Сообщение"></textarea>
+        <input type="submit" name="submit" class="btn-submit" value="Отправить">
+    </form>  
+
+    <!-- Всплывающее окно "Регистрация" -->
+    <div class="form-wrapper--registration"></div> 
+    <form action="" class="form--registration" id="form" method="POST">
+      <div class="form__top">
+        <div class="form__logo">
+          <p>Если вы впервые в</p>
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Зарегистрироваться</h2>
+        <div class="form__fields">
+          <div class="form__fields-left">
+            <input type="mail" name="user_mail" placeholder="E-mail *">
+            <input type="password" name="user_password" placeholder="Пароль *">
+            <input type="password" name="user_password-confirm" placeholder="Подтвердите пароль *">
+            <input type="tel" name="user_phone" placeholder="Телефон *">
+          </div>
+          <div class="form__fields-right">
+            <input type="text" name="user_surname" placeholder="Фамилия *">
+            <input type="text" name="user_name" placeholder="Имя *">
+            <input type="text" name="user_patronymic" placeholder="Отчество *">
+            <input type="text" name="user_city" placeholder="Город *">
+          </div>
+        </div>
+        <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Подписаться на рассылку по движению заказов</span>
+          </label>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Подписаться на рассылку об акциях и новинках</span>
+          </label>
+          <label>
+            <input class="checkbox" type="checkbox" name="checkbox-test">
+            <span class="checkbox-custom"></span>
+            <span class="label">Даю согласие на обработку персональных данных</span>
+          </label>
+        <input type="submit" name="submit" class="btn-submit" value="Зарегистрироваться">
+        <div class="socials">
+          <p class="socials__title">Зарегистрироваться через социальные сети</p>
+          <div class="socials__icons">
+            <a href="http://google.com" class="socials__link">
+              <div class="socials__icon google"></div>
+            </a>
+            <a href="http://facebook.com" class="socials__link">
+              <div class="socials__icon fb"></div>
+            </a>
+            <a href="http://twitter.com" class="socials__link">
+              <div class="socials__icon tw"></div>
+            </a>
+          </div>
+        </div>
+    </form> 
+
+    <!-- Всплывающее окно "Вход в личный кабинет" -->
+    <div class="form-wrapper--entrance"></div> 
+    <form action="" class="form--entrance" id="form" method="POST">
+      <div class="form__top">
+        <div class="form__logo">
+          <p>Уже зарегистрированы в</p>
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Вход в личный кабинет</h2>
+        <div class="form__fields">
+          <input type="text" name="user_mail" placeholder="E-mail / Телефон ">
+          <input type="password" name="user_password" placeholder="Пароль">
+        </div>
+        <input type="submit" name="submit" class="btn-submit" value="Войти">
+        <div class="socials">
+          <p class="socials__title">Войти через социальные сети</p>
+          <div class="socials__icons">
+            <a href="http://google.com" class="socials__link">
+              <div class="socials__icon google"></div>
+            </a>
+            <a href="http://facebook.com" class="socials__link">
+              <div class="socials__icon fb"></div>
+            </a>
+            <a href="http://twitter.com" class="socials__link">
+              <div class="socials__icon tw"></div>
+            </a>
+          </div>
+        </div>
+    </form> 
+    <script src="assets/scripts/jquery-3.2.1.js"></script>
+
+    <script type="text/javascript" src="assets/scripts/jquery.infinitecarousel3.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.easing.1.3.js"></script>
+
+
+    <script src="assets/scripts/options.js"></script>
+    <script src="assets/scripts/search.js"></script>
+    <script src="assets/scripts/login.js"></script>
+    <script src="assets/scripts/mobile-menu.js"></script>
+    <script src="assets/scripts/form.js"></script>
+
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/scripts/carousel.js"></script>
+    <script src="assets/scripts/jquery.fancybox.min.js"></script>
+    <script src="assets/scripts/modal-window.js"></script>
+    <script src="assets/scripts/product-details.js"></script>
+    
+
+  </body>
+</html>

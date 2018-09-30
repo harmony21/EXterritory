@@ -1,0 +1,96 @@
+.visibility {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    &__left {
+        @media screen and (max-width: 540px) {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    }
+    &__theme {
+        display: flex;
+        margin-left: 40px;
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    }
+    &__link {
+        display: block;
+        width: 34px;
+        height: 34px;
+        border: 2px solid $dark-grey;
+        &:last-child {
+            border-left: none;
+        }
+        &.cube {
+            background: url('assets/images/cube-2.png') no-repeat;
+            background-position: -2px -3px;
+            &.active, &:hover {
+                background-position: -2px -36px;
+            }
+        }
+        &.list {
+            background: url('assets/images/list-2.png') no-repeat;
+            background-position: -2px -1px;
+            &.active, &:hover {
+                background-position: -1px -36px;
+            }
+        }
+    }
+}
+.filter {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+    &__text {
+        font-size: 14px;
+        @media screen and (max-width: 845px) {
+            font-size: 12px;
+        }
+    }
+    &__choice {
+        margin-left: 15px;
+        display: flex;
+    }
+    &__link {
+        text-decoration: none;
+        color: $dark-grey;
+        font-size: 14px;
+        border: 2px solid $dark-grey;
+        display: block;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        align-items: center;
+        @media screen and (max-width: 845px) {
+            width: 75px;
+        }
+        &:last-child {
+            border-left: none;
+        }
+    }
+    &--mobile {
+        display: none;
+        @media screen and (max-width: 540px) {
+            display: flex;
+        }
+        .filter__link {
+            border: 3px solid #fff;
+            color: #000;
+            font-size: 12px;
+            background-color: $grey;
+            width: 50%;
+        }
+    }
+}
