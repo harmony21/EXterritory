@@ -4221,8 +4221,7 @@ _:-ms-lang(x), .search {
   width: 365px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-left: 15px; }
+  display: flex; }
   @media screen and (max-width: 540px) {
     .catalog-item {
       width: 100%;
