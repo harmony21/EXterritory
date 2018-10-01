@@ -66,16 +66,16 @@ $(document).ready(function() {
 
 
     //Подробная информация о материале
-    $('.hide-info-more').on('click', function (ev){
-        ev.preventDefault();
-        $('.hide-wrapper').fadeIn(400);
-        $('.product-item-scu-item-text-hide-info-more').fadeIn(400);
-    });
+    // $('.hide-info-more').on('mouseenter', function (ev){
+    //     ev.preventDefault();
+    //     $('.hide-wrapper').fadeIn(400);
+    //     $('.product-item-scu-item-text-hide-info-more').fadeIn(400);
+    // });
 
-    $('.hide-wrapper').on('click', function (ev){
-        ev.preventDefault();
-        $('.hide-wrapper').fadeOut(400);
-        $('.product-item-scu-item-text-hide-info-more').fadeOut(400);
-    });
+    // $('.hide-wrapper').on('click', function (ev){
+    //     ev.preventDefault();
+    //     $('.hide-wrapper').fadeOut(400);
+    //     $('.product-item-scu-item-text-hide-info-more').fadeOut(400);
+    // });
 
 })
