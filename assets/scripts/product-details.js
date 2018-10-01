@@ -40,8 +40,8 @@ $(document).ready(function() {
 
     //Тип покрытия
     $('.product-item-scu-item-text-material').on('click', function (ev) {
-        var element = $(ev.target).closest('.product-item-scu-item-text-block');
-        elements = element.closest('.product-item-scu-item-text-container').siblings().find('.product-item-scu-item-text-block');
+        var element = $(ev.target).closest('.product-item-scu-item-text-material').find('span');
+        elements = element.closest('.product-item-scu-item-text-container').siblings().find('span');
         if (!element.hasClass('selected')) {
             element.addClass('selected');
             elements.removeClass('selected');
