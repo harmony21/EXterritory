@@ -6,7 +6,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>EX-территория</title>
     <link rel="stylesheet" href="template_styles.css">
-    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css"/>
+    <!-- <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css"/> -->
+  
   </head>
   <body>
     <div class="wrapper">
@@ -149,35 +150,43 @@
         <!-- Контентная область -->
         <div class="container mobile">
           <div class="content-zone empty-mobile">
-            <a href="catalog-way.html" class="services-more__back">Вернуться назад</a>
+            <a href="catalog-more.html" class="services-more__back">Вернуться назад</a>
               <div class="catalog-way__top">
                   <div class="catalog-way__icon roof"></div>
                   <a href="catalog-way.html" class="catalog-way__name">Кровля</a>
               </div>
 
           
+              <!-- тестовый вариант, закомментированные строчки оставлены до согласования с заказчиком -->
             <div class="product-code">Код: 140012</div>
             <h1 class="bx-title product">Металлочерепица "Монтерре"</h1>
             <div class="product-wrap">
                 <div class="product-wrap__left">
-                  <ul id="carousel-pro">
+                  <ul id="carousel-pro">   
                     <li>
-                      <a class="fancybox1" rel="group1" href="assets/images/product-main.png">
-                          <img   class="product-wrap__img" src="assets/images/product-main.png" />
+                      <a href="#" data-reveal-id="pic1">
+                          <!-- fade   -->
+                          <img class="product-wrap__img" src="assets/images/product-main.png" />    
                       </a>
-                      <!-- <img  class="product-wrap__img" alt="" src="assets/images/product-main.png" /> -->
+                       <!-- <img  class="product-wrap__img" alt="" src="assets/images/product-main.png" />  -->
                     </li>
+                    
                     <li>
                       <img class="product-wrap__img" alt="" src="assets/images/product-main-rotated.png" />
                     </li>
                     <li>
                       <img class="product-wrap__img" alt="" src="assets/images/product-main.png" />
                     </li>
-                  </ul>    
+                  </ul>   
+
+                  <div id="pic1" class="reveal-modal">
+                     <h1>hello</h1> 
+                      <!-- <img class="product-wrap__img" src="assets/images/product-main.png" />  -->
+                  </div>
 
                   <!--Мобильный слайдер-->
                   <div class="product-photo">
-                    <div class="product-photo__img" id="carousel4">
+                     <div class="product-photo__img" id="carousel4">
                         <a class="fancybox carousel-element" rel="group" href="assets/images/product-main.png">
                             <img src="assets/images/product-main.png" alt="" />
                         </a>
@@ -187,7 +196,7 @@
                         <a class="fancybox carousel-element" rel="group" href="assets/images/product-main.png">
                             <img src="assets/images/product-main.png" alt="" />
                         </a>
-                    </div>
+                    </div> 
                   </div>
                 </div> 
 
@@ -1003,22 +1012,22 @@
     </form> 
     <script src="assets/scripts/jquery-3.2.1.js"></script>
 
-    <script type="text/javascript" src="assets/scripts/jquery.infinitecarousel3.js"></script>
-    <script type="text/javascript" src="assets/scripts/jquery.easing.1.3.js"></script>
-
+    <script src="assets/scripts/jquery.infinitecarousel3.js"></script>  
+    <script src="assets/scripts/jquery.easing.1.3.js"></script>   
 
     <script src="assets/scripts/options.js"></script>
     <script src="assets/scripts/search.js"></script>
     <script src="assets/scripts/login.js"></script>
     <script src="assets/scripts/mobile-menu.js"></script>
-    <script src="assets/scripts/form.js"></script>
+    <script src="assets/scripts/form.js"></script> 
 
-    <script src="owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/scripts/carousel.js"></script>
-    <script src="assets/scripts/jquery.fancybox.min.js"></script>
-    <script src="assets/scripts/modal-window.js"></script>
-    <script src="assets/scripts/product-details.js"></script>
-    
+    <script src="owl-carousel/owl.carousel.min.js"></script>  
+    <script src="assets/scripts/carousel.js"></script>  
+    <script src="assets/scripts/jquery.fancybox.min.js"></script>  
+    <script src="assets/scripts/modal-window.js"></script> 
+    <script src="assets/scripts/product-details.js"></script> 
+
+    <script src="assets/scripts/reveal.js"></script>
 
   </body>
 </html>
