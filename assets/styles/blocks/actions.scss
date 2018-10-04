@@ -41,9 +41,14 @@
         }
     }
     .link-way {
-        width: 95px;
+        width: 94px;
         @media screen and (max-width: 540px) {
             display: flex;
+            position: absolute;
+            left: 50%;
+            margin-left: -47px;
+            margin-top: 18px;
+            z-index: 50;
         }
         &.active {
             background-color: $red;
