@@ -5544,10 +5544,7 @@ _:-ms-lang(x), .search {
   margin-top: 10px; }
 
 .product-item-detail-slider-image {
-  height: 460px; }
-  .product-item-detail-slider-image img {
-    width: 100%;
-    height: 100%; }
+  width: 100%; }
 
 .product-item-detail-info-section {
   width: 70%;
