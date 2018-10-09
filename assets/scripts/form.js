@@ -17,6 +17,12 @@ $(document).ready(function() {
         $('.form-wrapper').fadeOut(400);
         $('.form').fadeOut(400);
     })
+
+    $('.form__mobile-close').on('click', function (ev){
+        ev.preventDefault();
+        $('.form-wrapper').fadeOut(400);
+        $('.form').fadeOut(400);
+    })
     //Форма "Зарегистрироваться"
     $('.links__link.registration').on('click', function (ev){
         ev.preventDefault();
@@ -40,6 +46,12 @@ $(document).ready(function() {
         $('.form-wrapper--registration').fadeOut(400);
         $('.form--registration').fadeOut(400);
     })
+
+    $('.form__mobile-close').on('click', function (ev){
+        ev.preventDefault();
+        $('.form-wrapper--registration').fadeOut(400);
+        $('.form--registration').fadeOut(400);
+    })
     //Форма "Войти в личный кабинет"
     $('.links__link.entrance').on('click', function (ev){
         ev.preventDefault();
@@ -59,6 +71,12 @@ $(document).ready(function() {
     });
 
     $('.form__close').on('click', function (ev){
+        ev.preventDefault();
+        $('.form-wrapper--entrance').fadeOut(400);
+        $('.form--entrance').fadeOut(400);
+    })
+
+    $('.form__mobile-close').on('click', function (ev){
         ev.preventDefault();
         $('.form-wrapper--entrance').fadeOut(400);
         $('.form--entrance').fadeOut(400);

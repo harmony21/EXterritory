@@ -91,11 +91,29 @@
             font-weight: bold;
         }
         .owl-wrapper-outer {
-            height: 200px;
+            height: 350px;
             overflow: hidden;
         }
         img {
             height: 200px;
+        }
+        .photo-gallery__block {
+            width: 100%;
+        }
+        .gallery-project__desc {
+            padding-top: 30px;
+            position: relative;
+            opacity: 1;
+            background: none;
+        }
+        .gallery-project__title {
+            color: $red;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .gallery-project__text {
+            font-size: 12px;
+            color: #000;
         }
     }
 }

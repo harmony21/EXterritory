@@ -6,13 +6,13 @@
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 100;
+    z-index: 150;
     position: fixed;
     display: none;
 }
 .form, .form--registration, .form--entrance {
     position: absolute;
-    top: 30px;
+    top: 70px;
     z-index: 150;
     width: 554px;
     background-color: #fff;
@@ -21,9 +21,15 @@
     padding: 30px 73px;
     display: none;
     @media screen and (max-width: 580px) {
-        width: 100%;
-        left: 0;
-        margin-left: 0;
+        width: 70%;
+        left: 30%;
+        margin-left: -15%;
+        padding: 30px 10px;
+    }
+    @media screen and (max-width: 380px) {
+        width: 96%;
+        left: 4%;
+        margin-left: -2%;
         padding: 30px 10px;
     }
     &__top {
@@ -50,6 +56,23 @@
         font-size: 18px;
         margin: 20px 0;
         font-weight: bold;
+    }
+    &__close {
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    }
+    &__mobile-close {
+        display: none;
+        @media screen and (max-width: 540px) {
+            display: block;
+            position: absolute;
+            top: -7%;
+            left: 50%; 
+            &:hover {
+                cursor: pointer;
+            }   
+        }
     }
     input {
         width: 100%;
@@ -78,12 +101,13 @@
             cursor: pointer;
         }
         @media screen and (max-width: 580px) {
-            width: 100%;
-            left: 0;
-            margin-left: 0;
+            width: 65%;
+            margin-left: 50px;
+            text-transform: uppercase;
         }
     }
     .socials {
+        margin-left: 0;
         &__title {
             color: #000;
             margin-top: 25px;
@@ -125,7 +149,6 @@
     }
     &--registration {
         position: absolute;
-        top: 30px;
         z-index: 150;
         width: 554px;
         background-color: #fff;
@@ -134,9 +157,15 @@
         padding: 30px 73px;
         display: none;
         @media screen and (max-width: 580px) {
-            width: 100%;
-            left: 0;
-            margin-left: 0;
+            width: 76%;
+            left: 24%;
+            margin-left: -12%;
+            padding: 30px;
+        }
+        @media screen and (max-width: 380px) {
+            width: 96%;
+            left: 4%;
+            margin-left: -2%;
             padding: 30px 10px;
         }
         p {
@@ -145,7 +174,7 @@
         }
         input {
             @media screen and (max-width: 580px) {
-                font-size: 11px;
+                font-size: 13px;
             }
         }
         .checkbox {
@@ -196,6 +225,20 @@
             justify-content: space-between;
             &-left, &-right {
                 width: 49%;
+                @media screen and (max-width: 540px) {
+                    width: 100%;
+                }
+            }
+            &-required {
+                display: none;
+                @media screen and (max-width: 540px) {
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                flex-direction: column;
             }
         }
     }
@@ -209,6 +252,12 @@
             justify-content: space-between;
             input {
                 width: 49%;
+                @media screen and (max-width: 540px) {
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                flex-direction: column;
             }
         }
     }

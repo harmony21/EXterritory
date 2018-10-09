@@ -59,6 +59,11 @@
     position: relative;
     .owl-pagination {
         display: none;
+        @media screen and (max-width: 540px) {
+            display: flex;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
     }
     .arrow-left {
         left: -5%;

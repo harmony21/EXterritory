@@ -306,7 +306,20 @@
                 left: 0;
             }
         }
-
+    }
+    &--about {
+        .hide-label-for-mobile {
+            @media screen and (max-width: 540px) {
+                display: none !important;
+            }
+        }
+        label {
+            @media screen and (max-width: 540px) {
+                width: 50%;
+                margin-right: 0;
+                border: 2px solid #fff;
+            }
+        }
     }
 }
 //табы на странице "Подробный товар"

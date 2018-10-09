@@ -1,9 +1,23 @@
-.about {
-    margin-top: 60px;
+.info-about {
+    margin-top: 40px;
+    padding: 50px 376px;
+    @media screen and (max-width: 1840px) {
+        padding: 50px 140px;
+    }
+    @media screen and (max-width: 1366px) {
+        padding: 50px 100px;
+    }
+    @media screen and (max-width: 1230px) {
+        padding: 20px 10px;
+    }
     @media screen and (max-width: 540px) {
-        background-color: $red;
-        color: #fff;
-        padding: 5px;
+        background-color: $grey;
+        padding: 20px 5px;
+        display: none;
+        &.mobile-visible {
+            display: block;
+            margin-top: 0px;
+        }
     }
     &__slogan {
         font-weight: bold;
