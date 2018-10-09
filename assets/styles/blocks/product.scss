@@ -243,7 +243,10 @@
 .product-item-details {
     @media screen and (max-width: 540px) {
         display: none;
-        &.mobile-visible {
+    }
+    &.mobile-visible {
+        display: none; 
+        @media screen and (max-width: 540px) {
             display: inline-block;
             margin-top: 15px;
             .product-subtitle {

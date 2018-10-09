@@ -5859,7 +5859,11 @@ _:-ms-lang(x), .search {
 
 @media screen and (max-width: 540px) {
   .product-item-details {
-    display: none; }
+    display: none; } }
+
+.product-item-details.mobile-visible {
+  display: none; }
+  @media screen and (max-width: 540px) {
     .product-item-details.mobile-visible {
       display: inline-block;
       margin-top: 15px; }
