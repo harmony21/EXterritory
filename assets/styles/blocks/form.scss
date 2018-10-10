@@ -67,8 +67,8 @@
         @media screen and (max-width: 540px) {
             display: block;
             position: absolute;
-            top: -7%;
-            left: 50%; 
+            top: -45px;
+            left: 48%; 
             &:hover {
                 cursor: pointer;
             }   
@@ -101,8 +101,8 @@
             cursor: pointer;
         }
         @media screen and (max-width: 580px) {
-            width: 65%;
-            margin-left: 50px;
+            width: 100%;
+            margin-left: 0;
             text-transform: uppercase;
         }
     }

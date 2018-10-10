@@ -303,8 +303,11 @@
         width: 200px;
     } 
     @media screen and (max-width: 540px) {
-        width: 270px;
+        width: 85vw;
         height: 320px;
+    }
+    @media screen and (max-width: 320px) {
+        width: 82vw;
     }
 }
 .owl-pagination {
@@ -331,12 +334,18 @@
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
+    @media screen and (max-width: 540px) {
+        padding: 0 30px;
+    }
+    @media screen and (max-width: 375px) {
+        padding: 0 20px;
+    }
     .catalog__img {
         @media screen and (max-width: 1070px) {
             width: 70%;
         }
         @media screen and (max-width: 760px) {
-            width: 60%;
+            width: 55%;
         }
 
     }

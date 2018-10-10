@@ -4,6 +4,9 @@
             width: 200px;
         }
         @media screen and (max-width: 790px) {
+            width: 150px;
+        }
+        @media screen and (max-width: 330px) {
             width: 120px;
         }
     }

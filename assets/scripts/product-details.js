@@ -4,14 +4,21 @@ $(document).ready(function() {
         ev.preventDefault();
 
         var element = $(ev.target),
+        elements = element.siblings('.product-item-detail-mobile-item'),
         verContent = element.next('.product-item-detail-mobile-wrap-hide-content'), 
+        verContents = verContent.siblings('.product-item-detail-mobile-wrap-hide-content'),
         maxHeight = verContent.find('.product-item-detail-mobile-wrap-hide-content-info').outerHeight(true);
 
         if (!element.hasClass('active')) {
             element.addClass('active');
+            elements.removeClass('active');
 
             verContent.css ({
                 'height' : maxHeight
+            });
+
+            verContents.css ({
+                'height' : 0
             });
 
         } else {
