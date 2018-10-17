@@ -212,7 +212,10 @@
     &--contacts {
         width: 99vw;
         margin-top: 95px;
-        // margin-left: -625px;
+        margin-left: -650px;
+        @media screen and (max-width: 1840px) {
+            margin-left: -413px;
+        }
         @media screen and (max-width: 1366px) {
             margin-left: -354px;
         }

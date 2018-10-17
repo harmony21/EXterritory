@@ -1,7 +1,10 @@
 .catalog-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    @media screen and (max-width: 1366px) {
+        justify-content: space-around;
+    }
 }
 .catalog-item {
     margin-top: 35px;
