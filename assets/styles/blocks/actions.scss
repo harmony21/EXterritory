@@ -14,10 +14,40 @@
     @media screen and (max-width: 540px) {
         padding: 20px;
     }
+    @media screen and (max-width: 450px) {
+        padding: 20px 13px;
+    }
+    @media screen and (max-width: 350px) {
+        padding: 20px 7px;
+    }
     &--catalog {
         background-color: $grey;
         @media screen and (max-width: 1070px) {
             display: none;
+        }
+        &.buy-it {
+            @media screen and (max-width: 540px) {
+                display: block;
+                margin-top: 20px;
+                .catalog {
+                    margin-top: 0;
+                }
+                .owl-item {
+                    width: 100%;
+                }
+                .carousel-element {
+                    width: 85vw;
+                }
+                .catalog__img-wrap {
+                    justify-content: center;
+                }
+                .catalog__img {
+                    width: 40%;
+                }
+                .product-item__title {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }

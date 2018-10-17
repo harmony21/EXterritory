@@ -20,20 +20,22 @@
         }
     }
     &--cooperation {
-        position: absolute;
-        width: 98.5vw;
-        margin-left: -625px;
+        width: 99vw;
+        // margin-left: -625px;
         @media screen and (max-width: 1366px) {
-            margin-left: -330px;
+            margin-left: -354px;
+        }
+        @media screen and (max-width: 1366px) {
+            margin-left: -354px;
         }
         @media screen and (max-width: 1230px) {
-            margin-left: -260px; 
+            margin-left: -284px;
         }
         @media screen and (max-width: 1000px) {
-            margin-left: -190px;
+            margin-left: -205px;
         }
-        @media screen and (max-width: 540px) {
-            position: relative;
+        @media screen and (max-width: 720px) {
+            width: 100%;
             margin-left: 0;
         }
     }

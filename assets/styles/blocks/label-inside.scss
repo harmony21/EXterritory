@@ -1,42 +1,41 @@
 .label-inside {
-    transition: .4s;
-    overflow: hidden;
-    height: 0;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 720px) {
+        display: none;
+    }
+    &.mobile-visible {
+        @media screen and (max-width: 720px) {
+            display: flex;
+            align-self: flex-start;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
     &__item {
         color: $dark-grey;
         font-size: 14px;
         padding: 10px 15px;
+        text-decoration: none;
         &:hover {
             color: $red;
             cursor: pointer;
         }
-    }
-    &__content {
-        label {
-            margin-top: 0;
-            color: #808080;
-            background-color: #fff;
-            font-size: 15px;
-            padding: 10px 15px;
-            &:hover {
-                background: #fff;
-                color: $red;
-            }
-            @media screen and (max-width: 540px) {
-                font-size: 13px;
+        &.active {
+            color: $red;
+        }
+        @media screen and (max-width: 720px) {
+            color: #000;;
+            background-color: $grey;
+            font-size: 14px;
+            padding: 5px 10px;
+            text-decoration: none;
+            width: 100%;
+            margin-top: 5px;
+            &.active, &:hover {
+                background-color: $red;
+                color: #fff;
             }
         }
-        input {
-            &:checked+label {
-                background-color: #fff;
-                color: $red;
-            }
-        }
-    }
-}
-.label-info {
-    &.current {
-        background-color: $red;
-        color: #fff;
     }
 }

@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('.product-item-detail-mobile-item').on('click', function (ev){
         ev.preventDefault();
 
-        var element = $(ev.target),
+        var element = $(this),
         elements = element.siblings('.product-item-detail-mobile-item'),
         verContent = element.next('.product-item-detail-mobile-wrap-hide-content'), 
         verContents = verContent.siblings('.product-item-detail-mobile-wrap-hide-content'),

@@ -25,6 +25,15 @@
             display: none;
         }
     }
+    &.mobile-visible {
+        display: none; 
+        @media screen and (max-width: 540px) {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+    }
     &__name {
         font-size: 30px;
         @media screen and (max-width: 950px) {

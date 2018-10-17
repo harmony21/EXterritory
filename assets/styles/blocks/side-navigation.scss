@@ -1,0 +1,48 @@
+.side-navigation {
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 720px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    @media screen and (max-width: 540px) {
+        justify-content: space-between;
+    }
+    &__link {
+        display: block;
+        width: 234px;
+        background-color: $grey;
+        padding: 5px 15px;
+        margin-top: 6px;
+        text-decoration: none;
+        color: #000;
+        &:hover, &.active {
+            background-color: $red;
+            color: #fff;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        &:last-child {
+            @media screen and (max-width: 540px) {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+            font-size: 14px;
+            width: 150px;
+        }
+        @media screen and (max-width: 720px) {
+            width: auto;
+            margin-right: 5px;
+        }
+        @media screen and (max-width: 540px) {
+            width: 48%;
+        }
+        @media screen and (max-width: 370px) {
+            font-size: 11px;
+        }
+    }
+}
