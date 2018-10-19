@@ -1,6 +1,7 @@
 $('.search__icon').click(function() {
     if(!$('.search').hasClass('active')) {
         $('.search').addClass('active');
+        $('.search-input').focus();
     }
     else {
         $('.search').removeClass('active');

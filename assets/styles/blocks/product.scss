@@ -5,6 +5,9 @@
     }
     &__left {
         width: 30%;
+        @media screen and (max-width: 1300px) {
+            width: 40%;
+        }
         @media screen and (max-width: 750px) {
             justify-content: center;
             width: 100%;
@@ -49,6 +52,9 @@
     &__right {
         width: 70%;
         margin-left: 20px;
+        @media screen and (max-width: 1300px) {
+            width: 60%;
+        }
         @media screen and (max-width: 750px) {
             width: 100%;
             margin-left: 0;
@@ -125,6 +131,7 @@
 }
 .product-wrap {
     margin-top: 20px;
+    width: 100%;
     &__right-bottom {
         margin-top: 10px;
         @media screen and (max-width: 750px) {
@@ -147,6 +154,12 @@
 .product-item-detail-info-section {
     width: 75%;
     padding: 0 15px;
+    margin-left: 15px;
+    @media screen and (max-width: 1300px) {
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+    }
     @media screen and (max-width: 750px) {
         width: 100%;
         margin-top: 15px;
@@ -194,6 +207,7 @@
     font-size: 14px;
     font-weight: bold;
     position: relative;
+    margin: 2px;
     &:hover {
         cursor: pointer;
     }
@@ -248,16 +262,28 @@
     }
 }
 .product-item-details {
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 1300px) {
         display: none;
     }
     &.mobile-visible {
         display: none; 
-        @media screen and (max-width: 540px) {
+        @media screen and (max-width: 1300px) {
             display: inline-block;
+            width: 100%;
             margin-top: 15px;
+            .product-item-scu-container {
+                float: left;
+                width: 25%;
+                border: 5px solid #fff;
+                @media screen and (max-width: 710px) {
+                    width: 50%;
+                }
+            }
             .product-subtitle {
                 margin-left: 15px;
+            }
+            .product-item-detail-price {
+                width: 220px;
             }
         }
     }
@@ -297,6 +323,9 @@
     .product-item-detail-info-container-title {
         font-size: 12px;
         margin-top: 0;
+        @media screen and (max-width: 340px) {
+            font-size: 10px;
+        }
     }
 }
 .product-item-detail-wrap {
@@ -315,6 +344,7 @@
         background-color: $grey;
         padding: 3.5px 0;
         align-items: center;
+        margin: 2px;
         justify-content: center;
         ::-webkit-input-placeholder {
             color: #000;
@@ -422,6 +452,9 @@
     width: 234px;
     justify-content: center;
     border-radius: 0 20px 20px 0;
+    @media screen and (max-width: 1300px) {
+        width: 190px;
+    }
     @media screen and (max-width: 1070px) {
         border-radius: 20px;
     }
