@@ -6,7 +6,6 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>EX-территория</title>
     <link rel="stylesheet" href="template_styles.css">
-    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css"/>
   </head>
   <body>
     <div class="wrapper">
@@ -56,7 +55,7 @@
                 <img class="search__icon" src="assets/images/search.png">
                 <input type="text" placeholder="Поиск по сайту" autofocus>
               </div>
-
+              
               <div class="basket">
                 <div class="basket__compare"><img class="basket__compare_icon" src="assets/images/compare.png"></div>
                 <div class="basket__count"><img class="basket__count_icon" src="assets/images/basket.png">
@@ -72,7 +71,7 @@
         <a href="catalog.html" class="menu__item_wrap mobile-hidden">
           <div class="menu__icon"></div>
           <span>Каталог</span>
-        </a>  
+        </a> 
 
         <div class="navigation-wrap">
           <img class="menu__laptop" src="assets/images/nav-icon.png" alt="">
@@ -142,107 +141,408 @@
           </div>
         </div>
         <!-- Заголовок страницы -->
-        <div class="page-title mobile-hidden">
-            <h1 class="page-title__name">ТЦ "Название"</h1>
+        <div class="page-title">
+            <h1 class="page-title__name">Корзина</h1>
             <div class="page-title__way">
-                <a href="index.html" class="page-title__link">Главная</a> - <a href="about.html" class="page-title__link">О компании</a> - <a href="about.html" class="page-title__link">Фотогалерея</a> - <a href="gallery-more.html" class="page-title__link">ТЦ "Название"</a>
+                <a href="index.html" class="page-title__link">Главная</a> - <a href="basket.html" class="page-title__link">Корзина</a>
             </div>
         </div>
         <!-- Контентная область -->
-        <div class="container mobile">
-            <div class="project">
-                <a href="gallery.html" class="services-more__back">Вернуться назад</a>
+        <div class="container">
+            <div class="container-wrapper">
+                <div class="basket-details">
+                    <div class="basket-top">
+                        <div class="basket-top__left">
+                            <a href="#" class="basket-top__type active">Физическое лицо</a>
+                            <a href="#" class="basket-top__type">Юридическое лицо</a>
+                        </div>
+                        <div class="basket-top__right">
+                            <div class="print">
+                                <img src="assets/images/print.png" alt="">
+                                <a href="" class="print__text">Распечатать</a>
+                            </div>
+                            <div class="delete-all">
+                                <a href="" class="delete-all__text">Удалить все товары</a>
+                                <div class="delete-all__icon mobile-hidden"></div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="photo-gallery">
-                    <h2 class="page-title__name">Фотогалерея</h2>
+                    <table class="basket-info">
+                        <tr>
+                            <th></th>
+                            <th>Товар</th>
+                            <th>Стоимость за 1 шт/ед.</th>
+                            <th>Количество</th>
+                            <th>Стоимость</th>
+                            <th>Вес</th>
+                            <th></th>
+                        </tr>
+                        <tr class="basket-row">
+                            <td class="basket-info__order">1.</td>
+                            <td class="basket-info__product">
+                                <div class="basket-info__img">
+                                    <img src="assets/images/action1.png" alt="">
+                                </div>
+                                <a href="product.html" class="basket-info__title">Металлочерепица 1,18х2,25м
+                                    толщина 0,45 мм Северс
+                                </a>
+                            </td>
+                            <td class="basket-info__price">
+                                <span class="basket-info__number">1 500 Р</span>
+                                <p class="basket-info__add">за ед. товара</p>
+                            </td>
+                            <td class="basket-info__amount">
+                                <input type="number" placeholder="0">
+                            </td>
+                            <td class="basket-info__price">
+                                <span class="basket-info__number">3 000</span>
+                            </td>
+                            <td class="basket-info__weight">
+                                10 кг
+                            </td>
+                            <td class="basket-info__delete">
+                                <div class="delete-all__icon"></div>
+                            </td>
+                        </tr>
+                        <tr class="basket-row">
+                            <td class="basket-info__order">2.</td>
+                            <td class="basket-info__product">
+                                <div class="basket-info__img">
+                                    <img src="assets/images/news1.png" alt="">
+                                </div>
+                                <a href="product.html" class="basket-info__title">Металлочерепица 1,18х2,25м
+                                    толщина 0,45 мм Северс
+                                </a>
+                            </td>
+                            <td class="basket-info__price">
+                                <span class="basket-info__number">1 500 Р</span>
+                                <p class="basket-info__add">за ед. товара</p>
+                            </td>
+                            <td class="basket-info__amount">
+                                <input type="number" placeholder="0">
+                            </td>
+                            <td class="basket-info__price">
+                                <span class="basket-info__number">3 000</span>
+                            </td>
+                            <td class="basket-info__weight">
+                                10 кг
+                            </td>
+                            <td class="basket-info__delete">
+                                <div class="delete-all__icon"></div>
+                            </td>
+                        </tr>
+                        <tr class="basket-row">
+                            <td class="basket-info__order">3.</td>
+                            <td class="basket-info__product">
+                                <div class="basket-info__img">
+                                    <img src="assets/images/action2.png" alt="">
+                                </div>
+                                <a href="product.html" class="basket-info__title">Металлочерепица 1,18х2,25м
+                                    толщина 0,45 мм Северс
+                                </a>
+                            </td>
+                            <td class="basket-info__price">
+                                <span class="basket-info__number">1 500 Р</span>
+                                <p class="basket-info__add">за ед. товара</p>
+                            </td>
+                            <td class="basket-info__amount">
+                                <input type="number" placeholder="0">
+                            </td>
+                            <td class="basket-info__price">
+                                <span class="basket-info__number">3 000</span>
+                            </td>
+                            <td class="basket-info__weight">
+                                10 кг
+                            </td>
+                            <td class="basket-info__delete">
+                                <div class="delete-all__icon"></div>
+                            </td>
+                        </tr>
+                    </table>
 
-                    <div class="photo-gallery__img" id="carousel4">
-                        <a class="fancybox carousel-element" rel="group" href="assets/images/ph.png">
-                            <img src="assets/images/ph.png" alt="" />
-                        </a>
-                        <a class="fancybox carousel-element" rel="group" href="assets/images/photo1.png">
-                            <img src="assets/images/photo1.png" alt="" />
-                        </a>
-                        <a class="fancybox carousel-element" rel="group" href="assets/images/photo2.png">
-                            <img src="assets/images/photo2.png" alt="" />
-                        </a>
-                        <a class="fancybox carousel-element" rel="group" href="assets/images/photo3.png">
-                            <img src="assets/images/photo3.png" alt="" />
-                        </a>
-                        <a class="fancybox carousel-element" rel="group" href="assets/images/photo3.png">
-                            <img src="assets/images/photo3.png" alt="" />
-                        </a>
-                        <a class="fancybox carousel-element" rel="group" href="assets/images/photo3.png">
-                            <img src="assets/images/photo3.png" alt="" />
-                        </a>
+                    <!--Мобильный контент + перестройка блоков -->
+                    <div class="basket-mobile">
+                        <div class="basket-mobile__item">
+                            <div class="basket-mobile__left">
+                                <div class="basket-mobile__img">
+                                    <img src="assets/images/action1.png" alt="">
+                                </div>
+                                <input type="number" class="basket-mobile__input" placeholder="2">
+                                <p class="basket-mobile__weight">ВЕС: 10 кг</p>
+                            </div>
+                            <div class="basket-mobile___right">
+                                <div class="delete-all__icon"></div>
+                                <p class="basket-mobile__status">Под заказ</p>
+                                <a href="product.html" class="basket-mobile__title">Металлочерепица 1,18х2,25 м толщина 
+                                    0,45 мм Северс..
+                                </a>
+                                <p class="basket-mobile__price">
+                                    <span>10 500</span> Р/Шт.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__total">
+                            Итоговая стоимость: <span>21 000 Р</span>
+                        </div>
+                    </div>
+                    <div class="basket-mobile">
+                        <div class="basket-mobile__item">
+                            <div class="basket-mobile__left">
+                                <div class="basket-mobile__img">
+                                    <img src="assets/images/action1.png" alt="">
+                                </div>
+                                <input type="number" class="basket-mobile__input" placeholder="2">
+                                <p class="basket-mobile__weight">ВЕС: 10 кг</p>
+                            </div>
+                            <div class="basket-mobile___right">
+                                <div class="delete-all__icon"></div>
+                                <p class="basket-mobile__status">Под заказ</p>
+                                <a href="product.html" class="basket-mobile__title">Металлочерепица 1,18х2,25 м толщина 
+                                    0,45 мм Северс..
+                                </a>
+                                <p class="basket-mobile__price">
+                                    <span>10 500</span> Р/Шт.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__total">
+                            Итоговая стоимость: <span>21 000 Р</span>
+                        </div>
+                    </div>
+                    <div class="basket-mobile">
+                        <div class="basket-mobile__item">
+                            <div class="basket-mobile__left">
+                                <div class="basket-mobile__img">
+                                    <img src="assets/images/action1.png" alt="">
+                                </div>
+                                <input type="number" class="basket-mobile__input" placeholder="2">
+                                <p class="basket-mobile__weight">ВЕС: 10 кг</p>
+                            </div>
+                            <div class="basket-mobile___right">
+                                <div class="delete-all__icon"></div>
+                                <p class="basket-mobile__status">Под заказ</p>
+                                <a href="product.html" class="basket-mobile__title">Металлочерепица 1,18х2,25 м толщина 
+                                    0,45 мм Северс..
+                                </a>
+                                <p class="basket-mobile__price">
+                                    <span>10 500</span> Р/Шт.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__total">
+                            Итоговая стоимость: <span>21 000 Р</span>
+                        </div>
+                    </div>
+
+                    <div class="basket-bottom">
+                        <div class="basket-top__right">
+                            <div class="print">
+                                <img src="assets/images/print.png" alt="">
+                                <a href="" class="print__text">Распечатать</a>
+                            </div>
+                            <div class="delete-all mobile-hidden">
+                                <a href="" class="delete-all__text">Удалить все товары</a>
+                                <div class="delete-all__icon"></div>
+                            </div>
+                        </div>
+
+                        <div class="basket-bottom__result">
+                            <div class="basket-bottom__text">
+                                Всего товара весом 30 кг <br>
+                                на сумму <span>10 059 Р</span>
+                            </div>
+                            <div class="basket-bottom__links">
+                                <a href="" class="basket-bottom__link active">Самовывоз</a>
+                                <a href="" class="basket-bottom__link">Доставка</a>
+                            </div>
+                        </div>
+                        <a href="" class="basket-formalize">Оформить</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="new-things">
+            <div class="block-top">
+                <div class="link-way non-active"><a class="link-way__link" href="new-things-more.html">В раздел</a><img src="assets/images/little-arrow.png"></div>
+                <div class="block-top__title">С этим покупают </div>
+                <a href="catalog.html" class="block-top__all">Все товары</a>
+            </div>
+            <div class="arrow-left news-arrow" id="js-prev"></div>
+            <div class="catalog" id="carousel">
 
-                <h2 class="project__title">Работа над строительством ТЦ</h2>
-                <p class="project__desc">
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                    Изделия "Центра кровли" выдерживают агрессивное летнее солнце и постоянную весенне-летнюю...
-                </p>
-            </div>
-            <div class="gallery inside details">
-                <a class="fancybox" rel="group" href="assets/images/ph.png">
-                    <img src="assets/images/ph.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo1.png">
-                    <img src="assets/images/photo1.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo2.png">
-                    <img src="assets/images/photo2.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo3.png">
-                    <img src="assets/images/photo3.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo3.png">
-                    <img src="assets/images/photo3.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo3.png">
-                    <img src="assets/images/photo3.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo2.png">
-                    <img src="assets/images/photo2.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo3.png">
-                    <img src="assets/images/photo3.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/photo1.png">
-                    <img src="assets/images/photo1.png" alt="" />
-                </a>
-                <a class="fancybox" rel="group" href="assets/images/ph.png">
-                    <img src="assets/images/ph.png" alt="" />
-                </a>
-            </div>
-            <div class="all">
-               <a href="">Смотреть все фотографии</a>
-            </div>
+                <div class="catalog__item carousel-element">
+                <a class="catalog__content" href="#">
+                    <span class="catalog__status order">Под заказ</span>
+                    <img class="catalog__flag" src="assets/images/tip-actions.png">
+                    <div class="catalog__img-wrap">
+                    <img class="catalog__img" src="assets/images/news1.png">
+                    <div class="catalog__bottom-price-wrap mobile-visible"> 
+                        <div class="catalog__bottom-price"> 
+                            <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                            <div class="catalog__bottom-price_new">
+                            <p>1500 </p><span>Р/Шт.  </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="catalog__action-status">
+                    <div class="catalog__action-title">До конца акции осталось</div>
+                    <div class="catalog__action-time-wrap">
+                        <div class="catalog__action-time"> 
+                        <p class="catalog__action-time_number">00</p>
+                        <p class="catalog__action-time_sub">часов</p>
+                        </div>
+                        <div class="catalog__action-time"> 
+                        <p class="catalog__action-time_number">55</p>
+                        <p class="catalog__action-time_sub">минут</p>
+                        </div>
+                        <div class="catalog__action-time"> 
+                        <p class="catalog__action-time_number">35</p>
+                        <p class="catalog__action-time_sub">секунд</p>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="catalog__title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+                <div class="catalog__bottom">
+                    <div class="catalog__bottom-img-wrap left-icon active"></div>
+                    <div class="catalog__bottom-price-wrap"> 
+                    <div class="catalog__bottom-price"> 
+                        <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                        <div class="catalog__bottom-price_new">
+                        <p>1500 </p><span>Р/Шт. </span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="catalog__bottom-img-wrap right-icon"></div>
+                </div>
+                </div>
 
-            <h2 class="project__title">Товары, которые были использованы в процессе строительства</h2>
+                <div class="catalog__item carousel-element">
+                <a class="catalog__content" href="#">
+                    <span class="catalog__status available">Товар в наличии</span>
+                    <img class="catalog__flag" src="assets/images/tip-hit.png">
+                    <div class="catalog__img-wrap">
+                    <img class="catalog__img" src="assets/images/news2.png">
+                    <div class="catalog__bottom-price-wrap mobile-visible"> 
+                        <div class="catalog__bottom-price"> 
+                            <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                            <div class="catalog__bottom-price_new">
+                            <p>1500 </p><span>Р/Шт.  </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="catalog__title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+                <div class="catalog__bottom">
+                    <div class="catalog__bottom-img-wrap left-icon"></div>
+                    <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                    <div class="catalog__bottom-img-wrap right-icon active"></div>
+                </div>
+                </div>
+
+                <div class="catalog__item carousel-element">
+                <a class="catalog__content" href="#">
+                    <span class="catalog__status order">Под заказ</span>
+                    <div class="catalog__img-wrap">
+                    <img class="catalog__img" src="assets/images/news3.png">
+                    <div class="catalog__bottom-price-wrap mobile-visible"> 
+                        <div class="catalog__bottom-price"> 
+                            <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                            <div class="catalog__bottom-price_new">
+                            <p>1500 </p><span>Р/Шт.  </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="catalog__title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+                <div class="catalog__bottom">
+                    <div class="catalog__bottom-img-wrap left-icon"></div>
+                    <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                    <div class="catalog__bottom-img-wrap right-icon"></div>
+                </div>
+                </div>
+
+                <div class="catalog__item carousel-element">
+                <a class="catalog__content" href="#">
+                    <span class="catalog__status available">Товар в наличии</span>
+                    <img class="catalog__flag" src="assets/images/tip-new.png">
+                    <div class="catalog__img-wrap">
+                    <img class="catalog__img" src="assets/images/news4.png">
+                    <div class="catalog__bottom-price-wrap mobile-visible"> 
+                        <div class="catalog__bottom-price"> 
+                            <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                            <div class="catalog__bottom-price_new">
+                            <p>1500 </p><span>Р/Шт.  </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="catalog__title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+                <div class="catalog__bottom">
+                    <div class="catalog__bottom-img-wrap left-icon"></div>
+                    <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                    <div class="catalog__bottom-img-wrap right-icon"></div>
+                </div>
+                </div>
+
+                <div class="catalog__item carousel-element">
+                <a class="catalog__content" href="#">
+                    <span class="catalog__status available">Товар в наличии</span>
+                    <img class="catalog__flag" src="assets/images/tip-hit.png">
+                    <div class="catalog__img-wrap">
+                    <img class="catalog__img" src="assets/images/news2.png">
+                    <div class="catalog__bottom-price-wrap mobile-visible"> 
+                        <div class="catalog__bottom-price"> 
+                            <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                            <div class="catalog__bottom-price_new">
+                            <p>1500 </p><span>Р/Шт.  </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="catalog__title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+                <div class="catalog__bottom">
+                    <div class="catalog__bottom-img-wrap left-icon"></div>
+                    <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                    <div class="catalog__bottom-img-wrap right-icon"></div>
+                </div>
+                </div>
+
+                <div class="catalog__item carousel-element">
+                <a class="catalog__content" href="#">
+                    <span class="catalog__status available">Товар в наличии</span>
+                    <img class="catalog__flag" src="assets/images/tip-new.png">
+                    <div class="catalog__img-wrap">
+                    <img class="catalog__img" src="assets/images/news4.png">
+                    <div class="catalog__bottom-price-wrap mobile-visible"> 
+                        <div class="catalog__bottom-price"> 
+                            <p class="catalog__bottom-price_old">1800 Р/Шт.</p>
+                            <div class="catalog__bottom-price_new">
+                            <p>1500 </p><span>Р/Шт.  </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="catalog__title">Металлочерепица 1,18х2,25 м толщина 0,45 мм Северс</p></a>
+                <div class="catalog__bottom">
+                    <div class="catalog__bottom-img-wrap left-icon"></div>
+                    <div class="catalog__bottom-price-wrap"> <span class="catalog__bottom-price">1500 </span><span class="catalog__bottom-amount">Р/Шт. </span></div>
+                    <div class="catalog__bottom-img-wrap right-icon"></div>
+                </div>
+                </div>
+            </div>
+            <div class="arrow-right news-arrow" id="js-next"></div>
+        </div>
+
+        <div class="container">
+            <div class="block-top">
+                <div class="link-way non-active"><a class="link-way__link" href="new-things-more.html">В раздел</a><img src="assets/images/little-arrow.png"></div>
+                <div class="block-top__title">Не забудь купить</div>
+                <a href="catalog.html" class="block-top__all">Все товары</a>
+            </div>
             <div class="products">
-                <div class="products__visible">
-                    <span>Показано с 1 по 10 из 44</span>
-                    <div class="products__visible-options">
-                        <div class="products__visible-choice">
-                            <span class="products__visible-number">10</span>
-                            <img src="assets/images/little-arrow-top.png" alt="">
-                        </div>
-                        <ul class="products__visible-list">
-                            <li class="products__visible-item">20</li>
-                            <li class="products__visible-item">30</li>
-                            <li class="products__visible-item">40</li>
-                        </ul>
-                    </div>
-                </div>
-                
                 <div class="products__item">
                     <div class="products__left">
                         <div class="products__img">
@@ -251,7 +551,7 @@
                         <div class="products__desc">
                             <p class="products__status">Под заказ</p>
                             <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
+                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
                             </a>
                         </div>
                     </div>
@@ -273,7 +573,7 @@
                         <div class="products__desc">
                             <p class="products__status">Под заказ</p>
                             <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
+                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... 
                             </a>
                         </div>
                     </div>
@@ -295,7 +595,7 @@
                         <div class="products__desc">
                             <p class="products__status">Под заказ</p>
                             <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
+                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... 
                             </a>
                         </div>
                     </div>
@@ -308,171 +608,6 @@
                             <div class="catalog__bottom-img-wrap right-icon small"></div>
                         </div>
                     </div>
-                </div>
-                <div class="products__item">
-                    <div class="products__left">
-                        <div class="products__img">
-                            <img src="assets/images/news1.png" alt="">
-                        </div>
-                        <div class="products__desc">
-                            <p class="products__status">Под заказ</p>
-                            <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__right">
-                        <p class="products__price">
-                            <span>10 500</span> Р/Шт.
-                        </p>
-                        <div class="products__icons">
-                            <div class="catalog__bottom-img-wrap left-icon small"></div>
-                            <div class="catalog__bottom-img-wrap right-icon small"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <div class="products__left">
-                        <div class="products__img">
-                            <img src="assets/images/news1.png" alt="">
-                        </div>
-                        <div class="products__desc">
-                            <p class="products__status">Под заказ</p>
-                            <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__right">
-                        <p class="products__price">
-                            <span>10 500</span> Р/Шт.
-                        </p>
-                        <div class="products__icons">
-                            <div class="catalog__bottom-img-wrap left-icon small"></div>
-                            <div class="catalog__bottom-img-wrap right-icon small"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <div class="products__left">
-                        <div class="products__img">
-                            <img src="assets/images/news1.png" alt="">
-                        </div>
-                        <div class="products__desc">
-                            <p class="products__status">Под заказ</p>
-                            <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__right">
-                        <p class="products__price">
-                            <span>10 500</span> Р/Шт.
-                        </p>
-                        <div class="products__icons">
-                            <div class="catalog__bottom-img-wrap left-icon small"></div>
-                            <div class="catalog__bottom-img-wrap right-icon small"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <div class="products__left">
-                        <div class="products__img">
-                            <img src="assets/images/news1.png" alt="">
-                        </div>
-                        <div class="products__desc">
-                            <p class="products__status">Под заказ</p>
-                            <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__right">
-                        <p class="products__price">
-                            <span>10 500</span> Р/Шт.
-                        </p>
-                        <div class="products__icons">
-                            <div class="catalog__bottom-img-wrap left-icon small"></div>
-                            <div class="catalog__bottom-img-wrap right-icon small"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <div class="products__left">
-                        <div class="products__img">
-                            <img src="assets/images/news1.png" alt="">
-                        </div>
-                        <div class="products__desc">
-                            <p class="products__status">Под заказ</p>
-                            <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__right">
-                        <p class="products__price">
-                            <span>10 500</span> Р/Шт.
-                        </p>
-                        <div class="products__icons">
-                            <div class="catalog__bottom-img-wrap left-icon small"></div>
-                            <div class="catalog__bottom-img-wrap right-icon small"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <div class="products__left">
-                        <div class="products__img">
-                            <img src="assets/images/news1.png" alt="">
-                        </div>
-                        <div class="products__desc">
-                            <p class="products__status">Под заказ</p>
-                            <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__right">
-                        <p class="products__price">
-                            <span>10 500</span> Р/Шт.
-                        </p>
-                        <div class="products__icons">
-                            <div class="catalog__bottom-img-wrap left-icon small"></div>
-                            <div class="catalog__bottom-img-wrap right-icon small"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <div class="products__left">
-                        <div class="products__img">
-                            <img src="assets/images/news1.png" alt="">
-                        </div>
-                        <div class="products__desc">
-                            <p class="products__status">Под заказ</p>
-                            <a href="" class="products__title">
-                                Металлочерепица 1,18х2,25 м толщина 0,45 Северс... Металлочерепица 1,18х2,25 м толщина 0,45 Северс...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__right">
-                        <p class="products__price">
-                            <span>10 500</span> Р/Шт.
-                        </p>
-                        <div class="products__icons">
-                            <div class="catalog__bottom-img-wrap left-icon small"></div>
-                            <div class="catalog__bottom-img-wrap right-icon small"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pagination">
-                    <div class="pagination__prev"><a href=""></a></div>
-                    <div class="pagination__begin"><a href="">В начало</a></div>
-                    <a href="" class="pagination__number active">1</a>
-                    <a href="" class="pagination__number">2</a>
-                    <a href="" class="pagination__number">3</a>
-                    <a href="" class="pagination__number">...</a>
-                    <a href="" class="pagination__number">20</a>
-                    <div class="pagination__last"><a href="">В конец</a></div>
-                    <div class="pagination__next"><a href=""></a></div>
                 </div>
             </div>
         </div>
@@ -542,7 +677,7 @@
       </ul>
       <img src="assets/images/close.png" alt="" class="menu__laptop-close">
     </div>
-        <!--Перестройка блоков для мобильной версии (меню, выбор региона, вход/регистрация) -->
+    <!--Перестройка блоков для мобильной версии (меню, выбор региона, вход/регистрация) -->
     <div class="mobile-menu">
 
       <div class="links">
@@ -604,7 +739,7 @@
     </div>
     <!-- Всплывающее окно "Закажите замер" -->
     <div class="form-wrapper"></div> 
-    <form action="" class="form" id="form" method="POST">
+    <form action="" class="form" method="POST">
       <img src="assets/images/mobile-close.png" alt="" class="form__mobile-close">       <div class="form__top">
         <img src="assets/images/logo.png" alt="">
         <img src="assets/images/close-black.png" alt="" class="form__close">
@@ -620,7 +755,7 @@
 
     <!-- Всплывающее окно "Регистрация" -->
     <div class="form-wrapper--registration"></div> 
-    <form action="" class="form--registration" id="form" method="POST">
+    <form action="" class="form--registration" method="POST">
       <img src="assets/images/mobile-close.png" alt="" class="form__mobile-close">       <div class="form__top">
         <div class="form__logo">
           <p>Если вы впервые в</p>
@@ -681,7 +816,7 @@
 
     <!-- Всплывающее окно "Вход в личный кабинет" -->
     <div class="form-wrapper--entrance"></div> 
-    <form action="" class="form--entrance" id="form" method="POST">
+    <form action="" class="form--entrance" method="POST">
       <img src="assets/images/mobile-close.png" alt="" class="form__mobile-close">       <div class="form__top">
         <div class="form__logo">
           <p>Уже зарегистрированы в</p>
@@ -715,12 +850,9 @@
     <script src="assets/scripts/search.js"></script>
     <script src="assets/scripts/login.js"></script>
     <script src="assets/scripts/mobile-menu.js"></script>
-    <script src="assets/scripts/form.js"></script>
+    <script src="assets/scripts/form.js"></script> 
 
-    <script src="assets/scripts/jquery.fancybox.min.js"></script>
-    <script src="assets/scripts/modal-window.js"></script>
     <script src="owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/scripts/carousel.js"></script>
-
   </body>
 </html>

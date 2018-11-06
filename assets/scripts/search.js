@@ -1,4 +1,4 @@
-$('.search__icon').click(function() {
+$('.search').click(function() {
     if(!$('.search').hasClass('active')) {
         $('.search').addClass('active');
         $('.search-input').focus();

@@ -15,6 +15,22 @@ $(document).ready(function() {
                 $('.location').css('z-index', 60);
             }
         })
+
+        $('.shadow').mouseenter(function(e) {
+        e.preventDefault();
+
+        if (!$('.links').hasClass('active')) {
+            $('.links').addClass('active');
+            $('.shadow').css('display', 'block');
+            $('.location').css('z-index', 50);
+            }
+            else {
+                $('.links').removeClass('active');
+                $('.shadow').css('display', 'none');
+                $('.location').css('z-index', 60);
+            }
+        })
+
         $('.shadow').click(function(e) {
             $('.links').removeClass('active');
             $('.shadow').css('display', 'none');

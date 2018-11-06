@@ -1,0 +1,47 @@
+.block-filter {
+    width: 234px;
+    @media screen and (max-width: 540px) {
+        width: 100%;
+    }
+    &__title {
+        background-color: $red;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+    &__name {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 12px;
+    }
+    &__price {
+        padding: 12px;
+        background-color: $grey;
+        p {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input {
+            margin-top: 10px;
+            border: none;
+            padding: 5px;
+            margin-left: 5px;
+            
+        }
+    }
+    &__input {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &__btn {
+        margin-top: 25px;
+        width: 100%;
+        background-color: $dark-grey;
+        color: #fff;
+        font-family: 'Circe';
+        font-size: 14px;
+        padding: 10px 0;
+        font-weight: bold;
+    }
+}

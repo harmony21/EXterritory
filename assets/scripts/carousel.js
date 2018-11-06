@@ -79,7 +79,7 @@ $(document).ready(function(){
     });
     
     $('#js-prev2').click(function () {
-        carousel.trigger('owl.prev');
+        carousel2.trigger('owl.prev');
         return false;
     });
 
