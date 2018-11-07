@@ -42,6 +42,7 @@
                 <div class="basket mobile-hidden">
                     <div class="basket__compare">
                         <img class="basket__compare_icon" src="assets/images/compare.png">
+                        <a href="compare.html" class="basket__link"></a>
                     </div>
                     <div class="basket__count">
                         <img class="basket__count_icon" src="assets/images/basket.png">
@@ -59,7 +60,10 @@
               </div>
               
               <div class="basket">
-                <div class="basket__compare"><img class="basket__compare_icon" src="assets/images/compare.png"></div>
+                <div class="basket__compare">
+                  <img class="basket__compare_icon" src="assets/images/compare.png">
+                  <a href="compare.html" class="basket__link"></a>
+                </div>
                 <div class="basket__count"><img class="basket__count_icon" src="assets/images/basket.png">
                   <a href="basket.html" class="basket__link"></a>
                   <div class="basket__count_number"><span>10</span></div>
@@ -330,6 +334,27 @@
         </a>
       </nav>
     </div>
+    <!--Нижняя полоса -->
+    <div class="bottom-line">
+        <div class="bottom-line__item order-call">
+            <div class="bottom-line__img">
+                <img src="assets/images/phone.png" alt="">
+            </div>
+            <p class="bottom-line__title">Заказать звонок</p>
+        </div>
+        <div class="bottom-line__item feedback">
+            <div class="bottom-line__img">
+                <img src="assets/images/mail.png" alt="">
+            </div>
+            <p class="bottom-line__title">Обратная связь</p>
+        </div>
+        <div class="bottom-line__item order-service">
+            <div class="bottom-line__img">
+                <img src="assets/images/size.png" alt="">
+            </div>
+            <p class="bottom-line__title">Закажи замер</p>
+        </div>
+    </div>
     <!-- Всплывающее окно "Закажите замер" -->
     <div class="form-wrapper"></div> 
     <form action="" class="form" method="POST">
@@ -438,6 +463,42 @@
           </div>
         </div>
     </form> 
+
+    <!-- Всплывающее окно "Закажи звонок" -->
+    <div class="form-wrapper--call"></div> 
+    <form action="" class="form--call" method="POST">
+      <img src="assets/images/mobile-close.png" alt="" class="form__mobile-close">       
+      <div class="form__top">
+        <div class="form__logo">
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Закажи звонок</h2>
+        <div class="form__fields">
+          <input type="text" placeholder="Имя *" required>
+          <input type="tel" placeholder="Телефон *" required>
+        </div>
+        <input type="submit" name="submit" class="btn-submit" value="Отправить">
+    </form> 
+
+    <!-- Всплывающее окно "Обратная связь" -->
+    <div class="form-wrapper--feedback"></div> 
+    <form action="" class="form--feedback" method="POST">
+      <img src="assets/images/mobile-close.png" alt="" class="form__mobile-close">       <div class="form__top">
+        <img src="assets/images/logo.png" alt="">
+        <img src="assets/images/close-black.png" alt="" class="form__close">
+      </div>
+        <h2 class="form__title">Обратная связь</h2>
+        <input type="text" name="user_name" placeholder="Имя *"><br>
+        <input type="tel" name="user_phone" placeholder="Телефон *"><br>
+        <input type="text" name="user_city" placeholder="Город *"><br>
+        <input type="text" name="user_address" placeholder="Адрес объекта"><br>
+        <textarea name="message" placeholder="Сообщение"></textarea>
+        <input type="submit" name="submit" class="btn-submit" value="Отправить">
+    </form>
+
+    
     <script src="assets/scripts/jquery-3.2.1.js"></script>
     <script src="assets/scripts/options.js"></script>
     <script src="assets/scripts/search.js"></script>

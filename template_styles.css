@@ -190,6 +190,8 @@ p {
     top: 50%; }
   .arrow-left.actions-arrow, .arrow-right.actions-arrow {
     top: 40%; }
+  .arrow-left.compare, .arrow-right.compare {
+    position: relative; }
 
 .arrow-left {
   left: 1%;
@@ -5158,7 +5160,9 @@ _:-ms-lang(x), .search {
     color: #000;
     text-transform: uppercase; }
 
-.form-wrapper, .form-wrapper--registration, .form-wrapper--entrance {
+.form-wrapper, .form-wrapper--registration,
+.form-wrapper--entrance, .form-wrapper--call,
+.form-wrapper--feedback {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   height: 100%;
@@ -5170,7 +5174,8 @@ _:-ms-lang(x), .search {
   position: fixed;
   display: none; }
 
-.form, .form--registration, .form--entrance {
+.form, .form--registration, .form--entrance, .form--call,
+.form--feedback {
   position: fixed;
   top: 70px;
   z-index: 150;
@@ -5181,18 +5186,21 @@ _:-ms-lang(x), .search {
   padding: 30px 73px;
   display: none; }
   @media screen and (max-width: 580px) {
-    .form, .form--registration, .form--entrance {
+    .form, .form--registration, .form--entrance, .form--call,
+    .form--feedback {
       width: 70%;
       left: 30%;
       margin-left: -15%;
       padding: 30px 10px; } }
   @media screen and (max-width: 380px) {
-    .form, .form--registration, .form--entrance {
+    .form, .form--registration, .form--entrance, .form--call,
+    .form--feedback {
       width: 96%;
       left: 4%;
       margin-left: -2%;
       padding: 30px 10px; } }
-  .form__top, .form--registration__top, .form--entrance__top {
+  .form__top, .form--registration__top, .form--entrance__top, .form--call__top,
+  .form--feedback__top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5202,30 +5210,39 @@ _:-ms-lang(x), .search {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
-    .form__top img:first-child, .form--registration__top img:first-child, .form--entrance__top img:first-child {
+    .form__top img:first-child, .form--registration__top img:first-child, .form--entrance__top img:first-child, .form--call__top img:first-child,
+    .form--feedback__top img:first-child {
       width: 160px; }
-    .form__top img:last-child:hover, .form--registration__top img:last-child:hover, .form--entrance__top img:last-child:hover {
+    .form__top img:last-child:hover, .form--registration__top img:last-child:hover, .form--entrance__top img:last-child:hover, .form--call__top img:last-child:hover,
+    .form--feedback__top img:last-child:hover {
       cursor: pointer; }
-  .form__logo img, .form--registration__logo img, .form--entrance__logo img {
+  .form__logo img, .form--registration__logo img, .form--entrance__logo img, .form--call__logo img,
+  .form--feedback__logo img {
     width: 160px; }
-  .form__title, .form--registration__title, .form--entrance__title {
+  .form__title, .form--registration__title, .form--entrance__title, .form--call__title,
+  .form--feedback__title {
     font-size: 18px;
     margin: 20px 0;
     font-weight: bold; }
   @media screen and (max-width: 540px) {
-    .form__close, .form--registration__close, .form--entrance__close {
+    .form__close, .form--registration__close, .form--entrance__close, .form--call__close,
+    .form--feedback__close {
       display: none; } }
-  .form__mobile-close, .form--registration__mobile-close, .form--entrance__mobile-close {
+  .form__mobile-close, .form--registration__mobile-close, .form--entrance__mobile-close, .form--call__mobile-close,
+  .form--feedback__mobile-close {
     display: none; }
     @media screen and (max-width: 540px) {
-      .form__mobile-close, .form--registration__mobile-close, .form--entrance__mobile-close {
+      .form__mobile-close, .form--registration__mobile-close, .form--entrance__mobile-close, .form--call__mobile-close,
+      .form--feedback__mobile-close {
         display: block;
         position: absolute;
         top: -45px;
         left: 48%; }
-        .form__mobile-close:hover, .form--registration__mobile-close:hover, .form--entrance__mobile-close:hover {
+        .form__mobile-close:hover, .form--registration__mobile-close:hover, .form--entrance__mobile-close:hover, .form--call__mobile-close:hover,
+        .form--feedback__mobile-close:hover {
           cursor: pointer; } }
-  .form input, .form--registration input, .form--entrance input {
+  .form input, .form--registration input, .form--entrance input, .form--call input,
+  .form--feedback input {
     width: 100%;
     padding: 5px 15px;
     margin-top: 8px;
@@ -5233,7 +5250,8 @@ _:-ms-lang(x), .search {
     border-bottom: 3px solid #f4f4f4;
     font-family: 'Circe';
     font-size: 14px; }
-  .form textarea, .form--registration textarea, .form--entrance textarea {
+  .form textarea, .form--registration textarea, .form--entrance textarea, .form--call textarea,
+  .form--feedback textarea {
     width: 100%;
     background-color: #f4f4f4;
     padding: 10px 15px;
@@ -5242,27 +5260,34 @@ _:-ms-lang(x), .search {
     height: 145px;
     font-family: 'Circe';
     font-size: 14px; }
-  .form .btn-submit, .form--registration .btn-submit, .form--entrance .btn-submit {
+  .form .btn-submit, .form--registration .btn-submit, .form--entrance .btn-submit, .form--call .btn-submit,
+  .form--feedback .btn-submit {
     width: 176px;
     margin-left: 120px;
     margin-top: 15px; }
-    .form .btn-submit:hover, .form--registration .btn-submit:hover, .form--entrance .btn-submit:hover {
+    .form .btn-submit:hover, .form--registration .btn-submit:hover, .form--entrance .btn-submit:hover, .form--call .btn-submit:hover,
+    .form--feedback .btn-submit:hover {
       cursor: pointer; }
     @media screen and (max-width: 580px) {
-      .form .btn-submit, .form--registration .btn-submit, .form--entrance .btn-submit {
+      .form .btn-submit, .form--registration .btn-submit, .form--entrance .btn-submit, .form--call .btn-submit,
+      .form--feedback .btn-submit {
         width: 100%;
         margin-left: 0;
         text-transform: uppercase; } }
-  .form .socials, .form--registration .socials, .form--entrance .socials {
+  .form .socials, .form--registration .socials, .form--entrance .socials, .form--call .socials,
+  .form--feedback .socials {
     margin-left: 0; }
-    .form .socials__title, .form--registration .socials__title, .form--entrance .socials__title {
+    .form .socials__title, .form--registration .socials__title, .form--entrance .socials__title, .form--call .socials__title,
+    .form--feedback .socials__title {
       color: #000;
       margin-top: 25px;
       text-align: center; }
       @media screen and (max-width: 400px) {
-        .form .socials__title, .form--registration .socials__title, .form--entrance .socials__title {
+        .form .socials__title, .form--registration .socials__title, .form--entrance .socials__title, .form--call .socials__title,
+        .form--feedback .socials__title {
           font-size: 12px; } }
-    .form .socials__icons, .form--registration .socials__icons, .form--entrance .socials__icons {
+    .form .socials__icons, .form--registration .socials__icons, .form--entrance .socials__icons, .form--call .socials__icons,
+    .form--feedback .socials__icons {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -5270,24 +5295,33 @@ _:-ms-lang(x), .search {
       justify-content: space-around;
       padding: 10px 100px; }
       @media screen and (max-width: 580px) {
-        .form .socials__icons, .form--registration .socials__icons, .form--entrance .socials__icons {
+        .form .socials__icons, .form--registration .socials__icons, .form--entrance .socials__icons, .form--call .socials__icons,
+        .form--feedback .socials__icons {
           padding: 10px 30px; } }
-    .form .socials__icon, .form--registration .socials__icon, .form--entrance .socials__icon {
+    .form .socials__icon, .form--registration .socials__icon, .form--entrance .socials__icon, .form--call .socials__icon,
+    .form--feedback .socials__icon {
       width: 31px;
       height: 31px; }
-      .form .socials__icon.google, .form--registration .socials__icon.google, .form--entrance .socials__icon.google {
+      .form .socials__icon.google, .form--registration .socials__icon.google, .form--entrance .socials__icon.google, .form--call .socials__icon.google,
+      .form--feedback .socials__icon.google {
         background: url("assets/images/google.png") no-repeat; }
-        .form .socials__icon.google:hover, .form--registration .socials__icon.google:hover, .form--entrance .socials__icon.google:hover {
+        .form .socials__icon.google:hover, .form--registration .socials__icon.google:hover, .form--entrance .socials__icon.google:hover, .form--call .socials__icon.google:hover,
+        .form--feedback .socials__icon.google:hover {
           background-position: 0 -31px; }
-      .form .socials__icon.fb, .form--registration .socials__icon.fb, .form--entrance .socials__icon.fb {
+      .form .socials__icon.fb, .form--registration .socials__icon.fb, .form--entrance .socials__icon.fb, .form--call .socials__icon.fb,
+      .form--feedback .socials__icon.fb {
         background: url("assets/images/facebook.png") no-repeat; }
-        .form .socials__icon.fb:hover, .form--registration .socials__icon.fb:hover, .form--entrance .socials__icon.fb:hover {
+        .form .socials__icon.fb:hover, .form--registration .socials__icon.fb:hover, .form--entrance .socials__icon.fb:hover, .form--call .socials__icon.fb:hover,
+        .form--feedback .socials__icon.fb:hover {
           background-position: 0 -31px; }
-      .form .socials__icon.tw, .form--registration .socials__icon.tw, .form--entrance .socials__icon.tw {
+      .form .socials__icon.tw, .form--registration .socials__icon.tw, .form--entrance .socials__icon.tw, .form--call .socials__icon.tw,
+      .form--feedback .socials__icon.tw {
         background: url("assets/images/twitter.png") no-repeat; }
-        .form .socials__icon.tw:hover, .form--registration .socials__icon.tw:hover, .form--entrance .socials__icon.tw:hover {
+        .form .socials__icon.tw:hover, .form--registration .socials__icon.tw:hover, .form--entrance .socials__icon.tw:hover, .form--call .socials__icon.tw:hover,
+        .form--feedback .socials__icon.tw:hover {
           background-position: 0 -31px; }
-  .form--registration, .form--registration--registration, .form--entrance--registration {
+  .form--registration, .form--registration--registration, .form--entrance--registration, .form--call--registration,
+  .form--feedback--registration {
     position: absolute;
     z-index: 150;
     width: 554px;
@@ -5298,40 +5332,50 @@ _:-ms-lang(x), .search {
     display: none;
     top: 50px; }
     @media screen and (max-width: 580px) {
-      .form--registration, .form--registration--registration, .form--entrance--registration {
+      .form--registration, .form--registration--registration, .form--entrance--registration, .form--call--registration,
+      .form--feedback--registration {
         width: 96%;
         left: 4%;
         margin-left: -2%;
         padding: 30px;
         position: fixed; } }
     @media screen and (max-width: 380px) {
-      .form--registration, .form--registration--registration, .form--entrance--registration {
+      .form--registration, .form--registration--registration, .form--entrance--registration, .form--call--registration,
+      .form--feedback--registration {
         width: 96%;
         left: 4%;
         margin-left: -2%;
         padding: 10px; } }
-    .form--registration p, .form--registration--registration p, .form--entrance--registration p {
+    .form--registration p, .form--registration--registration p, .form--entrance--registration p, .form--call--registration p,
+    .form--feedback--registration p {
       color: #a6a6a6;
       font-size: 15px; }
     @media screen and (max-width: 540px) {
-      .form--registration .form__title, .form--registration--registration .form__title, .form--entrance--registration .form__title {
+      .form--registration .form__title, .form--registration--registration .form__title, .form--entrance--registration .form__title, .form--call--registration .form__title,
+      .form--feedback--registration .form__title {
         margin: 0; } }
     @media screen and (max-width: 580px) {
-      .form--registration input, .form--registration--registration input, .form--entrance--registration input {
+      .form--registration input, .form--registration--registration input, .form--entrance--registration input, .form--call--registration input,
+      .form--feedback--registration input {
         font-size: 13px;
         margin-top: 0; } }
-    .form--registration .checkbox, .form--registration--registration .checkbox, .form--entrance--registration .checkbox {
+    .form--registration .checkbox, .form--registration--registration .checkbox, .form--entrance--registration .checkbox, .form--call--registration .checkbox,
+    .form--feedback--registration .checkbox {
       display: none; }
-    .form--registration .checkbox-custom, .form--registration--registration .checkbox-custom, .form--entrance--registration .checkbox-custom {
+    .form--registration .checkbox-custom, .form--registration--registration .checkbox-custom, .form--entrance--registration .checkbox-custom, .form--call--registration .checkbox-custom,
+    .form--feedback--registration .checkbox-custom {
       position: relative;
       width: 16px;
       height: 16px;
       background: url("assets/images/checkbox-nonactive-grey.png") no-repeat;
       cursor: pointer; }
-    .form--registration .checkbox-custom, .form--registration .label, .form--registration--registration .checkbox-custom, .form--registration--registration .label, .form--entrance--registration .checkbox-custom, .form--entrance--registration .label {
+    .form--registration .checkbox-custom, .form--registration .label, .form--registration--registration .checkbox-custom, .form--registration--registration .label, .form--entrance--registration .checkbox-custom, .form--entrance--registration .label, .form--call--registration .checkbox-custom, .form--call--registration .label,
+    .form--feedback--registration .checkbox-custom,
+    .form--feedback--registration .label {
       display: inline-block;
       vertical-align: middle; }
-    .form--registration .checkbox:checked + .checkbox-custom::before, .form--registration--registration .checkbox:checked + .checkbox-custom::before, .form--entrance--registration .checkbox:checked + .checkbox-custom::before {
+    .form--registration .checkbox:checked + .checkbox-custom::before, .form--registration--registration .checkbox:checked + .checkbox-custom::before, .form--entrance--registration .checkbox:checked + .checkbox-custom::before, .form--call--registration .checkbox:checked + .checkbox-custom::before,
+    .form--feedback--registration .checkbox:checked + .checkbox-custom::before {
       content: "";
       display: block;
       position: absolute;
@@ -5340,9 +5384,11 @@ _:-ms-lang(x), .search {
       bottom: 0px;
       left: 0px;
       background: url("assets/images/checkbox-active.png") no-repeat; }
-    .form--registration .label, .form--registration--registration .label, .form--entrance--registration .label {
+    .form--registration .label, .form--registration--registration .label, .form--entrance--registration .label, .form--call--registration .label,
+    .form--feedback--registration .label {
       margin-left: 15px; }
-    .form--registration label, .form--registration--registration label, .form--entrance--registration label {
+    .form--registration label, .form--registration--registration label, .form--entrance--registration label, .form--call--registration label,
+    .form--feedback--registration label {
       margin-top: 20px;
       border-bottom: none;
       display: -webkit-box;
@@ -5354,55 +5400,70 @@ _:-ms-lang(x), .search {
       font-size: 14px;
       width: 100%;
       padding-left: 0; }
-      .form--registration label:hover, .form--registration--registration label:hover, .form--entrance--registration label:hover {
+      .form--registration label:hover, .form--registration--registration label:hover, .form--entrance--registration label:hover, .form--call--registration label:hover,
+      .form--feedback--registration label:hover {
         background-color: transparent;
         color: #000; }
       @media screen and (max-width: 400px) {
-        .form--registration label, .form--registration--registration label, .form--entrance--registration label {
+        .form--registration label, .form--registration--registration label, .form--entrance--registration label, .form--call--registration label,
+        .form--feedback--registration label {
           font-size: 11px;
           margin-top: 10px; } }
-    .form--registration .form__fields, .form--registration--registration .form__fields, .form--entrance--registration .form__fields {
+    .form--registration .form__fields, .form--registration--registration .form__fields, .form--entrance--registration .form__fields, .form--call--registration .form__fields,
+    .form--feedback--registration .form__fields {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-      .form--registration .form__fields-left, .form--registration .form__fields-right, .form--registration--registration .form__fields-left, .form--registration--registration .form__fields-right, .form--entrance--registration .form__fields-left, .form--entrance--registration .form__fields-right {
+      .form--registration .form__fields-left, .form--registration .form__fields-right, .form--registration--registration .form__fields-left, .form--registration--registration .form__fields-right, .form--entrance--registration .form__fields-left, .form--entrance--registration .form__fields-right, .form--call--registration .form__fields-left, .form--call--registration .form__fields-right,
+      .form--feedback--registration .form__fields-left,
+      .form--feedback--registration .form__fields-right {
         width: 49%; }
         @media screen and (max-width: 540px) {
-          .form--registration .form__fields-left, .form--registration .form__fields-right, .form--registration--registration .form__fields-left, .form--registration--registration .form__fields-right, .form--entrance--registration .form__fields-left, .form--entrance--registration .form__fields-right {
+          .form--registration .form__fields-left, .form--registration .form__fields-right, .form--registration--registration .form__fields-left, .form--registration--registration .form__fields-right, .form--entrance--registration .form__fields-left, .form--entrance--registration .form__fields-right, .form--call--registration .form__fields-left, .form--call--registration .form__fields-right,
+          .form--feedback--registration .form__fields-left,
+          .form--feedback--registration .form__fields-right {
             width: 100%; } }
-      .form--registration .form__fields-required, .form--registration--registration .form__fields-required, .form--entrance--registration .form__fields-required {
+      .form--registration .form__fields-required, .form--registration--registration .form__fields-required, .form--entrance--registration .form__fields-required, .form--call--registration .form__fields-required,
+      .form--feedback--registration .form__fields-required {
         display: none; }
         @media screen and (max-width: 540px) {
-          .form--registration .form__fields-required, .form--registration--registration .form__fields-required, .form--entrance--registration .form__fields-required {
+          .form--registration .form__fields-required, .form--registration--registration .form__fields-required, .form--entrance--registration .form__fields-required, .form--call--registration .form__fields-required,
+          .form--feedback--registration .form__fields-required {
             display: block;
             margin-top: 10px;
             font-size: 12px; } }
       @media screen and (max-width: 540px) {
-        .form--registration .form__fields, .form--registration--registration .form__fields, .form--entrance--registration .form__fields {
+        .form--registration .form__fields, .form--registration--registration .form__fields, .form--entrance--registration .form__fields, .form--call--registration .form__fields,
+        .form--feedback--registration .form__fields {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
           flex-direction: column; } }
-  .form--entrance p, .form--registration--entrance p, .form--entrance--entrance p {
+  .form--entrance p, .form--registration--entrance p, .form--entrance--entrance p, .form--call--entrance p,
+  .form--feedback--entrance p {
     color: #a6a6a6;
     font-size: 15px; }
-  .form--entrance .form__fields, .form--registration--entrance .form__fields, .form--entrance--entrance .form__fields {
+  .form--entrance .form__fields, .form--registration--entrance .form__fields, .form--entrance--entrance .form__fields, .form--call--entrance .form__fields,
+  .form--feedback--entrance .form__fields {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .form--entrance .form__fields input, .form--registration--entrance .form__fields input, .form--entrance--entrance .form__fields input {
+    .form--entrance .form__fields input, .form--registration--entrance .form__fields input, .form--entrance--entrance .form__fields input, .form--call--entrance .form__fields input,
+    .form--feedback--entrance .form__fields input {
       width: 49%; }
       @media screen and (max-width: 540px) {
-        .form--entrance .form__fields input, .form--registration--entrance .form__fields input, .form--entrance--entrance .form__fields input {
+        .form--entrance .form__fields input, .form--registration--entrance .form__fields input, .form--entrance--entrance .form__fields input, .form--call--entrance .form__fields input,
+        .form--feedback--entrance .form__fields input {
           width: 100%; } }
     @media screen and (max-width: 540px) {
-      .form--entrance .form__fields, .form--registration--entrance .form__fields, .form--entrance--entrance .form__fields {
+      .form--entrance .form__fields, .form--registration--entrance .form__fields, .form--entrance--entrance .form__fields, .form--call--entrance .form__fields,
+      .form--feedback--entrance .form__fields {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -7105,3 +7166,313 @@ _:-ms-lang(x), .search {
     font-size: 14px;
     padding: 10px 0;
     font-weight: bold; }
+
+.compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 540px) {
+    .compare {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .compare__left {
+    width: 234px; }
+    @media screen and (max-width: 540px) {
+      .compare__left {
+        width: 100%; } }
+  @media screen and (max-width: 540px) {
+    .compare__options {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  .compare__details {
+    margin-top: 425px; }
+    .compare__details .compare-item__character {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      padding-left: 10px; }
+    @media screen and (max-width: 540px) {
+      .compare__details {
+        display: none; } }
+  .compare__link {
+    background-color: #f4f4f4;
+    display: block;
+    padding: 8px;
+    margin-top: 8px;
+    color: #000;
+    text-decoration: none; }
+    @media screen and (max-width: 540px) {
+      .compare__link {
+        width: 47%;
+        margin-top: 0; } }
+    .compare__link:first-child {
+      margin-top: 0; }
+    .compare__link.active, .compare__link:hover {
+      background-color: #ca1616;
+      color: #fff; }
+  .compare__right {
+    margin-left: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 78%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media screen and (max-width: 1070px) {
+      .compare__right {
+        margin-left: 10px; } }
+    @media screen and (max-width: 540px) {
+      .compare__right {
+        width: 100%;
+        margin-left: 0; } }
+    .compare__right .arrows {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media screen and (max-width: 540px) {
+        .compare__right .arrows {
+          display: none; } }
+    .compare__right .arrow-right {
+      margin-left: 35px; }
+
+.delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px; }
+  @media screen and (max-width: 540px) {
+    .delete {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  .delete.personal {
+    background-color: #f3f3f3;
+    margin-top: 0;
+    padding: 10px; }
+  .delete .delete-all__icon {
+    margin-left: 0;
+    margin-right: 10; }
+  .delete__link {
+    margin-left: 8px;
+    text-decoration: none;
+    color: #000; }
+    @media screen and (max-width: 1070px) {
+      .delete__link {
+        font-size: 14px; } }
+    @media screen and (max-width: 540px) {
+      .delete__link {
+        font-size: 18px; } }
+
+.compare-content {
+  margin-top: 30px;
+  padding-right: 20px; }
+  @media screen and (max-width: 540px) {
+    .compare-content {
+      display: none; } }
+  .compare-content.mobile-visible {
+    display: none; }
+    @media screen and (max-width: 540px) {
+      .compare-content.mobile-visible {
+        display: block;
+        padding-right: 0; } }
+
+.compare-item {
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding-bottom: 20px; }
+  .compare-item__status {
+    font-size: 14px;
+    color: #a9a9a9; }
+  .compare-item__title {
+    margin-top: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold; }
+  .compare-item:hover {
+    -webkit-box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01); }
+    @media screen and (max-width: 540px) {
+      .compare-item:hover {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; } }
+    .compare-item:hover .catalog__title, .compare-item:hover .product-item-title {
+      color: #ca1616; }
+  .compare-item__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 15px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .compare-item__price {
+    font-weight: bold; }
+    @media screen and (max-width: 1070px) {
+      .compare-item__price {
+        font-size: 14px; } }
+    .compare-item__price span {
+      color: #ca1616;
+      font-size: 18px; }
+      @media screen and (max-width: 1070px) {
+        .compare-item__price span {
+          font-size: 14px; } }
+  .compare-item__to-basket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #a6a6a6;
+    padding: 15px;
+    border-radius: 30px 0 0 30px; }
+    @media screen and (max-width: 1070px) {
+      .compare-item__to-basket {
+        padding: 8px; } }
+    .compare-item__to-basket:hover {
+      background-color: #ca1616; }
+    @media screen and (max-width: 600px) {
+      .compare-item__to-basket img {
+        display: none; } }
+    .compare-item__to-basket span {
+      margin-left: 8px; }
+      @media screen and (max-width: 1070px) {
+        .compare-item__to-basket span {
+          font-size: 14px; } }
+  .compare-item__details {
+    margin-top: 20px; }
+  .compare-item__character {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    height: 45px;
+    margin-top: 5px;
+    font-weight: bold; }
+    @media screen and (max-width: 800px) {
+      .compare-item__character {
+        font-size: 13px; } }
+  .compare-item__img {
+    width: 80%;
+    margin-top: 20px; }
+    .compare-item__img img {
+      width: 100%; }
+  .compare-item__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .compare-item__info .compare-item__details {
+      width: 48%; }
+    .compare-item__info .compare-item__character {
+      text-align: center; }
+  .compare-item.mobile .compare-item__title {
+    color: #ca1616; }
+
+.lSPager {
+  display: none; }
+  @media screen and (max-width: 540px) {
+    .lSPager {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.lSSlideOuter .lSPager.lSpg li:hover a, .lSSlideOuter .lSPager.lSpg li.active a {
+  background-color: #ca1616 !important; }
+
+.bottom-line {
+  background-color: #ca1616;
+  padding: 0 376px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media screen and (max-width: 1366px) {
+    .bottom-line {
+      padding: 0 250px; } }
+  @media screen and (max-width: 1185px) {
+    .bottom-line {
+      padding: 0px 100px; } }
+  @media screen and (max-width: 890px) {
+    .bottom-line {
+      padding: 0px 20px; } }
+  @media screen and (max-width: 540px) {
+    .bottom-line {
+      display: none; } }
+  .bottom-line__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+    width: calc(100%/3); }
+    .bottom-line__item:hover {
+      background-color: #971818;
+      cursor: pointer; }
+  .bottom-line__img {
+    border-right: 1px solid #fff;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .bottom-line__img img {
+      margin-right: 10px; }
+  .bottom-line__title {
+    color: #fff;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 15px; }
+    @media screen and (max-width: 740px) {
+      .bottom-line__title {
+        font-size: 12px; } }

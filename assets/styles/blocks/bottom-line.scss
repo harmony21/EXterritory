@@ -1,0 +1,50 @@
+.bottom-line {
+    background-color: $red;
+    padding: 0 376px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1366px) {
+        padding: 0 250px;
+    }
+    @media screen and (max-width: 1185px) {
+        padding: 0px 100px;
+    }
+    @media screen and (max-width: 890px) {
+        padding: 0px 20px;
+    }
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        width: calc(100%/3);
+        &:hover {
+            background-color: #971818;
+            cursor: pointer;
+        }
+    }
+    &__img {
+        border-right: 1px solid #fff;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__title {
+        color: #fff;
+        margin-left: 10px;
+        text-transform: uppercase;
+        font-size: 15px;
+        @media screen and (max-width: 740px) {
+            font-size: 12px;
+        }
+    }
+}

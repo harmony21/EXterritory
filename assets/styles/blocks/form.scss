@@ -1,4 +1,6 @@
-.form-wrapper, .form-wrapper--registration, .form-wrapper--entrance {
+.form-wrapper, .form-wrapper--registration, 
+.form-wrapper--entrance, .form-wrapper--call,
+.form-wrapper--feedback {
     background: rgba(0,0,0,0.7);
     position: absolute;
     height: 100%;
@@ -10,7 +12,8 @@
     position: fixed;
     display: none;
 }
-.form, .form--registration, .form--entrance {
+.form, .form--registration, .form--entrance, .form--call, 
+.form--feedback {
     position: fixed;
     top: 70px;
     z-index: 150;
