@@ -160,6 +160,15 @@
 .print {
     display: flex;
     align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    &.active, &:hover {
+        background-color: $red;
+        cursor: pointer;
+        .print__text {
+            color: #fff;
+        }
+    }
     &__text {
         margin-left: 15px;
         font-size: 18px;
@@ -177,6 +186,30 @@
     display: flex;
     align-items: center;
     margin-left: 45px;
+    &.non-margin {
+        @media screen and (max-width: 540px) {
+            margin-left: 0;
+        }
+        @media screen and (max-width: 330px) {
+            .delete-all__text {
+                width: 80%;
+                text-align: right;
+            }
+        }
+    }
+    &.mobile {
+        @media screen and (max-width: 540px) {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            background-color: #f3f3f3;
+            margin-left: 0;
+            padding: 10px;
+            .delete-all__icon {
+                margin: 0;
+            }
+        }
+    }
     &__text {
         font-size: 18px;
         color: #000;
@@ -205,6 +238,7 @@
                 display: none;
             }
         }
+        
     }
 }
 

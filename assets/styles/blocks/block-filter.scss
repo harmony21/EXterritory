@@ -18,9 +18,19 @@
     &__price {
         padding: 12px;
         background-color: $grey;
-        p {
+        .block-filter__sort {
             font-weight: bold;
             font-size: 14px;
+            padding: 5px;
+            &:hover {
+                cursor: pointer;
+                background-color: $red;
+                color: #fff;
+            }
+            &.active {
+                background-color: $red;
+                color: #fff;
+            }
         }
         input {
             margin-top: 10px;

@@ -137,3 +137,16 @@
         }
     }
 }
+.actions-more {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        @media screen and (max-width: 1540px) {
+            width: 90%;
+        }
+        @media screen and (max-width: 1366px) {
+            width: 100%;
+        }
+    }
+}
