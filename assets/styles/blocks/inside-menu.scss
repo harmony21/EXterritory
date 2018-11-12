@@ -5,9 +5,9 @@
     background-color: $light-grey;
 }
 .inside-menu__item {
-    padding: 15px;
     display: flex;
     align-items: center;
+    position: relative;
     img {
         margin-right: 10px;
     }
@@ -17,14 +17,20 @@
             color: $red;
         }
     }
-    &:hover > ul {
-        display: block;
+    &:hover {
+        .inside-menu__items {
+            display: block;
+        }
     }
 }
 .inside-menu__link {
-    text-decoration: none;
     color: #000;
     font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
 }
 
 .inside-menu__items {
@@ -44,5 +50,8 @@
         &:hover {
             color: $red;
         }
+    }
+    .inside-menu__item {
+        display: none;
     }
 }

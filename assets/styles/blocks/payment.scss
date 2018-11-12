@@ -71,6 +71,9 @@
     }
     &__item {
         padding: 25px;
+        &:hover {
+            cursor: pointer;
+        }
         &.active {
             background-color: $grey;
             .payment__arrow {

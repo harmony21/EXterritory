@@ -1439,11 +1439,11 @@ p {
 
 .footer {
   background-color: #3b3b3b;
-  padding: 30px 40px;
+  padding: 30px 40px 80px 40px;
   width: 100%; }
   @media screen and (max-width: 1230px) {
     .footer {
-      padding: 20px 10px; } }
+      padding: 20px 10px 80px 10px; } }
   @media screen and (max-width: 540px) {
     .footer {
       padding: 10px; } }
@@ -1802,26 +1802,34 @@ p {
   background-color: #f3f3f3; }
 
 .inside-menu__item {
-  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .inside-menu__item img {
     margin-right: 10px; }
   .inside-menu__item:hover {
     background-color: #eaeaea; }
     .inside-menu__item:hover .inside-menu__link {
       color: #ca1616; }
-  .inside-menu__item:hover > ul {
+  .inside-menu__item:hover .inside-menu__items {
     display: block; }
 
 .inside-menu__link {
-  text-decoration: none;
   color: #000;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .inside-menu__items {
   position: absolute;
@@ -1839,6 +1847,8 @@ p {
     text-transform: none; }
     .inside-menu__items a:hover {
       color: #ca1616; }
+  .inside-menu__items .inside-menu__item {
+    display: none; }
 
 .links {
   font-size: 14px;
@@ -4169,6 +4179,8 @@ _:-ms-lang(x), .search {
 
 .payment__item {
   padding: 25px; }
+  .payment__item:hover {
+    cursor: pointer; }
   .payment__item.active {
     background-color: #ebebeb; }
     .payment__item.active .payment__arrow {
@@ -6300,7 +6312,14 @@ _:-ms-lang(x), .search {
       font-weight: bold; }
 
 .catalog-navigation {
-  width: 234px; }
+  width: 234px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   @media screen and (max-width: 1000px) {
     .catalog-navigation {
       width: 150px; } }
@@ -6319,7 +6338,8 @@ _:-ms-lang(x), .search {
     font-weight: bold;
     padding: 5px;
     background-color: #ebebeb;
-    margin-top: 8px; }
+    margin-top: 8px;
+    text-decoration: none; }
     .catalog-navigation__item:hover, .catalog-navigation__item.active, .catalog-navigation__item.current {
       cursor: pointer;
       background-color: #ca1616;
