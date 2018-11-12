@@ -198,11 +198,13 @@
         }
     }
     &__img {
-        width: 80%;
+        width: 100%;
         margin-top: 20px;
         position: relative;
+        display: flex;
+        justify-content: center;
         img {
-            width: 100%;
+            width: 75%;
         }
     }
     &__info {
