@@ -939,6 +939,12 @@ p {
     @media screen and (max-width: 540px) {
       .catalog__flag {
         top: 8px; } }
+    .catalog__flag.small {
+      width: 80px;
+      top: 5px; }
+      @media screen and (max-width: 540px) {
+        .catalog__flag.small {
+          width: 50px; } }
   .catalog__img-wrap {
     height: 230px;
     display: -webkit-box;
@@ -1160,6 +1166,14 @@ p {
     -ms-flex-align: center;
     align-items: center;
     padding: 5px 0; }
+    .catalog__action-status.small {
+      bottom: 0;
+      padding: 0; }
+      .catalog__action-status.small .catalog__action-time_number {
+        font-size: 18px; }
+      @media screen and (max-width: 540px) {
+        .catalog__action-status.small {
+          display: none; } }
   .catalog__action-title {
     color: white;
     font-size: 10px; }
@@ -1297,7 +1311,7 @@ p {
       width: 70%; } }
   @media screen and (max-width: 760px) {
     .catalog-section .catalog__img {
-      width: 55%; } }
+      width: 53%; } }
 
 .product-item {
   background-color: white;
@@ -4922,7 +4936,8 @@ _:-ms-lang(x), .search {
     display: -ms-flexbox;
     display: flex; }
   .products__desc {
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-left: 10px; }
     @media screen and (max-width: 540px) {
       .products__desc {
         margin-top: 0; } }
@@ -4942,12 +4957,14 @@ _:-ms-lang(x), .search {
       .products__title {
         font-size: 13px;
         margin-top: 10px; } }
-  .products__img img {
-    width: 161px;
-    margin-right: 25px; }
-    @media screen and (max-width: 540px) {
-      .products__img img {
-        width: 100px; } }
+  .products__img {
+    position: relative; }
+    .products__img img {
+      width: 161px;
+      margin-right: 25px; }
+      @media screen and (max-width: 540px) {
+        .products__img img {
+          width: 100px; } }
   .products__right {
     text-align: center; }
   .products__price {
@@ -6551,7 +6568,11 @@ _:-ms-lang(x), .search {
 
 @media screen and (max-width: 540px) {
   .product-item .catalog__flag {
-    top: 160px; } }
+    top: 30px; } }
+
+@media screen and (max-width: 540px) {
+  .product-item .catalog__action-status {
+    bottom: 30px; } }
 
 .product-code {
   font-size: 14px;

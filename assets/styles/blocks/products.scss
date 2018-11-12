@@ -73,6 +73,7 @@
     }
     &__desc {
         margin-top: 15px;
+        margin-left: 10px;
         @media screen and (max-width: 540px) {
             margin-top: 0;
         }
@@ -97,6 +98,7 @@
         }
     }
     &__img {
+        position: relative;
         img {
             width: 161px;
             margin-right: 25px;
