@@ -5548,23 +5548,28 @@ _:-ms-lang(x), .search {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; } }
-  .form--feedback .checkbox, .form--registration--feedback .checkbox, .form--entrance--feedback .checkbox, .form--call--feedback .checkbox,
-  .form--feedback--feedback .checkbox {
+  .form--feedback .checkbox, .form--call .checkbox, .form--registration--feedback .checkbox, .form--registration--call .checkbox, .form--entrance--feedback .checkbox, .form--entrance--call .checkbox, .form--call--feedback .checkbox, .form--call--call .checkbox,
+  .form--feedback--feedback .checkbox,
+  .form--feedback--call .checkbox {
     display: none; }
-  .form--feedback .checkbox-custom, .form--registration--feedback .checkbox-custom, .form--entrance--feedback .checkbox-custom, .form--call--feedback .checkbox-custom,
-  .form--feedback--feedback .checkbox-custom {
+  .form--feedback .checkbox-custom, .form--call .checkbox-custom, .form--registration--feedback .checkbox-custom, .form--registration--call .checkbox-custom, .form--entrance--feedback .checkbox-custom, .form--entrance--call .checkbox-custom, .form--call--feedback .checkbox-custom, .form--call--call .checkbox-custom,
+  .form--feedback--feedback .checkbox-custom,
+  .form--feedback--call .checkbox-custom {
     position: relative;
     width: 16px;
     height: 16px;
     background: url("assets/images/checkbox-nonactive-grey.png") no-repeat;
     cursor: pointer; }
-  .form--feedback .checkbox-custom, .form--feedback .label, .form--registration--feedback .checkbox-custom, .form--registration--feedback .label, .form--entrance--feedback .checkbox-custom, .form--entrance--feedback .label, .form--call--feedback .checkbox-custom, .form--call--feedback .label,
+  .form--feedback .checkbox-custom, .form--feedback .label, .form--call .checkbox-custom, .form--call .label, .form--registration--feedback .checkbox-custom, .form--registration--feedback .label, .form--registration--call .checkbox-custom, .form--registration--call .label, .form--entrance--feedback .checkbox-custom, .form--entrance--feedback .label, .form--entrance--call .checkbox-custom, .form--entrance--call .label, .form--call--feedback .checkbox-custom, .form--call--feedback .label, .form--call--call .checkbox-custom, .form--call--call .label,
   .form--feedback--feedback .checkbox-custom,
-  .form--feedback--feedback .label {
+  .form--feedback--feedback .label,
+  .form--feedback--call .checkbox-custom,
+  .form--feedback--call .label {
     display: inline-block;
     vertical-align: middle; }
-  .form--feedback .checkbox:checked + .checkbox-custom::before, .form--registration--feedback .checkbox:checked + .checkbox-custom::before, .form--entrance--feedback .checkbox:checked + .checkbox-custom::before, .form--call--feedback .checkbox:checked + .checkbox-custom::before,
-  .form--feedback--feedback .checkbox:checked + .checkbox-custom::before {
+  .form--feedback .checkbox:checked + .checkbox-custom::before, .form--call .checkbox:checked + .checkbox-custom::before, .form--registration--feedback .checkbox:checked + .checkbox-custom::before, .form--registration--call .checkbox:checked + .checkbox-custom::before, .form--entrance--feedback .checkbox:checked + .checkbox-custom::before, .form--entrance--call .checkbox:checked + .checkbox-custom::before, .form--call--feedback .checkbox:checked + .checkbox-custom::before, .form--call--call .checkbox:checked + .checkbox-custom::before,
+  .form--feedback--feedback .checkbox:checked + .checkbox-custom::before,
+  .form--feedback--call .checkbox:checked + .checkbox-custom::before {
     content: "";
     display: block;
     position: absolute;
@@ -5573,11 +5578,13 @@ _:-ms-lang(x), .search {
     bottom: 0px;
     left: 0px;
     background: url("assets/images/checkbox-active.png") no-repeat; }
-  .form--feedback .label, .form--registration--feedback .label, .form--entrance--feedback .label, .form--call--feedback .label,
-  .form--feedback--feedback .label {
+  .form--feedback .label, .form--call .label, .form--registration--feedback .label, .form--registration--call .label, .form--entrance--feedback .label, .form--entrance--call .label, .form--call--feedback .label, .form--call--call .label,
+  .form--feedback--feedback .label,
+  .form--feedback--call .label {
     margin-left: 15px; }
-  .form--feedback label, .form--registration--feedback label, .form--entrance--feedback label, .form--call--feedback label,
-  .form--feedback--feedback label {
+  .form--feedback label, .form--call label, .form--registration--feedback label, .form--registration--call label, .form--entrance--feedback label, .form--entrance--call label, .form--call--feedback label, .form--call--call label,
+  .form--feedback--feedback label,
+  .form--feedback--call label {
     margin-top: 20px;
     border-bottom: none;
     display: -webkit-box;
@@ -5589,13 +5596,15 @@ _:-ms-lang(x), .search {
     font-size: 14px;
     width: 100%;
     padding-left: 0; }
-    .form--feedback label:hover, .form--registration--feedback label:hover, .form--entrance--feedback label:hover, .form--call--feedback label:hover,
-    .form--feedback--feedback label:hover {
+    .form--feedback label:hover, .form--call label:hover, .form--registration--feedback label:hover, .form--registration--call label:hover, .form--entrance--feedback label:hover, .form--entrance--call label:hover, .form--call--feedback label:hover, .form--call--call label:hover,
+    .form--feedback--feedback label:hover,
+    .form--feedback--call label:hover {
       background-color: transparent;
       color: #000; }
     @media screen and (max-width: 400px) {
-      .form--feedback label, .form--registration--feedback label, .form--entrance--feedback label, .form--call--feedback label,
-      .form--feedback--feedback label {
+      .form--feedback label, .form--call label, .form--registration--feedback label, .form--registration--call label, .form--entrance--feedback label, .form--entrance--call label, .form--call--feedback label, .form--call--call label,
+      .form--feedback--feedback label,
+      .form--feedback--call label {
         font-size: 11px;
         margin-top: 10px; } }
 
