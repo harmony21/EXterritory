@@ -1878,7 +1878,6 @@ p {
     text-decoration: none;
     color: #000; }
   .links__inside-list {
-    display: none;
     position: absolute;
     width: 100%;
     bottom: -134%;
@@ -1890,16 +1889,6 @@ p {
     .links__inside-item:hover {
       background-color: white;
       cursor: pointer; }
-  .links.active {
-    background-color: #ebebeb; }
-    .links.active .links__inside-list {
-      display: block; }
-    .links.active .links__item:first-child .links__link {
-      color: #d3c7c7; }
-    .links.active .links__item.border {
-      border-left: 2px solid #d3c7c7; }
-      .links.active .links__item.border .links__link {
-        color: #d3c7c7; }
 
 .location {
   display: -webkit-box;

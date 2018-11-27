@@ -28,7 +28,7 @@
         color: #000;
     }
     &__inside-list {
-        display: none;
+        // display: none;
         position: absolute;
         width: 100%;
         bottom: -134%;
@@ -43,23 +43,23 @@
             cursor: pointer;
         }
     }
-    &.active {
-        background-color: $grey;
-        .links__inside-list {
-            display: block;
-        }
-        .links__item {
-            &:first-child {
-                .links__link {
-                    color: #d3c7c7;
-                }
-            }
-            &.border {
-                border-left: 2px solid #d3c7c7;
-                .links__link {
-                    color: #d3c7c7;
-                }
-            }
-        }
-    }
+    // &.active {
+    //     background-color: $grey;
+    //     .links__inside-list {
+    //         display: block;
+    //     }
+    //     .links__item {
+    //         &:first-child {
+    //             .links__link {
+    //                 color: #d3c7c7;
+    //             }
+    //         }
+    //         &.border {
+    //             border-left: 2px solid #d3c7c7;
+    //             .links__link {
+    //                 color: #d3c7c7;
+    //             }
+    //         }
+    //     }
+    // }
 }
