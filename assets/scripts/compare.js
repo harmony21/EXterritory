@@ -25,7 +25,6 @@ $(document).ready(function() {
         lightSlider.goToNextSlide(); 
     });
 
-
     $("#lightSlider-mobile").lightSlider({
         item: 1,
     }); 
